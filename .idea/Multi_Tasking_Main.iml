@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking/slvr/SimInfo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking/Pseudo t value" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />
