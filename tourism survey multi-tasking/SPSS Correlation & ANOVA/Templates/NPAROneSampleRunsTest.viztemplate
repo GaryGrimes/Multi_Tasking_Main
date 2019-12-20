@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<visualization version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+    <intervalDomain id="xDomain">
+        <range max="100" min="0"/>
+    </intervalDomain>
+    <graph id="graph">
+        <location method="fixed" part="top" value="10%"/>
+        <location method="fixed" part="bottom" value="90%"/>
+        <location method="fixed" part="left" value="1%"/>
+        <location method="fixed" part="right" value="99%"/>
+        <coordinates>
+            <dimension domain="xDomain">
+                <axis>
+                    <majorTicks/>
+                </axis>
+            </dimension>
+            <dimension/>
+        </coordinates>
+        <area>
+            <distributionStatistic distribution="normal" parameter="50" secondaryParameter="5"/>
+        </area>
+        <lineGuide x="20">
+            <label style="labelStyle2">
+                <text>ObservedRunsText</text>
+            </label>
+        </lineGuide>
+        <lineGuide x="500"/>
+    </graph>
+    <labelFrame>
+        <location method="fixed" part="left" value="0%"/>
+        <location method="fixed" part="width" value="50%"/>
+        <location method="attach" part="top" target="graph"/>
+        <location method="sizeToContent" part="height"/>
+        <label style="labelStyle3">
+            <text>TooFewRuns</text>
+        </label>
+    </labelFrame>
+    <labelFrame>
+        <location method="fixed" part="right" value="100%"/>
+        <location method="fixed" part="width" value="50%"/>
+        <location method="attach" part="top" target="graph"/>
+        <location method="sizeToContent" part="height"/>
+        <label style="labelStyle4">
+            <text>TooManyRuns</text>
+        </label>
+    </labelFrame>
+    <style font-size="14" id="labelStyle2" labelLocationVertical="center"/>
+    <style font-size="10pt" font-weight="bold" id="labelStyle3" margin="0" padding="0" textAlignment="left"/>
+    <style font-size="10pt" font-weight="bold" id="labelStyle4" margin="0" padding="0" textAlignment="right"/>
+</visualization>

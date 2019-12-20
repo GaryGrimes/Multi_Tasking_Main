@@ -1,0 +1,4 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJDxDt6NAHAWARMJedhXa7IhQ,ff0791f721494ddb18242e0dc4c2c5134fc7f285,Nue-Daimyojin Shrine,35.017195,135.7458583,3.9,14,"964 Shuzeicho, Kamigyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJt15X_IAIAWARh51c3kSmC5g,d224d396f8c4e765d165d0d06e97d0ce3ce2b677,Mikane-Jinja Shrine,35.0118244,135.7550064,4.2,1557,"Kyoto, Nakagyo Ward, 御池上ル押西洞院町６１４ 西洞院通り","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJEZgcTIAIAWARPqnIau8BuiM,ff0a13458cec0f7ad63da9187ae435ee88f10144,Rakuyō-shōenji Temple,35.0114101,135.7536348,3,1,"Oshiaburanokojicho, Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

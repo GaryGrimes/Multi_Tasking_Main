@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2011                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" lang="en-US" version="3.0" style="vizstyle">
+  <extension>
+    <template aggregates="true" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">GLMMHistogram</name>
+      <description xml:lang="en">Histogram with Normal Curve</description>
+      <variable type="continuous">
+        <name xml:lang="en">X</name>
+        <description xml:lang="en">X</description>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">Y</name>
+        <description xml:lang="en">Frequency</description>
+      </variable>
+      <aesthetics>Color;Transparency;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAACAGBJEEEBEEFIHKNNOKNBDLGCMAEIBGMBPDHBHKKILIIEHMOHAAHLGHJOEFAJOCBMKIIDIEBEMBKLEBKCKAOEKOIOKGBHIOEOMKDIANBNJMJNPIAOAOAFECDEHDBBMBKII&#10;EBHABJEDCKEIDCNGMOJJCGECFPPPAPCCBPMLMJKPDMHDEMIKADIICHEAEAAGBIFAGBIFAGBIFABAIFAGBIFAGBIFAGBEAAGBIFAGBIFAGBIFABAIFAGBIFAGBIFAGBEAAGBIFAGBIFAGBIFABAIFAGBIFPNDLMFKBNKGJBLIFAIFPLFCGBDDONONGNLBPOPOGEPLPAGJ&#10;DHOMPMNODCBJIAIFPDFOOOOMBLLCBMCFIHBHCMOFAGJDGLLBIFLNEKCFFDLBEEJKEFDLFBIFOIIFKCFAGBIFAGNBNBLOILHKBBODDMKDLDDALGPJGDMCGBBMCFGMKHKHKDNDMKAGAPDNFPBAOHADIDBDMCNELHGHBIFGLKLILIKNPPHMKLKLCHJNGIHCHIFDNJOKPKFF&#10;BIFLHMFCEIAHIPOBMCPEBLCKBNHFALEFLCEBKLNLJLJKJMFAGNOIDBKPEJHJPFOBNDCMKPIPAALEJDPCPCAGJCECCBJNOPCAIAGNOKMDMDMKLMDODGGJOKLPABLEIIHEBCKELDLOKPHLJAKCFHJGLBJAEACAOHEMCBPHMJAOOOJFEMBCLFBBMCPDMFFHAPDGOACIFNIG&#10;EDCHJLMFGCDJJNMNNFNKGFNLOFPGBCNPNCGKDNJOEHLLNFJHEKJNMGKJLLIMLIECCBJADHCIFLIEODPJPKHNLOCPEIJMEGCKJGKJFHHHMDOBPGGFAJHPCPHMHCLKMFOCHCDJJMNMGHBKAFIIHMDODMBOANKHELNNOGLJPOHEOBJBNIGEFJKEFEOFBEHNFHDHCIFLIMMG&#10;GDLMGGDLCPEIJPMHOJOEHKFOBJKGFLKGONKMLHBNGIPPLKNABMCCAGBIFAGBIFAGBIFEAMCALAMCALAMCALIAIFAGBIFAGBIFAGBBALAMCALAMCALAMCCAGBIFAGBIFAGBIFEAMKNHCPFALJFFMPMHEPIEBMCFAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <!--  Extensions  -->
+
+
+  <!--  Size  -->
+  <location id="location_1027140" method="fixed" part="left" value="0px"/>
+  <location id="location_1027141" method="fixed" part="right" value="625px"/>
+  <location id="location_1027142" method="fixed" part="top" value="0px"/>
+  <location id="location_1027143" method="fixed" part="bottom" value="500px"/>
+  <!--  Data  -->
+
+
+
+  <!--  Structure  -->
+  <graph clip="false" id="graph_1022820">
+    <!--  Size  -->
+    <location id="location_1022821" method="fixed" part="height" value="100px"/>
+    <location id="location_1022822" method="fixed" part="width" value="100px"/>
+    <coordinates id="coordinates_1022823">
+      <dimension id="dimension_1022824">
+        <axis id="xAxis">
+          <label id="label_10" purpose="auto">
+            <descriptionGroup id="descriptionGroup_10" target="X">
+              <description id="description_101" name="label"/>
+            </descriptionGroup>
+          </label>
+        </axis>
+      </dimension>
+      <dimension id="dimension_1022829"/>
+    </coordinates>
+    <interval id="interval_1022830">
+      <binStatistic gridType="square" id="targetBarBin"/>
+      <summaryStatistic id="summaryStatistic_1022832" method="sum"/>
+      <x variable="X"/>
+      <y variable="Y"/>
+    </interval>
+    <line dot="true" id="line" positionModifier="none">
+      <distributionStatistic distribution="normal" id="targetBarDistribution"/>
+      <x variable="X"/>
+      <y variable="Y"/>
+    </line>
+  </graph>
+  <style id="vizstyle" color="transparent"/>
+</visualization>

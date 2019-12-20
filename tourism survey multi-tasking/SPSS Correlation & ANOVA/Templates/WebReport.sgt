@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2014                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<template description="Styles for Web Report" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+	<!-- Style the tick marks and gridlines -->
+	<setAxisMajorTicks>
+		<majorTicks categorical="true" role="x" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="true" role="y" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="true" role="z" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" role="x" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" role="y" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" role="z" styleOnly="true">
+			<gridLines>
+				<style color="#00649D"/>
+			</gridLines>
+			<markStyle>
+				<style color="#00649D"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#00649D"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<!-- Style the axis -->
+	<setAxisStyle role="x" categorical="true">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle role="y" categorical="true">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle role="z" categorical="true">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle role="x" categorical="false">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle role="y" categorical="false">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle role="z" categorical="false">
+		<style color="#00649D"/>
+		<axisLabelStyle>
+			<style color="#00649D" font-weight="bold"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+
+	<!-- Style the graph border and background -->
+	<addFrame type="graph" styleOnly="true">
+		<style number="1" color="#FFFFFF" color2="#00649D"/>
+	</addFrame>
+
+	<!-- Style the titles, subtitles, and footnotes -->
+	<addFrame count="1" styleOnly="true" type="title">
+		<label>
+			<style color="#00649D" font-weight="bold"/>
+		</label>
+	</addFrame>
+	<addFrame count="2" styleOnly="true" type="title">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="1" styleOnly="true" type="subtitle">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="1" styleOnly="true" type="footnote">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="2" styleOnly="true" type="footnote">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="3" styleOnly="true" type="footnote">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+
+	<addFrame count="1" type="legend" styleOnly="true">
+		<style number="1" color="#00649D"/>
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="2" type="legend" styleOnly="true">
+		<style number="1" color="#00649D"/>
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="1" type="statisticsSummary" styleOnly="true">
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="2" type="statisticsSummary" styleOnly="true">
+		<label>
+			<style color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="3" type="statisticsSummary" styleOnly="true">
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="4" type="statisticsSummary" styleOnly="true">
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addFrame count="5" type="statisticsSummary" styleOnly="true">
+		<label>
+			<style number="0" color="#00649D"/>
+		</label>
+	</addFrame>
+	<addDataLabels styleOnly="true">
+		<style number="0" color="#00649D"/>
+		<style number="1" color2="#00649D"/>
+	</addDataLabels>
+	<addReferenceLine styleOnly="true" >
+		<style color="#00649D"/>
+	</addReferenceLine>
+	<addReferenceLine styleOnly="true" numberPoints="10" >
+		<style color="#00649D"/>
+	</addReferenceLine>
+	<setPanelOptions>
+		<axisLabelStyle>
+			<style color="#00649D"/>
+		</axisLabelStyle>
+		<tickLabelStyle>
+			<style color="#00649D"/>
+		</tickLabelStyle>
+	</setPanelOptions>
+	<setStyle type="line">
+		<style color="#00B2EF"/>
+	</setStyle>
+	<setStyle type="dropline">
+		<style color="#00B2EF"/>
+	</setStyle>
+	<setStyle type="scatter" subtype="simple">
+		<style color2="#00649D"/>
+	</setStyle>
+	<setStyle type="scatter" subtype="simple">
+		<style coordinate="1" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="scatter" subtype="dot">
+		<style color2="#00649D"/>
+	</setStyle>
+	<setStyle type="histogram">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="bar" subtype="simple">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="range" subtype="simple">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="schema" subtype="simple">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="schema" subtype="fenceStyle">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="schema" subtype="medianStyle">
+		<style color="#00649D"/>
+	</setStyle>
+	<setStyle type="schema" subtype="outlierStyle">
+		<style color2="#00649D" />
+	</setStyle>
+	<setStyle type="schema" subtype="extremeStyle">
+		<style color="#00649D"/>
+	</setStyle>
+	<setStyle type="errorbar" subtype="simple">
+		<style color2="#00B2EF" color="#00649D"/>
+	</setStyle>
+	<setStyle type="area" subtype="simple">
+		<style color="#00B2EF" color2="#00649D"/>
+	</setStyle>
+	<setStyle type="dropline" subtype="interval">
+		<style color2="#00649D" color="#00649D"/>
+	</setStyle>
+	<setStyle id="element_centroid_1s">
+		<style color2="#00B2EF"/>
+	</setStyle>
+	<setStyle id="element_centroid_2s">
+		<style color2="#00B2EF"/>
+	</setStyle>
+	<setStyle id="element_survival_line_1s">
+		<style color2="#00B2EF"/>
+	</setStyle>
+
+	<setStyle id="element_survival_point_1s">
+		<style color2="#00B2EF"/>
+	</setStyle>
+	<setStyle id="element_survival_censored_1s">
+		<style color2="#00B2EF"/>
+	</setStyle>
+	<setColor>
+		<cycle>
+			<style color="#00B2EF"/>
+			<style color="#D9182D"/>
+			<style color="#FFCF01"/>
+			<style color="#7F1C7D"/>
+			<style color="#007670"/>
+			<style color="#DD731C"/>
+			<style color="#17AF4B"/>
+			<style color="#EE3D96"/>
+			<style color="#838329"/>
+			<style color="#82D1F5"/>
+			<style color="#F04E37"/>
+			<style color="#FFE14F"/>
+			<style color="#AB1A86"/>
+			<style color="#00A6A0"/>
+			<style color="#F19027"/>
+			<style color="#8CC63F"/>
+			<style color="#F389AF"/>
+			<style color="#A5A215"/>
+			<style color="#00649D"/>
+			<style color="#A91024"/>
+			<style color="#FDB813"/>
+			<style color="#3B0256"/>
+			<style color="#006058"/>
+			<style color="#B8471B"/>
+			<style color="#00BA52"/>
+			<style color="#BA006E"/>
+			<style color="#594F13"/>
+		</cycle>
+	</setColor>
+	<setStyleCycle id="styleCycleRepository" createType="ColorsOnly">
+		<cycle>
+			<style color="#00B2EF"/>
+			<style color="#D9182D"/>
+			<style color="#FFCF01"/>
+			<style color="#7F1C7D"/>
+			<style color="#007670"/>
+			<style color="#DD731C"/>
+			<style color="#17AF4B"/>
+			<style color="#EE3D96"/>
+			<style color="#838329"/>
+			<style color="#82D1F5"/>
+			<style color="#F04E37"/>
+			<style color="#FFE14F"/>
+			<style color="#AB1A86"/>
+			<style color="#00A6A0"/>
+			<style color="#F19027"/>
+			<style color="#8CC63F"/>
+			<style color="#F389AF"/>
+			<style color="#A5A215"/>
+			<style color="#00649D"/>
+			<style color="#A91024"/>
+			<style color="#FDB813"/>
+			<style color="#3B0256"/>
+			<style color="#006058"/>
+			<style color="#B8471B"/>
+			<style color="#00BA52"/>
+			<style color="#BA006E"/>
+			<style color="#594F13"/>
+		</cycle>
+	</setStyleCycle>
+	<setGenericAttributes elementName="label" parentName="labelFrame" styleName="style" color="#00649D"/>
+	<setGenericAttributes elementName="label" parentName="pointGuide" styleName="textFrameStyle" color2="#00649D"/>
+	<setGenericAttributes elementName="label" parentName="pointGuide" styleName="style" color="#00649D"/>
+	<setGenericAttributes elementName="line" styleName="style" color="#00649D"/>
+	<setGenericAttributes elementName="point" styleName="style" color2="#00649D"/>
+</template>

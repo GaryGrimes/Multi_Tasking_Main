@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2016                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<template SPSS-Version="15.0" date="2006-06-01" description="Simple gray-scale style following APA Guidelines" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+
+    <!-- Set the X and Y Axis label styles -->
+	<setAxisStyle categorical="true" role="x">
+		<axisLabelStyle>
+			<style color="#000000" color2="transparent" font-size="11pt" font-style="regular" font-weight="regular" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle categorical="false" role="y">
+		<axisLabelStyle>
+			<style color="#000000" color2="transparent" font-size="11pt" font-style="regular" font-weight="regular" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+
+    <!-- Set the legend styles -->
+	<addFrame count="1" styleOnly="true" type="legend">
+		<style color="#000000" color2="transparent" font-size="8pt" font-weight="regular" number="1" visible="true"/>
+		<style color="transparent" color2="transparent" number="0" visible="true"/>
+	</addFrame>
+
+    <!-- Set the X and Y tick label styles -->
+	<setAxisMajorTicks>
+		<majorTicks categorical="true" role="x">
+			<tickLabelStyle>
+				<style color="#000000" font-size="8pt" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" role="y">
+			<tickLabelStyle>
+				<style color="#000000" font-size="8pt" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+
+    <!-- Set the overall chart styles -->
+	<addFrame count="1" styleOnly="true" type="visualization">
+		<style color="#ffffff" color2="transparent" number="0" visible="true"/>
+		<style font-family="Arial" font-size="8pt" number="1" stroke-linecap="butt" text-fit="true" visible="true"/>
+	</addFrame>
+
+    <!-- Set the graph frame styles -->
+	<addFrame count="1" styleOnly="true" type="graph">
+		<style color="transparent" color2="transparent" visible="true"/>
+		<style color="transparent" color2="#000000" number="1" visible="true"/>
+	</addFrame>
+
+    <!-- Set the simple element styles -->
+	<setStyle subtype="simple" type="bar">
+		<style color="#7f7f7f" color2="#000000"/>
+	</setStyle>
+    <setStyle type="histogram">
+		<style color="#7f7f7f" color2="#000000"/>
+    </setStyle>
+    <setStyle subtype="simple" type="range">
+		<style color="#7f7f7f" color2="#000000"/>
+    </setStyle>
+    <setStyle id="element_errorbar_1s" subtype="simple" type="errorbar">
+		<style color2="#7f7f7f" color="#000000"/>
+    </setStyle>
+    <setStyle id="element_simplearea_1s" subtype="simple" type="area">
+		<style color="#7f7f7f" color2="#000000"/>
+    </setStyle>
+    <setStyle id="element_scatter_1s" subtype="simple" type="scatter">
+		<style color="transparent" color2="#000000"/>
+    </setStyle>
+    <setStyle id="element_line_1s" subtype="simple" type="line">
+		<style color="#000000"/>
+    </setStyle>
+    <setStyle id="element_dropdownline_1s" subtype="interval" type="dropline">
+		<style color="#000000"/>
+    </setStyle>
+
+    <!-- Set the dashing styles -->
+	<setDash>
+		<cycle>
+			<style/>
+			<style stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt"/>
+			<style stroke-dasharray="8pt,8pt"/>
+			<style stroke-dasharray="10pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="3pt,6pt"/>
+			<style stroke-dasharray="12pt,2pt,2pt,2pt,2pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="6pt,3pt,6pt"/>
+			<style stroke-dasharray="8pt,1pt,8pt,7pt,2pt,7pt"/>
+			<style stroke-dasharray="6pt,2pt,3pt,5pt,2pt,2pt"/>
+			<style stroke-dasharray="15pt,2pt,6pt,2pt"/>
+			<style stroke-dasharray="5pt,5pt"/>
+			<style stroke-dasharray="8pt,2pt,4pt,2pt"/>
+			<style stroke-dasharray="3pt,2pt"/>
+			<style stroke-dasharray="12pt,5pt,3pt,5pt"/>
+			<style stroke-dasharray="6pt,3pt,3pt,3pt"/>
+			<style stroke-dasharray="12pt,3pt"/>
+		</cycle>
+	</setDash>
+
+    <!-- Set the fill-pattern styles -->
+	<setPattern>
+		<cycle>
+			<style pattern="26" color="white" color2="black"/>
+			<style pattern="1" color="white" color2="black"/>
+			<style pattern="12" color="white" color2="black"/>
+			<style pattern="3" color="white" color2="black"/>
+			<style pattern="29" color="white" color2="black"/>
+			<style pattern="6" color="white" color2="black"/>
+			<style pattern="14" color="white" color2="black"/>
+			<style pattern="7" color="white" color2="black"/>
+			<style pattern="18" color="white" color2="black"/>
+			<style pattern="17" color="white" color2="black"/>
+			<style pattern="22" color="white" color2="black"/>
+			<style pattern="9" color="white" color2="black"/>
+			<style pattern="20" color="white" color2="black"/>
+			<style pattern="10" color="white" color2="black"/>
+			<style pattern="21" color="white" color2="black"/>
+			<style pattern="27" color="white" color2="black"/>
+			<style pattern="19" color="white" color2="black"/>
+			<style pattern="23" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="4" color="white" color2="black"/>
+			<style pattern="25" color="white" color2="black"/>
+			<style pattern="28" color="white" color2="black"/>
+			<style pattern="5" color="white" color2="black"/>
+			<style pattern="15" color="white" color2="black"/>
+			<style pattern="2" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="11" color="white" color2="black"/>
+			<style pattern="16" color="white" color2="black"/>
+			<style pattern="8" color="white" color2="black"/>
+		</cycle>
+	</setPattern>
+
+    <!-- Set the symbol styles -->
+	<setShape>
+		<cycle>
+			<style size="5pt" symbol="circle"/>
+			<style size="5pt" symbol="square"/>
+			<style size="5pt" symbol="cross" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3"/>
+			<style size="5pt" symbol="plus"/>
+			<style size="5pt" symbol="circle" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="square" glyph-angle="45"/>
+			<style size="5pt" symbol="flower" glyph-sides="5"/>
+			<style size="5pt" symbol="bowtie"/>
+			<style size="5pt" symbol="square" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="circle" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-sides="5"/>
+			<style size="5pt" symbol="star" glyph-sides="8"/>
+			<style size="5pt" symbol="square" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="flower" glyph-sides="3"/>
+			<style size="5pt" symbol="bowtie" glyph-angle="90"/>
+			<style size="5pt" symbol="line" glyph-angle="90"/>
+			<style size="5pt" symbol="polygon" glyph-sides="4" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="line"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="270"/>
+			<style size="5pt" symbol="arrow"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="90"/>
+		</cycle>
+	</setShape>
+
+    <!-- Set the grouped styles for Graph generated charts -->
+	<setStyleCycle id="styleCycleRepository" createType="PatternsOnly">
+	    <!-- Fill pattern cycle -->
+		<cycle>
+			<style pattern="26"/>
+			<style pattern="1"/>
+			<style pattern="12"/>
+			<style pattern="3"/>
+			<style pattern="29"/>
+			<style pattern="6"/>
+			<style pattern="14"/>
+			<style pattern="7"/>
+			<style pattern="18" visible="true"/>
+			<style pattern="17" visible="true"/>
+			<style pattern="22" visible="true"/>
+			<style pattern="9" visible="true"/>
+			<style pattern="20" visible="true"/>
+			<style pattern="10" visible="true"/>
+			<style pattern="21" visible="true"/>
+			<style pattern="27" visible="true"/>
+			<style pattern="19" visible="true"/>
+			<style pattern="23" visible="true"/>
+			<style pattern="24" visible="true"/>
+			<style pattern="4" visible="true"/>
+			<style pattern="25" visible="true"/>
+			<style pattern="28" visible="true"/>
+			<style pattern="5" visible="true"/>
+			<style pattern="15" visible="true"/>
+			<style pattern="2" visible="true"/>
+			<style pattern="24" visible="true"/>
+			<style pattern="11" visible="true"/>
+			<style pattern="16" visible="true"/>
+			<style pattern="8" visible="true"/>
+		</cycle>
+		<cycle>
+    	    <!-- symbol cycle -->
+			<style size="5pt" symbol="circle"/>
+			<style size="5pt" symbol="square"/>
+			<style size="5pt" symbol="cross" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3"/>
+			<style size="5pt" symbol="plus"/>
+			<style size="5pt" symbol="circle" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="square" glyph-angle="45"/>
+			<style size="5pt" symbol="flower" glyph-sides="5"/>
+			<style size="5pt" symbol="bowtie"/>
+			<style size="5pt" symbol="square" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="circle" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-sides="5"/>
+			<style size="5pt" symbol="star" glyph-sides="8"/>
+			<style size="5pt" symbol="square" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="flower" glyph-sides="3"/>
+			<style size="5pt" symbol="bowtie" glyph-angle="90"/>
+			<style size="5pt" symbol="line" glyph-angle="90"/>
+			<style size="5pt" symbol="polygon" glyph-sides="4" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="line"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="270"/>
+			<style size="5pt" symbol="arrow"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="90"/>
+		</cycle>
+		<cycle>
+    	    <!-- line dash cycle -->
+			<style/>
+			<style stroke-dasharray="3px,2px" width="1pt"/>
+			<style stroke-dasharray="3px,6px" width="1pt"/>
+			<style stroke-dasharray="8px,8px" width="1pt"/>
+			<style stroke-dasharray="6px,3px,3px,3px" width="1pt"/>
+			<style/>
+			<style stroke-dasharray="3px,2px" width="1.5pt"/>
+			<style stroke-dasharray="3px,6px" width="1.5pt"/>
+			<style stroke-dasharray="6px,3px,3px,3px" width="1.5pt"/>
+		</cycle>
+	</setStyleCycle>
+
+</template>

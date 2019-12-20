@@ -1,0 +1,13 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJuXbdnQ0OAWAROvtsCwR08pA,96d7863298a7bab4ca131acd685b818c62071fca,Daigoji,34.951024,135.819563,4.3,1462,"22 Daigohigashiojicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJdQWMIwwOAWARS_bCuHdYh_s,be894ddb4a2dfb68dcce93c65c322f8e4a49542c,"Kondō, Daigoji Temple",34.9514843,135.8217651,4.3,24,"9-13 Daigoakamaminamiuracho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJHY0Eng0OAWARaIUBFvIRWvE,02610517a1e62294c5f7cba2619d45c54cefdb0e,Hōonin Temple,34.9503567,135.8190444,5,3,"Daigohigashiojicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJjxwk5BEOAWARkFqn3_FxhZE,6aa4a145108794deea4a7ed1d4a2d7062e8ba049,Yuishinji Temple,34.94861,135.818088,0,0,"Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJcWrPeQ4OAWARkisLTUwJKko,c0c35b947107d30a6c7d169e7787014d3c0d94cc,Koudaiin Temple,34.950291,135.820313,3,2,"15 Daigogarancho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ5dTXxw0OAWARuO3Fu6pw_0A,d58fda99264becc885fea02040edb3df6044b899,Daigoji Temple Nio-mon Gate,34.9514349,135.8202612,4.2,33,"22 Daigohigashiojicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJH2cT2REOAWARkmryx9R7iBw,7b86e302a8421903a0e173d1397ae5f5be583e4d,Toorukumo Temple,34.948052,135.818324,3,2,"Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJu5wsBDgPAWARg8H41hW_nq0,36a556528e38037a933b9c3846baa00d31c56487,Shimodaigo Temple,34.950896,135.8217108,5,2,"Kyoto, Fushimi Ward, Daigogarancho, １","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ6SsEFAkOAWARTY7ohQg8L0M,813188fbbc18f7ffb0d7f0678a8652cbbdf6a238,Bentendo Temple,34.9510908,135.8246913,4.3,68,"Daigogarancho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJgQhXi80IAWARf7aGvUrhCZQ,ff6b84c6ae0d3729c677af2795e676345f6b7434,Daigoji,34.9510043,135.8195362,4,2,"22 Daigohigashiojicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJJ8REYwwOAWAR-7dmdnDDjgc,9d8d132cb573d3d011f509a231a82bbe24816a04,Nagaotenmangu Shrine,34.9524421,135.8230979,4.3,10,"18 Daigogarancho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJf3z-_gsOAWARnHAh9bNpPyA,b8bad2b52ef621697fe5579743192741cd0034e2,Sumeragi Daijingu Shrine,34.9520256,135.8233853,3.5,2,"Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

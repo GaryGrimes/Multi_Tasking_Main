@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2013                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization clip="false" version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <!--  Data  -->
+  <userSource id="graphSource"/>
+  <sourceVariable categorical="true" id="celltext" source="graphSource" sourceName="CellText"/>
+  <sourceVariable categorical="true" id="o_column" source="graphSource" sourceName="Column"/>
+  <sourceVariable categorical="true" id="o_row" source="graphSource" sourceName="Row"/>
+  <sourceVariable categorical="true" id="category" source="graphSource" sourceName="Category"/>
+  <sourceVariable id="cellvalue" source="graphSource" sourceName="CellValue"/>
+  <sourceVariable categorical="true" id="observedtooltip" source="graphSource" sourceName="ObservedTooltip"/>
+  <sourceVariable categorical="true" id="hypothesizedtooltip" source="graphSource" sourceName="HypothesizedTooltip"/>
+  <graph id="graph1">
+    <coordinates id="coordinates1">
+      <rotationTransform angle="0"/>
+      <dimension/>
+      <dimension facetsShareScale="true">
+        <axis id="axis">
+          <majorTicks />
+        </axis>
+      </dimension>
+    </coordinates>
+    <coordinates id="coordinates2"/>
+    <faceting>
+      <cross>
+        <variableReference ref="o_column"/>
+        <variableReference ref="o_row"/>
+      </cross>
+    </faceting>
+    <facetLayout>
+      <tableLayout verticalTitlesInCorner="false"/>
+      <facetLevel id="facetLevel" level="1">
+        <axis>
+          <label>
+            <text>Facet1Text</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </facetLevel>
+      <facetLevel gap="0pt" level="2">
+        <axis>
+          <label>
+            <text>Facet2Text</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </facetLevel>
+      <setCellProperties>
+        <setStyle style="nonDiagonalCellColor" target="graph1"/>
+        <setStyle style="hiddenStyle" target="axis"/>
+        <union>
+          <intersect>
+            <intersectWhere variable="o_column" variable2="o_row"/>
+          </intersect>
+        </union>
+      </setCellProperties>
+    </facetLayout>
+    <interval coordinates="coordinates2" id="interval" style="intervalStyle">
+      <labeling variable="celltext" textFrameStyle="labelingStyle3"/>
+    </interval>
+    <interval coordinates="coordinates1" id="interval2">
+      <color affect="main" id="categoryColor" missing="silver" variable="category"/>
+      <x variable="category"/>
+      <y variable="cellvalue"/>
+    </interval>
+  </graph>
+  <legend id="legend1">
+    <location method="sizeToContent" part="width"/>
+    <location method="sizeToContent" part="height"/>
+    <location method="same" part="top" target="graph1"/>
+    <location method="attach" part="left" target="graph1"/>
+    <label purpose="auto">
+      <descriptionGroup target="category">
+        <description name="label"/>
+      </descriptionGroup>
+    </label>
+    <legendTarget target="categoryColor"/>
+  </legend>
+  
+  <style id="hiddenStyle" visible="false"/>
+  <style color="white" height="30px;30px;100%" id="nonDiagonalCellColor" visible="true"/>
+  <style color="transparent" color2="transparent" id="labelingStyle3"/>
+  <style id="intervalStyle" color="transparent"/>
+  <popup target="interval2" tokenTemplate="tooltipText">
+    <tokenMapping valueToken="0" variable="observedtooltip"/>
+    <tokenMapping valueToken="1" variable="hypothesizedtooltip"/>
+  </popup>
+</visualization>

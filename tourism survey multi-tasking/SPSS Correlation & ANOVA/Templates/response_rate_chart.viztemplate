@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" style="visualizationStyle" version="2.7" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+    <extension>
+        <template aggregates="true" description="cumlative ResponseRate from Tree" name="response_rate_chart"
+            summary="sum; mean; cumulativeSum; min; max; mode; range; percent; cumulativePercent" version="1">
+            <variable name="profile" type="categorical"/>
+            <variable name="rate" type="continuous"/>
+            <aesthetics>Color;Transparency;Size;Label</aesthetics>
+            <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAFADDJEEEBEEFIHKNNOMJPFLELFJGABGMLPBLMLANPAABMLAPOECBCKOFFIEOCEFCEANAJLJAKABFMKIBEEECEKCOKGHHNILGDEGJGNKGIENGGFEADGLIELLIFNGLGNKGKL&#10;OKOOKFMFHNKEOCNLABBJALLPAOLAHKKGOPNLGOMMJDJHPEGHOBEECGIDECCPDHGGOMMMDPOIJHAPPCLEKFPAIBBADMCGIFMALIBGBDMCGIFMIAMICIFDPDPDPDJDJDJLALALAJKEFKAPDCOBEMDOBPEECCBLOLOLOLGLGLGMALOOKCKBNIGCDJJMBPBPBHMDGAGCAODA&#10;JCACDAMKNKNKNKMEGCDDADADALMHLFDNPDPDPHJJOPFHJNCCCCDIFODPJPAAIEAMKDMDMDMJLJLJLIEECCIHOBPOBDDDDDDCCILGEGEGECHHLFHKPNOMCGJKPIJDLCIICBGFJBNFNFNFJIHAFIALAKFMFNNLHPLLPFJBGNNFFBFIFANPIJMPAMALEGBGNBMBNJMDLFJP&#10;MMALEKAGBEIKMFHEHMHKMALEKAGBKCNPDKHKLJMALEKAGBEPGODMPJIPCGIFCFALEECDCCEMIBGJEBMCEFKHFGLNOCFOAGBEPEOFOHKNNNPDGGIFCFALEJNGLLEBFIFLBPJOPKHBPKCLFPGALADHMINMGGLBMBMBEKFIFANINDJNAFNKCNDBAMKGNGNGFPIHMDEOALAN&#10;AKOPAPMPNHNFBMKJOJOJOGOGOGGHLLNNEOALACEGCKCFDAGLOFIFHJHJHJNANANANCNCNCGEAMCBJMIFPDALCPJPMDCILMFOCHNNEHKEDOBPIHBKDFKJNMGGDDJJMEPGPGPONLOHPDEEGNPCLMLDFPDJGIAMBBMAGAFDHKEFIBEKFIOEJOJPJPJHFBBJFAFECBPOEBJB&#10;ALFPCMCPJPMHOFPKHBBFDKJDFKCMACFJHHKELCKAHPEEFEKCNLOFIFIEAMOIOIOABJGIFFLDFKCDFJOFFIBALFBNGKELIGPEPIBDIILJCFJFNPOHIHCIKPFLCPGHPNCMHHDEEKBGPEPEPIJAALEDPMLAIMADPAJFCDCLAHLCMGMGMGEDNAGJGFFMAFFPPAOIOEMCGBJF&#10;GHLLNNMMIMKLJKFMFNNLHEPEHDPPOPHOMMCDBJFIGNBANBDENEAGJIGMCAFIPNMJGMFJACCLMJOEHGPHPHPHNKAGJGOPKCCEMCNLOPFEFPJNADABIAIPNPOPKNCMCBKNNNPDGDEPMHIIAKPMCPIHMDIMEEFBAGBEIGMCAFIMENNIMCEIFBGANBFEAGJIGPFNAKJFCJAK&#10;GGFHPFLCJJMEKCCALACDICJBNKKNHGFJHNGHGPLKBBDLBBBEEGJLNNOOJIJIJAFKAGBEILDDCJLLMKEJDLBOOMOMOEKDNJOCFLGCJFNJJPHKHEIAOCKNDCPAKMJNABFMOBAIKENKJEGFNGOPJOJOHFJGNIADCGHKEFDIFEIGOPJOMCOFJJNIPDEFEHKENIDDPPEPICGJ&#10;KPIEFLMAAGCJDFKGOHBIPLDNJHBJEBPCLMIDFKKHEIOBFJEGJHCMKEOEJKOMBDIEPHBPCCILLBGLHLHLHNKMPMKLHJOJNKMHGNJDGABBAMKAFICEDEDEDEKODMKMJOONEGCCIEDEMACNFDEDPPOOLNJEIOBLJAFPCMKIFMCGOEHKDNBOAHIFCAGBEPKHDPAKKODCIEFK&#10;HLIGMILEGMKOOMDNEFPNCKBDIELILKLHFFINCBEJLFEDGBCIFCCPBDCJIHHGGPILDOKLGJFOAGFOOKPIILPBOPEPGFOPAPBJAKDIHMEIMLELELEGFEIFCEBOJNPNECPMHLJGKFHALEDMCBDMGLMMBDKBBEBIPGLGLGLIGEDKHDNMPLCKLJPHKCDMKMNFPODAEFMCJPEA&#10;FAOLLKLKLAIAEDDPPKENGOPJIPPBJGDDNJCNLPKAJMIIEJMCDLMAAEAALAAFELDHDEAMCCPNMPDDDFHKPNOMGAPBPLBEBOHDKAGBCHALLLLLLFJFDPPKKABKFKICKNFOLOFIFDLDLDLAOFDKDKDKGJOCAPFICMIAJFIOPKCBEPJFIPOKOLPJFKEINKMICMEBOAHIHIHI&#10;HIJBGFNJINKMMALIBGBDMCGIFMALIBGBDMCGIFMALIBGBDMKCJKCPPBAJIMALOGJKMPHAECKHNLONAPNGJPNPOPALEIEGOCDCMHJKCKHJNENENEJBCALKEJJPHFICABEJJHJFJJLMIAPFKEOPCDKPKJFKJJPHFIKKILFDICPHJBBOLEJMPFGGAGBIPCEJIDGOICPHNII&#10;PABEAJJAKGBHGFCFOFHBHBHBCKAFIMEFOFFLAGJIDGOIKIHJJIDAEKKIBPLCDOMKBIJGFMHHENKCPKKFALEMPJBLCKPBLCDLFNEIIANBLBLBDJBIFBIAEAMKKALKODEMALKOIAGJLMFOCHLLNNIGFOCPJPMDKGPJIKAINHNHNHBKAFIAJJLIHCLMMNFIPPHHALMOGHLD&#10;AGBKDILOMOMOMNONONOAGADIIOECLJKJKJMBOAHIIFANHLJNMGMALOLHEGNNMLHFCCAKAALMJOEHKINCICMELAIHGIBGBHNMCGIFMALIFMALIBGBDMCGIFMALIBGBLIBGJODNPHAIBJCICBPGNAJKJPBAAAAAAAAJEFEOEEEOKCEAGCI</image>
+        </template>
+    </extension>
+    <!--  Extensions  -->
+    <!--  Structure  -->
+    <graph cellStyle="graphStyle2" id="graph_1084" style="graphStyle">
+        <coordinates id="coordinates_1085">
+            <dimension id="dimension_1086">
+                <axis id="axis_1087">
+                    <label id="label_1108" style="labelStyle">
+                        <text id="text_1346">Profile</text>
+                    </label>
+                    <majorTicks id="majorTicks_1088" markStyle="majorTicksStyle3" style="majorTicksStyle"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1089">
+                <axis id="axis_1090">
+                    <label id="label_1111" style="labelStyle2">
+                        <text id="text_1406">Cumlative Response Rate</text>
+                    </label>
+                    <majorTicks id="majorTicks_1091" markStyle="majorTicksStyle4" style="majorTicksStyle2">
+                        <format maximumFractionDigits="1" minimumFractionDigits="1" negativesInParentheses="false" suffix="%" useGrouping="true"/>
+                    </majorTicks>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line id="line_1092" style="lineStyle">
+            <summaryStatistic convertIntervalToSingleValue="true" id="summaryStatistic_1093" method="mean"/>
+            <x variable="profile"/>
+            <y variable="rate"/>
+        </line>
+    </graph>
+    <!--  Styles  -->
+    <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle" padding="1px"/>
+    <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle2" padding="1px" margin="2px"/>
+    <style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+    <style id="graphStyle" margin="0px"/>
+    <style color="#EBEBEB" color2="black" id="graphStyle2"/>
+    <style color="black" font-size="8pt" id="majorTicksStyle"/>
+    <style color="black" font-size="8pt" id="majorTicksStyle2"/>
+    <style color="black" id="majorTicksStyle3" stroke-width="1px"/>
+    <style color="black" id="majorTicksStyle4" stroke-width="1px"/>
+    <style color="#013996" color2="black" depth="80%" id="lineStyle" stroke-width="1px"/>
+</visualization>

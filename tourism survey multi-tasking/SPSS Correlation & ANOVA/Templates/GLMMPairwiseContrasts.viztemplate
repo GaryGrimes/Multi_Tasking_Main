@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization id="visualization1" lang="en-US" version="2.8" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="nodeSource_1"/>
+  <userSource id="edgeSource_1"/>
+  <sourceVariable categorical="true" id="node" source="nodeSource_1" sourceName="node"/>
+  <sourceVariable categorical="true" id="nfacet1" source="nodeSource_1" sourceName="facet1"/>
+  <sourceVariable categorical="true" id="nfacet2" source="nodeSource_1" sourceName="facet2"/>
+  <sourceVariable categorical="true" id="from" source="edgeSource_1" sourceName="from"/>
+  <sourceVariable categorical="true" id="to" source="edgeSource_1" sourceName="to"/>
+  <sourceVariable categorical="false" id="weight" source="edgeSource_1" sourceName="weight"/>
+  <sourceVariable categorical="true" id="weightInPopup" source="edgeSource_1" sourceName="weightInPopup"/>
+  <sourceVariable categorical="true" id="type" source="edgeSource_1" sourceName="type"/>
+  <sourceVariable categorical="true" id="efacet1" source="edgeSource_1" sourceName="facet1"/>
+  <sourceVariable categorical="true" id="efacet2" source="edgeSource_1" sourceName="facet2"/>
+  <sourceVariable categorical="true" id="tooltip_1" source="edgeSource_1" sourceName="tooltip"/>
+  <expressionVariable categorical="true" expression="from+to" id="distance"/>
+  <graph id="graph_1">
+    <coordinates id="coordinates_1">
+      <dimension id="dimension_1" lowerMargin="10%" upperMargin="10%"/>
+      <dimension id="dimension_2" lowerMargin="10%" upperMargin="10%"/>
+      <sameRatioTransform center="true" id="sameRatioTransform_1"/>
+    </coordinates>
+    <faceting id="faceting_1" method="nest">
+      <cross id="cross_1">
+        <variableReference>
+          <elementVariableReference element="point_1" ref="nfacet1"/>
+          <elementVariableReference element="line" ref="efacet1"/>
+        </variableReference>
+        <variableReference>
+          <elementVariableReference element="point_1" ref="nfacet2"/>
+          <elementVariableReference element="line" ref="efacet2"/>
+        </variableReference>
+      </cross>
+    </faceting>
+    <facetLayout id="facetLayout_2">
+      <facetLevel gap="5px" id="facetLevel_1" level="1">
+        <axis id="axis_1">
+          <label id="label_2" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1" target="nfacet1">
+              <description id="description_1" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1"/>
+        </axis>
+      </facetLevel>
+      <facetLevel id="facetLevel_2" gap="5px" level="2">
+        <axis id="axis_2">
+          <label id="label_4" purpose="auto">
+            <descriptionGroup id="descriptionGroup_2" target="nfacet2">
+              <description id="description_2" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_2"/>
+        </axis>
+      </facetLevel>
+    </facetLayout>
+    <point clip="none" dot="true" id="point_1" showCollidingLabels="false">
+      <graphLayoutStatistic from="from" id="graphLayoutStatistic" nodes="node" to="to">
+        <initial id="initial" type="circle"/>
+      </graphLayoutStatistic>
+      <labeling id="labeling_1" variable="node"/>
+    </point>
+    <line clip="none" dot="true" id="line">
+      <attach id="attach" target="point_1" targetKey="node"/>
+      <color affect="main" clamp="true" id="color_1" variable="type"/>
+      <size high="5px," id="sizeAesthetic_1" low="1px," variable="weight"/>
+      <position id="position_1" variable="distance"/>
+    </line>
+  </graph>
+  <labelFrame id="labelFrame_3">
+    <!--  Size  -->
+    <label id="label_3" purpose="footnote">
+      <text id="text_3">FootnoteText</text>
+    </label>
+  </labelFrame>
+  <labelFrame id="labelFrame_5">
+    <label id="label_5" purpose="title">
+      <text id="text_5">TitleText</text>
+    </label>
+  </labelFrame>
+  <labelFrame id="labelFrame_1" style="style7">
+    <label id="label_1" purpose="subTitle">
+      <text id="text_1">subTitleText</text>
+    </label>
+  </labelFrame>
+  <legend id="legend_1">
+    <legendTarget target="color_1"/>
+  </legend>
+  <style id="style7"/>
+  <popup id="edgePopup" target="line" tokenTemplate="$[1]$">
+    <tokenMapping id="tokenMapping_1" valueToken="1" variable="tooltip_1"/>
+  </popup>
+</visualization>

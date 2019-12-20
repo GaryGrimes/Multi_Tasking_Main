@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2014                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="graphSource"/>
+  <sourceVariable categorical="false" id="x" measurementLevel="ratio" source="graphSource" sourceName="value"/>
+  <sourceVariable categorical="false" id="y" measurementLevel="ratio" source="graphSource" sourceName="count"/>
+  <derivedVariable id="type" value="x&gt;=0?&quot;0positive&quot;:&quot;1negative&quot;"/>
+  <graph id="graph">
+    <coordinates>
+      <dimension>
+        <axis>
+          <label>
+            <text>XAxis Text</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+      <dimension>
+        <axis>
+          <label>
+            <text>YAxis Text</text>
+          </label>
+          <majorTicks>
+            <format maximumFractionDigits="0" minimumFractionDigits="0" negativesInParentheses="false" useGrouping="true"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <interval>
+      <binStatistic binStart="0"/>
+      <summaryStatistic method="sum"/>
+      <color affect="main" id="color1" missing="silver" variable="type"/>
+      <x variable="x"/>
+      <y variable="y"/>
+    </interval>
+  </graph>
+  <legend id="legend">
+    <location method="same" part="top" target="graph"/>
+    <location method="same" part="bottom" target="graph"/>
+    <location max="50%" method="sizeToContent" part="width"/>
+    <location method="fixed" part="right" value="100%"/>
+    <legendTarget target="color1"/>
+  </legend>
+  <labelFrame>
+    <location method="same" part="width" target="legend"/>
+    <location method="sizeToContent" part="height"/>
+    <location method="attach" part="top" target="legend"/>
+    <location method="same" part="left" target="legend"/>
+    <label style="labelStyle3">
+      <text>LegendLabel</text>
+    </label>
+  </labelFrame>
+  <style color="black" color2="transparent" font-size="9pt" font-weight="regular" id="labelStyle3" margin="3px" padding="2px"/>
+</visualization>

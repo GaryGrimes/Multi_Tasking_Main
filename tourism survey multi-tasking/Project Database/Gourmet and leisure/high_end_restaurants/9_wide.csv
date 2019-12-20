@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJlQjB_PwHAWARF25jsGiNIzg,d24b7a7185c059b44ef723b894b8d3b4c8322a9e,Itsutsu,35.0408584,135.7476054,4.1,110,"28 Murasakino Unrinincho, Kita Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJDRN1WgwIAWARrXuo6tMKdZs,33c073ed6543c93b6f9c3f436c67de5cef92865a,Hatakaku,35.0361181,135.7586819,4.3,64,"Kyoto, Kamigyo Ward, 室町東入内構町430","['restaurant', 'food', 'point_of_interest', 'establishment']"

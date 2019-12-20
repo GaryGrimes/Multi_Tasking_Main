@@ -1,0 +1,9 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJvUbrwCCoAWARX2QiHCsn5A4,65867e1d1cdf7a8e01267807286e4a0565963c91,Kinkaku-ji,35.03937,135.7292431,4.5,18412,"1 Kinkakujicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJE7LrdCKoAWAR9W3afHG2YkU,ba4baa5f86f90ca04ffd381634ffb4c0babc07b0,Kinugasa Joshuji Temple,35.04514899999999,135.732915,4,6,"38 Kinugasa Hirakicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJD6FedS-oAWAR4L67Qfw-VpI,0f824eb925d5ff0d52a63d3d93ef819e7d246dcb,Fushiginotani Fushigi-fudōin Temple,35.0405208,135.7242843,4.7,3,"Kinugasa Akasakacho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJbYon-SWoAWARCmotHFNAnvY,a21d36b78c130c3ac052aa3d9bed5cae2a9d04e8,Tenryu-Shin-Dai-Jinja Shrine,35.0400067,135.7238019,3,1,"Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJSfVT54wHAWAR2yBLWbHLplE,99dc39b2491593ae7c282c71127299c4a840fc20,Hirano Shrine,35.03243450000001,135.732288,4.1,992,"1 Hirano Miyamotocho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJEwrxHIsHAWARg67_86NKo-s,b7c6af1175ca824ac069599eb20ed68c6ec82d2a,Shikichi-jinja Shrine (Wara-tenjin),35.0360451,135.7316282,3.9,281,"10 Kinugasa Tenjinmoricho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJXUsGZ4sHAWARmfs5C0pFtXg,0d86f286710d209dde1f9952e82f3549d7d68e91,Kinkaku-Hachimangu Shrine,35.0349017,135.7318479,3.3,3,"2-1 Hirano Sakuragicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJeXMgHYsHAWAR9o4vJYL7LDY,19d20a9b556d4e5cf1460d4b966cb462ac30e24c,Massha Oyamazumi Shrine,35.0363911,135.7314413,3,1,"10 Kinugasa Tenjinmoricho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

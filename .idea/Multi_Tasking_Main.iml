@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking/slvr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking/slvr/SimInfo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tourism survey multi-tasking/Pseudo t value" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7 (2)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="R User Library" level="project" />
+    <orderEntry type="library" name="R Skeletons" level="application" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
+</module>

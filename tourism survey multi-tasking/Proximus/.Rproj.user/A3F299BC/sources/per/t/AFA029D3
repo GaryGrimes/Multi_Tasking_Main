@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555899326604.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "AFA029D3",
+    "lastKnownWriteTime" : -8070450532247928832,
+    "last_content_update" : 1555899326604,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "9af59b746c75426585105a6957d25fae",
+        "name" : "pr3",
+        "title" : "pr3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}

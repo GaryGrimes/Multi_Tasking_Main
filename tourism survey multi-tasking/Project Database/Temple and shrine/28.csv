@@ -1,0 +1,11 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJs4Cbj8oIAWARiBZl2-sBK6o,f84c947d19630bbc026a5f8b147286ddc855b6ef,Rengeoin Sanjusangendo,34.9878845,135.7717126,4.5,3424,"657 Sanjusangendomawari, Higashiyama Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJNUggIcsIAWARyywyCIhTyX8,73ec24985133f1bbd2f442a5fc38f24b282727f2,Yogenin Temple,34.9878332,135.7736207,4.2,176,"656 Sanjusangendomawari, Higashiyama Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJiXmNDMoIAWARNUZyTY1OAH0,f55783f8b8d4c3aaf4282fa1f4acc814f3c9cc0e,Hōkōji Temple,34.9920613,135.7721221,4,142,"Kyoto, Higashiyama Ward, 正面通大和大路東入茶屋町527-2","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ30M0kskIAWAR2YB3p_JWeB0,31231e0b2ac2a9c643bcba6afa34d369b9a6dc7c,Toyokuni-Jinja Shrine,34.9915599,135.7724954,4,615,"Kyoto, Higashiyama Ward, Chayacho, ５３０","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ__-2trYIAWARkr5eRxIjPEw,7055186377e43ee3313f8e23f01d2d8dd6487151,Taimatsuden-Inari-jinja Shrine,34.9890852,135.7666769,3.6,11,"452-1 Inaricho, Shimogyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ30M0kskIAWARuD4Eqy-f3og,2eef998201d11c5ad38576535e32171f7dfd8d78,Toyokuni Shrine,34.9912943,135.7717958,3.7,17,"530 Chayacho, Higashiyama Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJF0s_78kIAWARJ6YVDdUFNms,6aa440a79b0d058e4dd7ab1ba5e18dde9bd8a2c2,Sadateru Shrine,34.9913161,135.7717264,0,0,"530 Chayacho, Higashiyama Ward, 京都市東山区","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ6wpwrU4JAWARek4WqYy_hEc,0dd729bcdf3eaf1c7b8ba00810499411cc8ac05e,Makimotoinari Shrine,34.9917749,135.7721159,4,3,"530 Chayacho, Higashiyama Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJAQBQQzMPAWARykRznFzqg2Y,86a35e58ddfe1adab7556958df732bb7bb1ed3f0,Chishakuin Temple,34.988084,135.7763969,4.3,456,"京都市東山区Higashiyama Ward, 七条下る東瓦町964番地 東大路通り","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJl36yhcsIAWAR9KPkO06sqho,6c249572440a649b11c0cd62156b7f3e0d2d743c,Myohoin Temple,34.9904394,135.775393,4.2,84,"447 Myohoin Maekawacho, Higashiyama Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

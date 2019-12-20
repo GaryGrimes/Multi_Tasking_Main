@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" version="2.5" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="true" description="template for pattern frequecy chart" name="MI_pattern_frequency" summary="sum; mean; cumulativeSum; min; max; range; percent; cumulativePercent" version="1"><variable name="PATTERNS" type="categorical"/><variable name="COUNT" type="continuous"/><aesthetics>Color;Transparency;Size;Label</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAADAAIJEEEBEEFIHKNNONNNMKGCPAEEBGAAGPCDKHJBNLMAPOCKHHBGBFMNJOGKILAFLKOCEKLBFBNGNGAEEEECFBJAECFCIIIIIACCOCEEEEIMCEEEMNKLIACBEKNDEGIPE&#10;FMGMKDDGFPDPPONDEIAJJGCDBBPBCDHMIHKJEEHNHNKFIFGJFLIFMCMEDNEKJDFDJNCMCLJIAHNKHDCGBLIFLLNNOPELDIKJPJLGBAJKNEMKMHODPKKKKGBLIFMKFNKGDJJMEIGBCHJLMJPNPOHKGCEKGDBLMBDEDNEDADBALAIFAMCAGBALAIFAGCAGBALAIFAMCAGN&#10;NOAGJJGKJGJFGNGEJIGKKFNKCKEEDOAIFCJECNAHIDMFPCBNEGCDJBPKHNLICBNIDAGJOKLOEHMBNKHJIGIGBCABIAAKEEDIMJFAMCAGBALAIFAMCADBALAIFAMCAGBALAIFAGCHGMKNGFCKJHOHGNMNOGOKJCMBGFOGCALKGFLKJCKICOIFCKJHMHENMFOKPCOJJIGL&#10;MLJAMKOGHLLFOCHJNBLEEDAMCBIMJFAMKFBGNIHMDOKHNLOAMCOCMCFFFFDGBLIBALILALGIDMBCFKGHAGBHBGBNIBEPJPMHAMCEOMCEOMCEOMKLMAMKGGDLJBKAFIAIFLLBLIOEGNLPNPOHBKAFAAGNOGMCKPCPMEDGAFGJFGAGBOLOOMBKHIBGCCBJAKDCLMEDNMFG&#10;FGGGDKEEDAMKFNBJFEJDLIAFKDNJOMKPNJNEICBNIDDGJOKLOEOCEICLNOKCKBAGBCHGJIDGBFKEKEGCDJCJECBALILOIMCDMADIOECOPALIFPBPBKBNCDPMEHJCFGLPFNJBMHGDLJNDMCGNLNLBPGHBHLLFLLIBMKJPMHOJKEFKIGOAMKNNIFEHODFEPNFHKEFKCBAL&#10;OEGPJGIAMCAGBALAIFAMCAGNFCCGNGMDMHGOPIFCKJLCHMKBPIHMKLOKPBKKEEDHFOIFBMAGALLNNOOBKKEEDIMJFAMCAGBALAIFAMCAGBALAIFHOEIFENLIHGKHNHFFAIFENEOKOFHHHHKBALAIFAMCAGNKKAFDHKKCBNMFMAGFDKBNIJNMGGHKNCBNMFMAGNMMOIDN&#10;GJIGGPAMKHKHCONLOEAGJHBJBPLMLAPGHJHPHHFOKKCHGNNPNDPOLANCPGEDNHIHAONOCBOALGAMCAGBALAIFAMCAGBALAIFAMCAGBALOKCALOHOPCEBJKKKKAMCHGMKPJPLAFEBJIEEAIFOMIFLBFCHIIHMDOOBPIHELNCBJOEHKFDBMIPPDNFOAOPCENLOFPILCHGN&#10;PCBMGHBHGINFOIEPCEPHCMKNPCMCLMCBKNOJNDLEMFELLMOBPEKBHGHLLFOBLALIFFGFFIKLALHKOEJAFHBGPMCBHBKOCMOKKMDBNHLDMOGHLMDGBGBLKMKKAFHBGPENJCBKOCMOJFCOCENFINFFJHCKPGHINNOGJHOFDMANBHEFCPMAEDLMOIPFGABNCPGPDKFINBHC&#10;IPHFINBLDMPOHPHDLJNEJFGJHKDNJCNJDNNIGEDCGDHKGGNLOFPBMAGAEDPOHPLPELFGFKCFBKBCMELBDNIKEDMADGKGHANKFGDIELAFICEGDLJFGLGDJGHALFFELHDGLPJLGAMCKEJEJKEFKIALIONPHEDKBFKMDIMGOGMPLACCIGFLKFMGMDCFKMLAFICEEEGEPHHK&#10;BCDNOGHLNHODPBLDNGOCFJKEEHEGBLFLCJNBMGFNCHPDHNAIFMDPJJACKJAOPIEBPNIMJKJONIIBOPBLIKAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Data  -->
+
+
+
+<categoricalDomain id="categoricalDomain_3027"><variableReference ref="PATTERNS"/>
+<statisticSort descending="true" id="statisticSort_3879" method="sum" sourceVariable="PATTERNS" statVariable="COUNT"/></categoricalDomain>
+<intervalDomain id="intervalDomain_3039"><range exact="true" max="60"/><range min="0"/></intervalDomain>
+<!--  Structure  -->
+<graph id="graph_3883">
+  <coordinates id="coordinates_3884">
+    <dimension domain="categoricalDomain_3027" id="dimension_3885">
+      <axis id="axis_3886">        
+        <majorTicks id="majorTicks_3889"/>
+      </axis>
+    </dimension>
+    <dimension domain="intervalDomain_3039" id="dimension_3890" niceUpperMapping="false" unionDomain="true"><scale id="scale_3891" method="linear"/>
+    <axis id="axis_3892">
+      <majorTicks id="majorTicks_3789">
+        <format maximumFractionDigits="2" minimumFractionDigits="2"/>
+      </majorTicks></axis></dimension>
+  </coordinates>
+  <interval dot="true" id="interval_3897" positionModifier="none" zOrder="0"><summaryStatistic convertIntervalToSingleValue="true" id="summaryStatistic_3898" method="percent" summaryAcrossPanels="true" summaryBase="global"/><x variable="PATTERNS"/><y variable="COUNT"/></interval></graph>
+</visualization>

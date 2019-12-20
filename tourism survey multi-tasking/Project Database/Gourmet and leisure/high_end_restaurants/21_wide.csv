@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJk3s6r9QHAWARE2O9ZpKPa6k,e8e5ff431dcb31e4668b9524464fc1a0a46f3e2e,Kyoto Shinsenen Heihachi,35.011403,135.74777,4.1,73,"Kyoto, Nakagyo Ward, 京都市中京区 御池神泉苑東入門前167","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJv6A2TC0GAWARhom7PHHkiP4,f335e1387115157b40084c4411db88abcfbcc43f,Kyoto Yakiniku (BBQ) HIRO Senbon Sanjo Location,35.0084557,135.7433816,4.2,321,"2-6 Mibushujakucho, Nakagyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"

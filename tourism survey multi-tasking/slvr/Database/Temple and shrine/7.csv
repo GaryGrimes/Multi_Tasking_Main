@@ -1,0 +1,5 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJl2zXtj-oAWAR44oePXmk9zU,353bd71d8bddfad9512ffbfe6163d7b8b9ab28e1,Genko-an Temple,35.0547025,135.7317488,4.3,382,"47 Takagamine Kitatakaminecho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJNbeEMz6oAWARpF59Nx4AvHQ,4ce597d9b60a96fb69aa5b270544b15afc512ad2,Joshoji Temple,35.0555662,135.7328116,4,75,"Kyoto, Kita Ward, Takagamine Kitatakaminecho, １","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJTxgH-z6oAWARt-gpRre6igE,e99b3dfb9640891d93ed510e84863c886aa5835a,Kōetsuji Temple,35.053412,135.730312,4.2,138,"29 Takagamine Koetsucho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJyyyzGxaoAWARqahlB1mF7nI,3554c036f670214bb584deb329183ee6fd2b92be,Zuiho Temple,35.052323,135.73359,0,0,"10 Takagamine Minamitakaminecho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

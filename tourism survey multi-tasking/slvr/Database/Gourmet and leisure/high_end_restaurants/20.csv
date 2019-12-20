@@ -1,0 +1,4 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJk3s6r9QHAWARE2O9ZpKPa6k,e8e5ff431dcb31e4668b9524464fc1a0a46f3e2e,Kyoto Shinsenen Heihachi,35.011403,135.74777,4.1,73,"Kyoto, Nakagyo Ward, 京都市中京区 御池神泉苑東入門前167","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJw4BEWoAIAWARCTxU5_7Juro,80471dc8993db5d7ed501cbaca92509b55f33eba,Grill French,35.0119918,135.7540694,4.3,72,"Kyoto, Nakagyo Ward, 御池上る下古城町377","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJXf3eDoAIAWARatccbDVqfFI,060063b3a5538c4b40a2a84b933deedeec340ca7,Unkai,35.0124634,135.7530092,3.3,15,"Kyoto, Nakagyo Ward, 堀川通二条下ル土橋町10番地 ANAクラウンプラザホテル京都","['restaurant', 'food', 'point_of_interest', 'establishment']"

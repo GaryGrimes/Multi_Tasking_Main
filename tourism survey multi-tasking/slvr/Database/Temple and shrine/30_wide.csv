@@ -1,0 +1,6 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJRy9JMOMGAWARJPDWfv7emj0,f7ec7093e86e94aabc1b25f70a6255d20be01856,Suhayashi Temple,34.9878022,135.7042886,5,1,"165 Kamikatsura Higashinokuchicho, Nishikyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJgfKgl_oGAWARzSMSOD5C96c,bc7d1775217e7eeedc0b767dc979f4541ae6daf3,Anrakuji Temple,34.983368,135.706124,3.7,6,"9 Katsurashibanoshitacho, Nishikyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJKdpuB_sGAWARkGRaV1u9epg,037de5ea395a5937886b0f58ae72003ef6700b09,Gokurakuji Temple,34.9857568,135.7071045,3.3,4,"32 Katsurahisakatacho, Nishikyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJDfOhDv0GAWARad10lpuxg7c,9f03c002709c68140eef25946a12fd19e1f3dcaa,Konishi Temple,34.9904114,135.706714,0,0,"Nishikyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJF9goV_wGAWARLRorqvgNmZM,219336525e516a55983691c409f4c6ae8205c52a,Sannomiya-Jinja Shrine,34.9895358,135.707373,2.5,2,"Nishikyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

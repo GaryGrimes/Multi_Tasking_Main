@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization id="visualization1" lang="en-US" style="visualizationStyle" version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <!--  Data  -->
+  <embeddedSource id="nodeSource_1">
+    <names>node;facet1;facet2</names>
+    <types>string;string;string</types>
+    <labels>node;facet1;facet2</labels>
+    <labelColumns>;;</labelColumns>
+    <row>211;2;1</row>
+    <row>202;2;0</row>
+    <row>212;2;1</row>
+    <row>112;1;1</row>
+    <row>201;2;0</row>
+    <row>111;1;1</row>
+    <row>102;1;0</row>
+    <row>101;1;0</row>
+  </embeddedSource>
+  <embeddedSource id="edgeSource_1">
+    <names>from;to;weight;weightInPopup;type;facet1e;facet2e;tooltip</names>
+    <types>string;string;double;string;string;string;string;string</types>
+    <labels>from;to;weight;weightInPopup;type;facet1e;facet2e;tooltip</labels>
+    <labelColumns>;;;;;;;</labelColumns>
+    <row>102;101;1.00000002044184;1.02209198882264E-8;1;1;0;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>101;102;1.00000002044184;1.02209198882264E-8;1;1;0;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>112;111;1.0014772355386818;7.37800441120484E-4;1;1;1;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>111;112;1.0014772355386818;7.37800441120484E-4;1;1;1;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>202;201;1.001292368787748;6.45558736248386E-4;1;2;0;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>201;202;1.001292368787748;6.45558736248386E-4;1;2;0;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>212;211;1.003161307211667;0.00157691575289087;1;2;1;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+    <row>211;212;1.003161307211667;0.00157691575289087;1;2;1;Post-test is significantly higher for Qualifies for reduced/free lunch than for Does not qualify.</row>
+  </embeddedSource>
+  <sourceVariable categorical="true" id="node" source="nodeSource_1" sourceName="node">
+    <format>
+      <relabel from="211" id="relabel_1024333" to="Qualifies for reduced/free lunch"/>
+      <relabel from="202" id="relabel_1024334" to="Does not qualify"/>
+      <relabel from="212" id="relabel_1024335" to="Does not qualify"/>
+      <relabel from="112" id="relabel_1024336" to="Does not qualify"/>
+      <relabel from="201" id="relabel_1024337" to="Qualifies for reduced/free lunch"/>
+      <relabel from="111" id="relabel_1024338" to="Qualifies for reduced/free lunch"/>
+      <relabel from="102" id="relabel_1024339" to="Does not qualify"/>
+      <relabel from="101" id="relabel_1024340" to="Qualifies for reduced/free lunch"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="nfacet1" label="School type" source="nodeSource_1" sourceName="facet1">
+    <format>
+      <relabel from="2" id="relabel_1024321" to="Non-public"/>
+      <relabel from="1" id="relabel_1024322" to="Public"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="nfacet2" label="Teaching method" source="nodeSource_1" sourceName="facet2">
+    <format>
+      <relabel from="1" id="relabel_1024327" to="Experimental"/>
+      <relabel from="0" id="relabel_1024328" to="Standard"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="from" source="edgeSource_1" sourceName="from">
+    <format>
+      <relabel from="211" id="relabel_1024342" to="Qualifies for reduced/free lunch"/>
+      <relabel from="202" id="relabel_1024343" to="Does not qualify"/>
+      <relabel from="212" id="relabel_1024344" to="Does not qualify"/>
+      <relabel from="112" id="relabel_1024345" to="Does not qualify"/>
+      <relabel from="201" id="relabel_1024346" to="Qualifies for reduced/free lunch"/>
+      <relabel from="111" id="relabel_1024347" to="Qualifies for reduced/free lunch"/>
+      <relabel from="102" id="relabel_1024348" to="Does not qualify"/>
+      <relabel from="101" id="relabel_1024349" to="Qualifies for reduced/free lunch"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="to" source="edgeSource_1" sourceName="to">
+    <format>
+      <relabel from="211" id="relabel_1024351" to="Qualifies for reduced/free lunch"/>
+      <relabel from="202" id="relabel_1024352" to="Does not qualify"/>
+      <relabel from="212" id="relabel_1024353" to="Does not qualify"/>
+      <relabel from="112" id="relabel_1024354" to="Does not qualify"/>
+      <relabel from="201" id="relabel_1024355" to="Qualifies for reduced/free lunch"/>
+      <relabel from="111" id="relabel_1024356" to="Qualifies for reduced/free lunch"/>
+      <relabel from="102" id="relabel_1024357" to="Does not qualify"/>
+      <relabel from="101" id="relabel_1024358" to="Qualifies for reduced/free lunch"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="false" id="weight" source="edgeSource_1" sourceName="weight" weight="true"/>
+  <sourceVariable categorical="true" id="weightInPopup" source="edgeSource_1" sourceName="weightInPopup"/>
+  <sourceVariable categorical="true" id="type" source="edgeSource_1" sourceName="type"/>
+  <sourceVariable categorical="true" id="efacet1" source="edgeSource_1" sourceName="facet1e">
+    <format>
+      <relabel from="2" id="relabel_1024324" to="Non-public"/>
+      <relabel from="1" id="relabel_1024325" to="Public"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="efacet2" source="edgeSource_1" sourceName="facet2e">
+    <format>
+      <relabel from="1" id="relabel_1024330" to="Experimental"/>
+      <relabel from="0" id="relabel_1024331" to="Standard"/>
+    </format>
+  </sourceVariable>
+  <sourceVariable categorical="true" id="tooltip_1" source="edgeSource_1" sourceName="tooltip"/>
+  <expressionVariable categorical="true" expression="from+to" id="distance"/>
+  <!--  Structure  -->
+  <graph cellStyle="graphStyle3" id="embedded_graph_1" style="graphStyle">
+    <!--  Size  -->
+    <location id="location_1024276" method="attach" part="top" target="labelFrame_1024359"/>
+    <location id="location_1024277" max="2000px" method="sizeToContent" min="220px" part="width"/>
+    <location id="location_1024278" max="2600px" method="sizeToContent" min="220px" part="height"/>
+    <coordinates id="coordinates_1024279">
+      <dimension id="dimension_1024280" lowerMargin="10%" upperMargin="10%"/>
+      <dimension id="dimension_1024281" lowerMargin="10%" upperMargin="10%"/>
+      <sameRatioTransform center="true" id="sameRatioTransform_1024282"/>
+    </coordinates>
+    <faceting id="faceting_1024283" method="nest">
+      <cross id="cross_1024284">
+        <variableReference>
+          <elementVariableReference element="point_1" ref="nfacet1"/>
+          <elementVariableReference element="edge" ref="efacet1"/>
+        </variableReference>
+        <variableReference>
+          <elementVariableReference element="point_1" ref="nfacet2"/>
+          <elementVariableReference element="edge" ref="efacet2"/>
+        </variableReference>
+      </cross>
+    </faceting>
+    <facetLayout id="facetLayout_1024291">
+      <facetLevel gap="5px" id="facetLevel_1024292" level="1">
+        <axis id="axis_1024293" style="axisStyle2">
+          <label id="label_1024294" purpose="auto" style="labelStyle6">
+            <descriptionGroup id="descriptionGroup_1024295" target="nfacet1">
+              <description id="description_1024296" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1024297" markStyle="majorTicksStyle9" style="majorTicksStyle4"/>
+        </axis>
+      </facetLevel>
+      <facetLevel gap="5px" id="facetLevel_1024298" level="2">
+        <axis id="axis_1024299" style="axisStyle3">
+          <label id="label_1024300" purpose="auto" style="labelStyle7">
+            <descriptionGroup id="descriptionGroup_1024301" target="nfacet2">
+              <description id="description_1024302" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1024303" markStyle="majorTicksStyle10" style="majorTicksStyle5"/>
+        </axis>
+      </facetLevel>
+    </facetLayout>
+    <point clip="none" dot="true" id="point_1" showCollidingLabels="false" style="pointStyle3">
+      <graphLayoutStatistic from="from" id="graphLayoutStatistic" nodes="node" to="to">
+        <initial id="initial" type="grid"/>
+      </graphLayoutStatistic>
+      <labeling id="labeling_1024307" textFrameStyle="labelingStyle" variable="node"/>
+    </point>
+    <edge clip="none" dot="true" id="edge" style="edgeStyle">
+      <attach id="attach" target="point_1" targetKey="node"/>
+      <color affect="main" clamp="true" cycle="cycle3" id="color_1024310" variable="type">
+        <colorMapping from="1" id="colorMapping_1024311" to="#f0c001"/>
+        <colorMapping from="2" id="colorMapping_1024312" to="black"/>
+      </color>
+      <size cycle="cycle" high="100%,2px," id="sizeAesthetic_1024313" low="25%,2px," variable="weight"/>
+      <position id="position_1024314" variable="distance"/>
+    </edge>
+  </graph>
+  <labelFrame id="labelFrame_1024359">
+    <!--  Size  -->
+    <location id="location_1024363" method="sizeToContent" part="height"/>
+    <label id="label_1024360" purpose="subTitle" style="labelStyle8">
+      <text id="text_1024361">Pairwise Contrasts</text>
+    </label>
+  </labelFrame>
+  <labelFrame id="labelFrame_1024367">
+    <!--  Size  -->
+    <location id="location_1024372" method="attach" part="top" target="embedded_graph_1"/>
+    <location id="location_1024371" method="sizeToContent" part="height"/>
+    <location id="location_1024370" method="same" part="width" target="embedded_graph_1"/>
+    <label id="label_1024368" purpose="footnote" style="labelStyle9">
+      <text id="text_1024369">Significant contrasts are shaded gold.  The least significant difference adjusted significance level is .05.</text>
+    </label>
+  </labelFrame>
+  <!--  Styles  -->
+  <style color="black" color2="transparent" font-size="9pt" font-weight="regular" id="labelStyle" margin="3px" padding="2px"/>
+  <style font-size="10pt" font-weight="bold" id="labelStyle2" margin="3px" padding="2px" textAlignment="center"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle3" padding="1px"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle4" padding="1px"/>
+  <style font-size="10pt" id="labelStyle5" margin="3px" padding="2px" textAlignment="left"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle6" padding="1px"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle7" padding="1px"/>
+  <style font-size="10pt" font-weight="bold" id="labelStyle8" margin="3px" padding="2px" textAlignment="center"/>
+  <style font-size="10pt" id="labelStyle9" margin="3px" padding="2px" textAlignment="left"/>
+  <style font-size="10pt" font-weight="bold" id="labelStyle10" margin="3px" padding="2px" textAlignment="center"/>
+  <style font-size="12pt" font-weight="bold" id="labelStyle11" margin="3px" padding="2px" textAlignment="center"/>
+  <style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+  <style id="graphStyle" margin-bottom="10px" margin-top="10px"/>
+  <style color="#EBEBEB" color2="black" id="graphStyle2"/>
+  <style color="#EBEBEB" color2="black" height="5px,400px,250px" id="graphStyle3" margin-bottom="10px" margin-top="5px" width="5px,500px,300px"/>
+  <style id="legendStyle" margin="5px" padding="5px"/>
+  <style color="black" color2="transparent" font-size="9pt" font-weight="regular" id="legendStyle2"/>
+  <style color="transparent" id="axisStyle"/>
+  <style color="transparent" id="axisStyle2"/>
+  <style color="transparent" id="axisStyle3"/>
+  <style color="black" font-size="8pt" id="majorTicksStyle"/>
+  <style color="black" font-size="8pt" id="majorTicksStyle2"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="majorTicksStyle3" padding="1px"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="majorTicksStyle4" padding="1px"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="majorTicksStyle5" padding="1px"/>
+  <style color="black" id="majorTicksStyle6" stroke-width="1px"/>
+  <style color="black" id="majorTicksStyle7" stroke-width="1px"/>
+  <style color="transparent" id="majorTicksStyle8" stroke-width="1px"/>
+  <style color="transparent" id="majorTicksStyle9" stroke-width="1px"/>
+  <style color="transparent" id="majorTicksStyle10" stroke-width="1px"/>
+  <style color="transparent" color2="transparent" id="labelingStyle"/>
+  <style color="#7f060c" color2="black" id="pointStyle" opacity="0" size="5pt" stroke-width="1px" symbol="circle"/>
+  <style color="#571c8c" color2="black" glyph-angle="90" id="pointStyle2" size="5pt" stroke-width="1px" symbol="line"/>
+  <style color="#8cb9d0" color2="black" id="pointStyle3" size="10px" stroke-width="1px" symbol="circle"/>
+  <style color="#013996" color2="black" depth="80%" id="lineStyle" stroke-width="1px"/>
+  <style color="#21791b" color2="black" depth="80%" id="lineStyle2" stroke-width="1px"/>
+  <style color="#7f060c" color2="black" id="edgeStyle" stroke-width="1px" width="1px"/>
+  <style font-size="14pt" id="popupStyle"/>
+  <style font-size="14pt" id="popupStyle2"/>
+  <!--  Style Cycles  -->
+  <styleCycle id="cycle">
+    <cycle id="cycle_1024678">
+      <style id="style_1024680" size="4px"/>
+      <style id="style_1024681" size="6px"/>
+      <style id="style_1024682" size="8px"/>
+      <style id="style_1024683" size="10px"/>
+      <style id="style_1024684" size="12px"/>
+      <style id="style_1024685" size="14px"/>
+      <style id="style_1024686" size="16px"/>
+      <style id="style_1024687" size="18px"/>
+      <style id="style_1024688" size="20px"/>
+      <style id="style_1024689" size="3px"/>
+      <style id="style_1024690" size="5px"/>
+      <style id="style_1024691" size="7px"/>
+      <style id="style_1024692" size="9px"/>
+      <style id="style_1024693" size="11px"/>
+      <style id="style_1024694" size="13px"/>
+      <style id="style_1024695" size="15px"/>
+      <style id="style_1024696" size="19px"/>
+    </cycle>
+  </styleCycle>
+  <styleCycle id="cycle2">
+    <cycle id="cycle_1024697">
+      <style color="#8cb9d0" id="style_1024699"/>
+      <style color="#bf4c51" id="style_1024700"/>
+      <style color="#0a598f" id="style_1024701"/>
+      <style color="#38ad30" id="style_1024702"/>
+      <style color="#ffcc66" id="style_1024703"/>
+      <style color="#ed8c6b" id="style_1024704"/>
+      <style color="#0066cc" id="style_1024705"/>
+      <style color="#a2cb7e" id="style_1024706"/>
+      <style color="#cb356e" id="style_1024707"/>
+      <style color="#bde2fa" id="style_1024708"/>
+      <style color="#6a3e83" id="style_1024709"/>
+      <style color="#e0c3e7" id="style_1024710"/>
+      <style color="#f85995" id="style_1024711"/>
+      <style color="#a3b6d7" id="style_1024712"/>
+      <style color="#cce5c9" id="style_1024713"/>
+      <style color="#00736a" id="style_1024714"/>
+      <style color="#99cc99" id="style_1024715"/>
+      <style color="#f16d7e" id="style_1024716"/>
+      <style color="#914193" id="style_1024717"/>
+      <style color="#498dc8" id="style_1024718"/>
+      <style color="#c69c6d" id="style_1024719"/>
+      <style color="#bc1a78" id="style_1024720"/>
+      <style color="#c6df9c" id="style_1024721"/>
+      <style color="#7da7d9" id="style_1024722"/>
+      <style color="#ce2f4c" id="style_1024723"/>
+      <style color="#605ca8" id="style_1024724"/>
+      <style color="#e89cc9" id="style_1024725"/>
+      <style color="#8596aa" id="style_1024726"/>
+      <style color="#fbe081" id="style_1024727"/>
+      <style color="#004c8d" id="style_1024728"/>
+    </cycle>
+  </styleCycle>
+  <styleCycle id="cycle3">
+    <cycle id="cycle_1024729">
+      <style color="#8cb9d0" id="style_1024731"/>
+      <style color="#bf4c51" id="style_1024732"/>
+      <style color="#0a598f" id="style_1024733"/>
+      <style color="#38ad30" id="style_1024734"/>
+      <style color="#ffcc66" id="style_1024735"/>
+      <style color="#ed8c6b" id="style_1024736"/>
+      <style color="#0066cc" id="style_1024737"/>
+      <style color="#a2cb7e" id="style_1024738"/>
+      <style color="#cb356e" id="style_1024739"/>
+      <style color="#bde2fa" id="style_1024740"/>
+      <style color="#6a3e83" id="style_1024741"/>
+      <style color="#e0c3e7" id="style_1024742"/>
+      <style color="#f85995" id="style_1024743"/>
+      <style color="#a3b6d7" id="style_1024744"/>
+      <style color="#cce5c9" id="style_1024745"/>
+      <style color="#00736a" id="style_1024746"/>
+      <style color="#99cc99" id="style_1024747"/>
+      <style color="#f16d7e" id="style_1024748"/>
+      <style color="#914193" id="style_1024749"/>
+      <style color="#498dc8" id="style_1024750"/>
+      <style color="#c69c6d" id="style_1024751"/>
+      <style color="#bc1a78" id="style_1024752"/>
+      <style color="#c6df9c" id="style_1024753"/>
+      <style color="#7da7d9" id="style_1024754"/>
+      <style color="#ce2f4c" id="style_1024755"/>
+      <style color="#605ca8" id="style_1024756"/>
+      <style color="#e89cc9" id="style_1024757"/>
+      <style color="#8596aa" id="style_1024758"/>
+      <style color="#fbe081" id="style_1024759"/>
+      <style color="#004c8d" id="style_1024760"/>
+    </cycle>
+  </styleCycle>
+  <!--  Interactivity  -->
+  <popup id="edgePopup" style="popupStyle2" target="edge" tokenTemplate="$[1]$">
+    <tokenMapping id="tokenMapping_1024319" valueToken="1" variable="tooltip_1"/>
+  </popup>
+</visualization>

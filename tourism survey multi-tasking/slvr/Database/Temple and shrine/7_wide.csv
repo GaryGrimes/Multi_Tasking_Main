@@ -1,0 +1,8 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJl2zXtj-oAWAR44oePXmk9zU,353bd71d8bddfad9512ffbfe6163d7b8b9ab28e1,Genko-an Temple,35.0547025,135.7317488,4.3,382,"47 Takagamine Kitatakaminecho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJNbeEMz6oAWARpF59Nx4AvHQ,4ce597d9b60a96fb69aa5b270544b15afc512ad2,Joshoji Temple,35.0555662,135.7328116,4,75,"Kyoto, Kita Ward, Takagamine Kitatakaminecho, １","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJTxgH-z6oAWARt-gpRre6igE,e99b3dfb9640891d93ed510e84863c886aa5835a,Kōetsuji Temple,35.053412,135.730312,4.2,138,"29 Takagamine Koetsucho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJyyyzGxaoAWARqahlB1mF7nI,3554c036f670214bb584deb329183ee6fd2b92be,Zuiho Temple,35.052323,135.73359,0,0,"10 Takagamine Minamitakaminecho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJwVsH0ROoAWARISxLsvbVPQ0,6c92cb6e72b59876f1b4e3a82ab881a5940f0a1b,Joshinin Temple,35.0567411,135.7387407,3.5,2,"17 Omiya Yakushiyamahigashicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJwVsH0ROoAWARbB4QyGoBJis,5771587d9c36830984d12a27a3ea93cf9838ee30,Ichiyoin Temple,35.0563449,135.7398891,3.4,5,"16 Omiya Yakushiyamahigashicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ3VmjHUCoAWAR8-I1k9VS6Eg,ecf0ead929527fad4eed9e98766be22c47a968cf,Ōyamatsumi-sha Shrine,35.0579812,135.733057,0,0,"10-70 Omiya Shakadani, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

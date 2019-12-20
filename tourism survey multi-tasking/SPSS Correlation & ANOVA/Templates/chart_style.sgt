@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2013                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<template
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization"
+	xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+
+     <!--Set the default chart size -->
+    <addFrame type="visualization">
+        <location bottom="500px" left="0px" right="800px" top="0px" />
+    </addFrame>
+
+	<!-- Sets the gap between clusters in a clustered bar chart -->
+	<setClusterWidth gap="15%"/>
+
+	<!-- Adds a margin to the top and bottom of all axes, except for scalar Y-axis, which only have a top margin -->
+	<setAxisMargin categorical="true" role="x" lowerMargin="5%" upperMargin="5%"/>
+	<setAxisMargin categorical="true" role="y" lowerMargin="5%" upperMargin="5%"/>
+	<setAxisMargin categorical="true" role="y2" lowerMargin="5%" upperMargin="5%"/>
+	<setAxisMargin categorical="true" role="z" lowerMargin="5%" upperMargin="5%"/>
+	<setAxisMargin categorical="false" role="x" lowerMargin="5%" upperMargin="5%"/>
+	<setAxisMargin categorical="false" role="y" upperMargin="10%"/>
+	<setAxisMargin categorical="false" role="y2" upperMargin="10%"/>
+	<setAxisMargin categorical="false" role="z" lowerMargin="5%" upperMargin="5%"/>
+
+	<!-- Sets the gap between panels, and style the panel ticks and labels -->
+	<setPanelOptions gap="2%">
+    <axisStyle>
+			<style color="transparent"/>
+    </axisStyle>
+    <axisLabelStyle>
+			<style font-size="12pt;8pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+    </axisLabelStyle>
+    <axisLabelTextFrameStyle>
+			<style color="transparent" color2="transparent"/>
+    </axisLabelTextFrameStyle>
+    <markStyle>
+			<style visible="false"/>
+    </markStyle>
+		<tickLabelStyle>
+			<style font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+			<style number="1" color="transparent" color2="transparent"/>
+		</tickLabelStyle>
+	</setPanelOptions>
+
+	<!-- Sets the styles of all axes, including the axis line, the axis title, and the textbox around the axis label. -->
+  <setAxisStyle role="x">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="y">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="y2">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="z">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+
+	<!-- Sets the styles of all derived axes, including the axis line, the axis title, and the textbox around the axis label. -->
+  <setAxisStyle role="x" categorical="false" derived="true">
+		<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="y" categorical="false" derived="true">
+		<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="y2" categorical="false" derived="true">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+  <setAxisStyle role="z" categorical="false" derived="true">
+	<style color="black" stroke-width="0.5pt"/>
+    <axisLabelStyle>
+  		<style number="0" font-size="10pt;7pt" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="2px" padding="1px"/>
+  		<style number="1" visible="false"/>
+    </axisLabelStyle>
+  </setAxisStyle>
+
+  <!-- Sets the style of the major ticks, including the tick mark and the tick labels -->
+	<setAxisMajorTicks>
+    <majorTicks categorical="true" role="x" styleOnly="true">
+		<markStyle>
+			<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+		</markStyle>
+		<tickLabelStyle>
+			<style number="0" color="black" font-size="12pt;8pt" margin="5px"/>
+			<style number="1" visible="false"/>
+		</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="true" role="y">
+			<gridLines>
+				<style color="#AEAEAE" stroke-width="1pt" visible="true"/>
+			</gridLines>
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="true" role="y2" styleOnly="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="true" role="z" styleOnly="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+	<setAxisMajorTicks>
+    <majorTicks categorical="false" role="x" styleOnly="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="false" role="y">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="false" role="y" styleOnly="true" derived="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="false" role="y2" styleOnly="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+  <setAxisMajorTicks>
+    <majorTicks categorical="false" role="z" styleOnly="true">
+			<markStyle>
+				<style color="#AEAEAE" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style number="0" color="black" font-size="8pt;8pt" margin="5px"/>
+				<style number="1" visible="false"/>
+			</tickLabelStyle>
+    </majorTicks>
+  </setAxisMajorTicks>
+
+  <!-- Sets the style of the tick marks of the minor ticks -->
+	<setAxisMinorTicks>
+    <minorTicks role="x" styleOnly="true">
+			<markStyle>
+				<style color="black" stroke-width="1pt" visible="false"/>
+			</markStyle>
+    </minorTicks>
+	</setAxisMinorTicks>
+	<setAxisMinorTicks>
+    <minorTicks role="y" styleOnly="true">
+			<markStyle>
+				<style color="black" stroke-width="1pt" visible="false"/>
+			</markStyle>
+		</minorTicks>
+	</setAxisMinorTicks>
+	<setAxisMinorTicks>
+  	<minorTicks role="y2" styleOnly="true">
+			<markStyle>
+				<style color="black" stroke-width="1pt" visible="false"/>
+			</markStyle>
+    </minorTicks>
+	</setAxisMinorTicks>
+	<setAxisMinorTicks>
+    <minorTicks role="z" styleOnly="true">
+			<markStyle>
+				<style color="black" stroke-width="1pt" visible="false"/>
+			</markStyle>
+    </minorTicks>
+	</setAxisMinorTicks>
+
+	<!-- Sets the default position of 3-D charts -->
+	<setRotation method="rectangular" phi="-35.0" theta="10.0" zeta="0.0" distance="1.3"/>
+
+	<!-- Sets the style of the planes in a 3-D chart. -->
+	<setBackPlane>
+		<plane role="z">
+			<style visible="true" color="#d3d3d3" color2="transparent"/>
+		</plane>
+		<plane role="y">
+			<style visible="true" color="#d3d3d3" color2="transparent"/>
+		</plane>
+		<plane role="x">
+			<style visible="true" color="#d3d3d3" color2="transparent"/>
+		</plane>
+	</setBackPlane>
+	<setWireFrame>
+		<style color="#000000" stroke-width="2pt"/>
+	</setWireFrame>
+
+
+  <!-- Sets the style of the entire chart (the outer frame). -->
+	<addFrame type="visualization" styleOnly="true">
+		<style color2="transparent" color="white"/>
+		<style number="1" font-size="8pt;6pt" stroke-linecap="butt" pattern="0" text-fit="true">
+			<interpolation missingRepresentation="wings"/>
+		</style>
+	</addFrame>
+
+  <!-- Adds a statistics summary frame to histograms. -->
+  <addHistogramSummaryFrame/>
+
+  <!-- Sets the style of the graph (the data frame). -->
+  <!-- Apply this one to all graph frames -->
+	<addFrame type="graph" styleOnly="true">
+		<style number="0" color="white" color2="transparent"/>
+		<style number="1" color="white" color2="transparent"/>
+		<style number="2" color="white" color2="transparent"/>
+	</addFrame>
+
+  <!-- Apply this one to charts with only one graph frame -->
+	<addFrame type="graph" styleOnly="true" count="0">
+    <!-- Set the outer frame style (where legends and axis titles appear) -->
+		<style number="0" color="white" color2="transparent"/>
+    <!-- Set the inner graph frame style (where the chart data is plotted) to a gray background -->
+		<style number="1" color="white" color2="black"/>
+    <!-- Set the outer frame style for polar (e.g. pie) charts -->
+		<style number="2" color="white" color2="transparent"/>
+	</addFrame>
+
+  <!-- Apply this one to the first graph in charts with multiple graphs -->
+	<addFrame type="graph" styleOnly="true" count="1">
+    <!-- Set the outer frame style (where legends and axis titles appear) -->
+		<style number="0" color="white" color2="transparent"/>
+    <!-- Set the inner graph frame style (where the chart data is plotted) to a no background -->
+		<style number="1" color="white" color2="transparent"/>
+    <!-- Set the outer frame style for polar (e.g. pie) charts -->
+		<style number="2" color="white" color2="transparent"/>
+	</addFrame>
+
+  <!-- Sets the style of the container frame (often around multiple legends) -->
+	<addFrame type="container" styleOnly="true" count="1">
+		<style number="0" color="white" color2="transparent"/>
+	</addFrame>
+
+  <!-- Sets the style of the statistics summary frame (histograms). -->
+	<addFrame count="1" type="statisticsSummary" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="8pt;6pt" font-weight="regular" label-location-x="negative" label-location-y="center" color2="transparent" color="black" margin="5px" padding="2px" textAlignment="left"/></label>
+	</addFrame>
+	<addFrame count="2" type="statisticsSummary" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="8pt;6pt" font-weight="regular" label-location-x="negative" label-location-y="center" color2="transparent" color="black" margin="5px" padding="2px" textAlignment="left"/></label>
+	</addFrame>
+	<addFrame count="3" type="statisticsSummary" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="8pt;6pt" font-weight="regular" label-location-x="negative" label-location-y="center" color2="transparent" color="black" margin="5px" padding="2px" textAlignment="left"/></label>
+	</addFrame>
+	<addFrame count="4" type="statisticsSummary" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="8pt;6pt" font-weight="regular" label-location-x="negative" label-location-y="center" color2="transparent" color="black" margin="5px" padding="2px" textAlignment="left"/></label>
+	</addFrame>
+	<addFrame count="5" type="statisticsSummary" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="8pt;6pt" font-weight="regular" label-location-x="negative" label-location-y="center" color2="transparent" color="black" margin="5px" padding="2px" textAlignment="left"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the title1 frame and label. -->
+	<addFrame count="1" type="title" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="12pt;8pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the title2 frame and label. -->
+	<addFrame count="2" type="title" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="12pt;8pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the subtitle frame and label. -->
+	<addFrame count="1" type="subtitle" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="10pt;8pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the footnote1 frame and label. -->
+	<addFrame count="1" type="footnote" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="10pt;10pt;10pt" font-weight="regular" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the footnote2 frame and label. -->
+	<addFrame count="2" type="footnote" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="10pt;10pt;10pt" font-weight="regular" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the footnote3 frame and label. -->
+	<addFrame count="3" type="footnote" styleOnly="true">
+		<style color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="10pt;10pt;10pt" font-weight="regular" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the first legend frame and label. -->
+	<addFrame count="1" type="legend" styleOnly="true">
+		<style number="0" color="transparent" color2="transparent"/>
+		<style number="1" font-size="10pt;6pt" font-weight="regular" label-location-x="center" label-location-y="center" color2="transparent" color="black"/>
+		<style number="2" color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="12pt;6pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of the second legend frame and label. -->
+	<addFrame count="2" type="legend" styleOnly="true">
+		<style number="0" color="transparent" color2="transparent"/>
+		<style number="1" font-size="10pt;6pt" font-weight="regular" label-location-x="center" label-location-y="center" color2="transparent" color="black"/>
+		<style number="2" color="transparent" color2="transparent"/>
+		<label><style number="1" color="transparent" color2="transparent"/><style number="0" font-size="12pt;6pt" font-weight="bold" label-location-x="center" label-location-y="center" color2="transparent" color="black" margin="3px" padding="2px"/></label>
+	</addFrame>
+
+  <!-- Sets the style of data labels -->
+	<addDataLabels styleOnly="true">
+		<style number="0" font-size="8pt;6pt" font-weight="regular" color2="transparent" color="black" label-location-inside="false" margin="1px" padding="1px" stroke-width="0.5pt"/>
+		<style number="1" visible="true" color="white" color2="black"/>
+	</addDataLabels>
+
+  <!-- Sets the style of data reference lines -->
+	<addReferenceLine styleOnly="true">
+		<style color="black" stroke-width="2.5pt"/>
+	</addReferenceLine>
+
+  <addChartsOnDiagonal type="none"/>
+
+	<!-- Other set styles -->
+
+	<!-- scatter -->
+	<setStyle type="scatter" subtype="simple">
+		<style color="#777677" color2="#777677" symbol="circle" size="6pt"/>
+	</setStyle>
+	<setStyle type="scatter" subtype="simple">
+		<style coordinate="1" color="#777677" color2="#777677" symbol="circle" size="6pt"/>
+	</setStyle>
+
+	<!-- histograms have an interval width of 100% -->
+	<setStyle type="histogram">
+		<style color="#5575BE" color2="black" width="95%" depth="75%" stroke-width="0"/>
+	</setStyle>
+
+	<!-- binned points don't set size - defaults to 100% -->
+	<setStyle type="point" subtype="dot">
+		<style color="transparent" color2="black" symbol="circle"/>
+	</setStyle>
+
+	<!-- bars have an interval width of 75% -->
+	<setStyle type="bar" subtype="simple">
+		<style color="#5575BE" color2="black" stroke-width="0" size="75%" depth="75%" width="90%" pattern="26"/>
+	</setStyle>
+	<setStyle type="range" subtype="simple">
+		<style color="#5575BE" color2="black" stroke-width="0" size="75%" depth="75%" width="90%"/>
+	</setStyle>
+
+	<!-- clustered bars have an interval width of 100% -->
+	<setStyle type="bar" subtype="clustered">
+		<style color2="black" stroke-width="0" size="100%" depth="75%" width="90%"/>
+	</setStyle>
+
+	<!-- simple-lines have stroke colors -->
+	<setStyle type="line" subtype="simple">
+		<style color="black" color2="black" stroke-width="2.5pt" depth="75%"/>
+	</setStyle>
+
+	<setStyle type="line" subtype="3D">
+		<style color="#5575BE" color2="black" stroke-width="2.5pt" depth="75%"/>
+	</setStyle>
+
+	<setStyle type="pie">
+		<style color2="black" stroke-linecap="round" size="100%" stroke-width="0"/>
+	</setStyle>
+
+	<!-- Tukey boxplot -->
+	<setStyle type="schema" subtype="simple">
+		<style size="25%" color="#5575BE" depth="75%" stroke-width="0"/>
+	</setStyle>
+	<setStyle type="schema" subtype="fenceStyle">
+		<style stroke-width="0.75pt" color="#5575BE" color2="black" symbol="ibeam" depth="75%"/>
+	</setStyle>
+	<setStyle type="schema" subtype="medianStyle">
+		<style stroke-width="1.5pt" color="black" stroke-linecap="butt" depth="75%"/>
+	</setStyle>
+	<setStyle type="schema" subtype="outlierStyle">
+		<style color="transparent" color2="black" symbol="circle" size="5pt"/>
+	</setStyle>
+	<setStyle type="schema" subtype="extremeStyle">
+		<style color="black" color2="black" symbol="flower" size="5pt"/>
+	</setStyle>
+
+	<!-- error-bar -->
+	<setStyle type="errorbar" subtype="simple">
+		<style width="25%;;1cm" color="black" color2="black" symbol="ibeam" depth="75%" stroke-width="1pt"/>
+	</setStyle>
+
+	<setStyle type="area" subtype="simple">
+		<style color="#5575BE" color2="black" depth="75%" stroke-width="0"/>
+	</setStyle>
+
+	<!-- dropdown lines -->
+	<setStyle type="dropline" subtype="interval">
+		<style color="black" color2="black" stroke-width="1.5pt" symbol="line"/>
+	</setStyle>
+
+	<!-- attribute importance, AIM -->
+	<setStyle id="element_AIM_Center_Step_1s">
+		<style stroke-width="3pt" stroke-dasharray="12pt,3pt">
+			<interpolation type="jump" pointPosition="center"/>
+		</style>
+	</setStyle>
+
+
+	<!-- Elements -->
+
+	<setStyle id="element_element_1s">
+		<style color2="black" stroke-linecap="round"/>
+	</setStyle>
+	<setStyle id="element_element_2s">
+		<style color2="black" stroke-linecap="round"/>
+	</setStyle>
+
+	<setStyle id="element_series_100_1s">
+		<style color="black" color2="black"/>
+	</setStyle>
+	<setStyle id="element_series_100_2s">
+		<style color="black" color2="black"/>
+	</setStyle>
+
+
+	<!-- Dot Elements are really tiny circles. -->
+	<setStyle id="element_dot_1s">
+		<style color="black" color2="black" symbol="circle" size="1pt"/>
+	</setStyle>
+
+	<setStyle id="element_errorbarhidden_1s">
+		<style width="25%;;1cm" visible="false" symbol="ibeam"/>
+	</setStyle>
+
+	<setStyle id="element_hiddenline_1s">
+		<style visible="false"/>
+	</setStyle>
+
+	<!-- element_controlchart -->
+	<setStyle id="element_controlchart_Average_1s">
+		<style color="black" stroke-width="2pt">
+			<interpolation type="jump" pointPosition="center"/>
+		</style>
+	</setStyle>
+
+	<setStyle id="element_controlchart_Center_Step_LCL_1s">
+		<style color="black" stroke-dasharray="5pt,5pt" stroke-width="2pt">
+			<interpolation type="step" pointPosition="center"/>
+		</style>
+	</setStyle>
+
+	<setStyle id="element_controlchart_Center_Step_UCL_1s">
+		<style color="black" stroke-dasharray="5pt,5pt" stroke-width="2pt">
+			<interpolation type="step" pointPosition="center"/>
+		</style>
+	</setStyle>
+
+
+	<setStyle id="element_controlchart_LCL_1s">
+		<style color="black" stroke-dasharray="5pt,5pt"/>
+	</setStyle>
+	<setStyle id="element_controlchart_UCL_1s">
+		<style color="black" stroke-dasharray="5pt,5pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="element_controlchart_LSpec_1s">
+		<style color="black" stroke-dasharray="3pt,2pt" width="1pt"/>
+	</setStyle>
+	<setStyle id="element_controlchart_USpec_1s">
+		<style color="black" stroke-dasharray="3pt,2pt" width="1pt"/>
+	</setStyle>
+	<setStyle id="element_controlchart_line_1s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="element_controlchart_marker_1s">
+		<style color2="black" color="transparent" symbol="square" glyph-angle="45" size="5pt"/>
+	</setStyle>
+
+	<!-- biplots -->
+	<setStyle id="element_biplot_line_1s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="element_biplot_line_2s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="element_biplot_point_1s">
+		<style color="transparent" color2="transparent"/>
+	</setStyle>
+	<setStyle id="element_biplot_point_2s">
+		<style color="transparent" color2="transparent"/>
+	</setStyle>
+
+	<!-- triplots -->
+	<setStyle id="element_triplot_line_1s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="element_triplot_line_2s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="element_triplot_point_1s">
+		<style color="black" symbol="circle" size="5pt"/>
+	</setStyle>
+	<setStyle id="element_triplot_point_2s">
+		<style color="transparent" color2="transparent"/>
+	</setStyle>
+
+
+	<!-- reference lines -->
+	<setStyle id="functionGuideGain1s">
+		<style color="black" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="lineGuidedash1s">
+		<style color="black" stroke-dasharray="5pt,5pt" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="lineGuidedash2s">
+		<style color="black" stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt" stroke-width="2.5pt"/>
+	</setStyle>
+	<setStyle id="lineGuidedash3s">
+		<style color="black" stroke-dasharray="10pt,2pt,2pt,2pt" stroke-width="2.5pt"/>
+	</setStyle>
+
+	<!-- Y functions of X -->
+	<setStyle id="guide_yFunctionOfX_1s">
+		<style color="black" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_2s">
+		<style color="black" stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_3s">
+		<style color="black" stroke-dasharray="8pt,8pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_4s">
+		<style color="black" stroke-dasharray="10pt,2pt,2pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_5s">
+		<style color="black" stroke-dasharray="3pt,6pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_6s">
+		<style color="black" stroke-dasharray="12pt,2pt,2pt,2pt,2pt,2pt,2pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_7s">
+		<style color="black" stroke-dasharray="6pt,3pt,6pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_8s">
+		<style color="black" stroke-dasharray="8pt,1pt,8pt,7pt,2pt,7pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_9s">
+		<style color="black" stroke-dasharray="6pt,2pt,3pt,5pt,2pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_10s">
+		<style color="black" stroke-dasharray="15pt,2pt,6pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_11s">
+		<style color="black" stroke-dasharray="5pt,5pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_12s">
+		<style color="black" stroke-dasharray="8pt,2pt,4pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_13s">
+		<style color="black" stroke-dasharray="3pt,2pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_14s">
+		<style color="black" stroke-dasharray="12pt,5pt,3pt,5pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_15s">
+		<style color="black" stroke-dasharray="6pt,3pt,3pt,3pt" stroke-width="2pt"/>
+	</setStyle>
+	<setStyle id="guide_yFunctionOfX_16s">
+		<style color="black" stroke-dasharray="12pt,3pt" stroke-width="2pt"/>
+	</setStyle>
+
+	<!-- Centroids are different from other points -->
+
+	<setStyle id="element_centroid_1s">
+		<style color="#05417C" color2="black" symbol="square" size="8pt"/>
+	</setStyle>
+	<setStyle id="element_centroid_2s">
+		<style color="#ED2024" color2="black" symbol="square" size="8pt"/>
+	</setStyle>
+
+	<!-- Survival plots -->
+	<setStyle id="element_survival_line_1s">
+		<style color="black" width="2pt">
+			<interpolation type="step" pointPosition="left"/>
+		</style>
+	</setStyle>
+
+	<setStyle id="element_survival_point_1s">
+		<style color2="black" color="transparent" symbol="square" size="5pt"/>
+	</setStyle>
+	<setStyle id="element_survival_censored_1s">
+		<style symbol="plus" size="5pt"/>
+	</setStyle>
+
+	<!-- Repository Style Cycles -->
+	<setColor>
+		<cycle>
+		<style color="#5596E6"/>
+		<style color="#D70033"/>
+		<style color="#298626"/>
+		<style color="#F3672A"/>
+		<style color="#E3D710"/>
+		<style color="#00B4A0"/>
+		<style color="#FFC4E2"/>
+		<style color="#AB49F3"/>
+		<style color="#5FC338"/>
+		<style color="#3F5AA8"/>
+		<style color="#FE82B4"/>
+		<style color="#D0CA8C"/>
+		<style color="#CC863F"/>
+		<style color="#77378F"/>
+		<style color="#ECE6D0"/>
+		<style color="#454647"/>
+		<style color="#5CCA88"/>
+		<style color="#D05334"/>
+		<style color="#CC7FE4"/>
+		<style color="#E1BC1D"/>
+		<style color="#ED4B4B"/>
+		<style color="#1CCDCD"/>
+		<style color="#5C7148"/>
+		<style color="#E18B0E"/>
+		<style color="#092672"/>
+		<style color="#5A645E"/>
+		<style color="#9B0000"/>
+		<style color="#CFACE3"/>
+		<style color="#969191"/>
+		<style color="#3FEB7C"/>
+		</cycle>
+	</setColor>
+	<setDash>
+		<cycle>
+			<style/>
+			<style stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt"/>
+			<style stroke-dasharray="8pt,8pt"/>
+			<style stroke-dasharray="10pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="3pt,6pt"/>
+			<style stroke-dasharray="12pt,2pt,2pt,2pt,2pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="6pt,3pt,6pt"/>
+			<style stroke-dasharray="8pt,1pt,8pt,7pt,2pt,7pt"/>
+			<style stroke-dasharray="6pt,2pt,3pt,5pt,2pt,2pt"/>
+			<style stroke-dasharray="15pt,2pt,6pt,2pt"/>
+			<style stroke-dasharray="5pt,5pt"/>
+			<style stroke-dasharray="8pt,2pt,4pt,2pt"/>
+			<style stroke-dasharray="3pt,2pt"/>
+			<style stroke-dasharray="12pt,5pt,3pt,5pt"/>
+			<style stroke-dasharray="6pt,3pt,3pt,3pt"/>
+			<style stroke-dasharray="12pt,3pt"/>
+		</cycle>
+	</setDash>
+	<setPattern>
+		<cycle>
+			<style pattern="26" color="white" color2="black"/>
+			<style pattern="1" color="white" color2="black"/>
+			<style pattern="12" color="white" color2="black"/>
+			<style pattern="3" color="white" color2="black"/>
+			<style pattern="29" color="white" color2="black"/>
+			<style pattern="6" color="white" color2="black"/>
+			<style pattern="14" color="white" color2="black"/>
+			<style pattern="7" color="white" color2="black"/>
+			<style pattern="18" color="white" color2="black"/>
+			<style pattern="17" color="white" color2="black"/>
+			<style pattern="22" color="white" color2="black"/>
+			<style pattern="9" color="white" color2="black"/>
+			<style pattern="20" color="white" color2="black"/>
+			<style pattern="10" color="white" color2="black"/>
+			<style pattern="21" color="white" color2="black"/>
+			<style pattern="27" color="white" color2="black"/>
+			<style pattern="19" color="white" color2="black"/>
+			<style pattern="23" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="4" color="white" color2="black"/>
+			<style pattern="25" color="white" color2="black"/>
+			<style pattern="28" color="white" color2="black"/>
+			<style pattern="5" color="white" color2="black"/>
+			<style pattern="15" color="white" color2="black"/>
+			<style pattern="2" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="11" color="white" color2="black"/>
+			<style pattern="16" color="white" color2="black"/>
+			<style pattern="8" color="white" color2="black"/>
+		</cycle>
+	</setPattern>
+	<setShape>
+		<cycle>
+			<style symbol="circle"/>
+			<style symbol="square"/>
+			<style symbol="cross" glyph-angle="180" glyph-sides="3"/>
+			<style symbol="polygon" glyph-sides="3"/>
+			<style symbol="plus"/>
+			<style symbol="circle" glyph-angle="90" glyph-aspect="0.5"/>
+			<style symbol="square" glyph-angle="45"/>
+			<style symbol="flower" glyph-sides="5"/>
+			<style symbol="bowtie"/>
+			<style symbol="square" glyph-angle="90" glyph-aspect="0.5"/>
+			<style symbol="polygon" glyph-angle="180" glyph-sides="3"/>
+			<style symbol="circle" glyph-aspect="0.5"/>
+			<style symbol="polygon" glyph-sides="5"/>
+			<style symbol="star" glyph-sides="8"/>
+			<style symbol="square" glyph-aspect="0.5"/>
+			<style symbol="flower" glyph-sides="3"/>
+			<style symbol="bowtie" glyph-angle="90"/>
+			<style symbol="line" glyph-angle="90"/>
+			<style symbol="polygon" glyph-sides="4" glyph-angle="90" glyph-aspect="0.5"/>
+			<style symbol="line"/>
+			<style symbol="polygon" glyph-sides="3" glyph-angle="270"/>
+			<style symbol="arrow"/>
+			<style symbol="polygon" glyph-sides="3" glyph-angle="90"/>
+		</cycle>
+	</setShape>
+	<setStyleCycle id="styleCycleRepository" createType="ColorsOnly">
+		<cycle>
+			<style color="#5596E6"/>
+			<style color="#D70033"/>
+			<style color="#298626"/>
+			<style color="#F3672A"/>
+			<style color="#E3D710"/>
+			<style color="#00B4A0"/>
+			<style color="#FFC4E2"/>
+			<style color="#AB49F3"/>
+			<style color="#5FC338"/>
+			<style color="#3F5AA8"/>
+			<style color="#FE82B4"/>
+			<style color="#D0CA8C"/>
+			<style color="#CC863F"/>
+			<style color="#77378F"/>
+			<style color="#ECE6D0"/>
+			<style color="#454647"/>
+			<style color="#5CCA88"/>
+			<style color="#D05334"/>
+			<style color="#CC7FE4"/>
+			<style color="#E1BC1D"/>
+			<style color="#ED4B4B"/>
+			<style color="#1CCDCD"/>
+			<style color="#5C7148"/>
+			<style color="#E18B0E"/>
+			<style color="#092672"/>
+			<style color="#5A645E"/>
+			<style color="#9B0000"/>
+			<style color="#CFACE3"/>
+			<style color="#969191"/>
+			<style color="#3FEB7C"/>
+		</cycle>
+		<cycle>
+			<style pattern="26" color="white" color2="black"/>
+			<style pattern="1" color="white" color2="black"/>
+			<style pattern="12" color="white" color2="black"/>
+			<style pattern="3" color="white" color2="black"/>
+			<style pattern="29" color="white" color2="black"/>
+			<style pattern="6" color="white" color2="black"/>
+			<style pattern="14" color="white" color2="black"/>
+			<style pattern="7" color="white" color2="black"/>
+			<style pattern="18" color="white" color2="black"/>
+			<style pattern="17" color="white" color2="black"/>
+			<style pattern="22" color="white" color2="black"/>
+			<style pattern="9" color="white" color2="black"/>
+			<style pattern="20" color="white" color2="black"/>
+			<style pattern="10" color="white" color2="black"/>
+			<style pattern="21" color="white" color2="black"/>
+			<style pattern="27" color="white" color2="black"/>
+			<style pattern="19" color="white" color2="black"/>
+			<style pattern="23" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="4" color="white" color2="black"/>
+			<style pattern="25" color="white" color2="black"/>
+			<style pattern="28" color="white" color2="black"/>
+			<style pattern="5" color="white" color2="black"/>
+			<style pattern="15" color="white" color2="black"/>
+			<style pattern="2" color="white" color2="black"/>
+			<style pattern="24" color="white" color2="black"/>
+			<style pattern="11" color="white" color2="black"/>
+			<style pattern="16" color="white" color2="black"/>
+			<style pattern="8" color="white" color2="black"/>
+		</cycle>
+		<cycle>
+			<style size="5pt" symbol="circle"/>
+			<style size="5pt" symbol="square"/>
+			<style size="5pt" symbol="cross" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3"/>
+			<style size="5pt" symbol="plus"/>
+			<style size="5pt" symbol="circle" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="square" glyph-angle="45"/>
+			<style size="5pt" symbol="flower" glyph-sides="5"/>
+			<style size="5pt" symbol="bowtie"/>
+			<style size="5pt" symbol="square" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-angle="180" glyph-sides="3"/>
+			<style size="5pt" symbol="circle" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="polygon" glyph-sides="5"/>
+			<style size="5pt" symbol="star" glyph-sides="8"/>
+			<style size="5pt" symbol="square" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="flower" glyph-sides="3"/>
+			<style size="5pt" symbol="bowtie" glyph-angle="90"/>
+			<style size="5pt" symbol="line" glyph-angle="90"/>
+			<style size="5pt" symbol="polygon" glyph-sides="4" glyph-angle="90" glyph-aspect="0.5"/>
+			<style size="5pt" symbol="line"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="270"/>
+			<style size="5pt" symbol="arrow"/>
+			<style size="5pt" symbol="polygon" glyph-sides="3" glyph-angle="90"/>
+		</cycle>
+		<cycle>
+			<style/>
+			<style stroke-dasharray="12pt,2pt,2pt,10pt,2pt,2pt"/>
+			<style stroke-dasharray="8pt,8pt"/>
+			<style stroke-dasharray="10pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="3pt,6pt"/>
+			<style stroke-dasharray="12pt,2pt,2pt,2pt,2pt,2pt,2pt,2pt"/>
+			<style stroke-dasharray="6pt,3pt,6pt"/>
+			<style stroke-dasharray="8pt,1pt,8pt,7pt,2pt,7pt"/>
+			<style stroke-dasharray="6pt,2pt,3pt,5pt,2pt,2pt"/>
+			<style stroke-dasharray="15pt,2pt,6pt,2pt"/>
+			<style stroke-dasharray="5pt,5pt"/>
+			<style stroke-dasharray="8pt,2pt,4pt,2pt"/>
+			<style stroke-dasharray="3pt,2pt"/>
+			<style stroke-dasharray="12pt,5pt,3pt,5pt"/>
+			<style stroke-dasharray="6pt,3pt,3pt,3pt"/>
+			<style stroke-dasharray="12pt,3pt"/>
+		</cycle>
+	</setStyleCycle>
+
+	<!-- Set the style for all axis children of dimensions (good for parallel coordinate graphs -->
+	<setGenericAttributes elementName="axis" parentName="dimension" count="0" styleName="style" color="black" stroke-width="0.5pt"/>
+	<setGenericAttributes elementName="label" parentName="axis" count="0" styleName="style" font-size="12pt;8pt" font-weight="bold" color="black" margin="6px" padding="1px"/>
+
+  <!-- Custom data labels for points -->
+  <setGenericAttributes elementName="labeling" parentName="point" count="0" styleName="textFrameStyle" color="transparent" color2="transparent"/>
+</template>

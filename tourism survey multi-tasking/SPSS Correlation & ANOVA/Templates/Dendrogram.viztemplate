@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" style="frame_graph_1s" version="2.4" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <extension>
+    <template aggregates="false" description="Dendrogram" name="Dendrogram" version="1">
+      <variable name="Distance" type="continuous"/>
+      <variable name="Y" type="continuous"/>
+      <variable name="CaseNumber" type="categorical"/>
+      <variable name="StartID" type="categorical"/>
+      <variable name="EndID" type="categorical"/>
+      <variable name="Label" type="categorical"/>
+      <aesthetics>Color;Transparency;Size</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAADADLJEEEBEEFIHKNNONJBELEDOAEEBHMDAOJFAPICONNPIAOHIAPAONKAKHGBBEPIOBFMDEPACFMLINKACKJDIHBJKMKALFCACFMKEGDEIAIBJICOKILHIACJDMCFKKEKA&#10;KIFIGPAJDEPALIEBBHPJNHLMALIINGCBDDLOGNEPPPHCELJOEONMDDNPFGCDJJJJOMMDFJHGICCLEBACAAMKPEFALOHFHFBLMOPBPBPBFMHMHKHKHKODGMEGJPAPAPAPKCBPFFGJHDNGGAEBGJKKKKFICEBOCOCOCOGPGPGPEOEOEOOPOPOJGPLOFPKPFNFNFBFKANOA&#10;PBCKHFHNFHJMOPIOIOIEDNELGGDLJMGMLLLLLLMGJEGAFLKFNIDPCHGBCDGCLJKGFLKEJCNMOKEEGBBPHOEINIDOIDMPKHIHIHIEHIMADMACPGEJFEILFGHIPPJBGJOKLOEHOHLKLKLKEHCNLFLFLFHJHJHJHAHAHAEHGGLBLBLBGJFGBNHPEODEFKCFJOKPKPKJBOOO&#10;NONOBFKDLBDBIDBGJECOMLMJFEIDHKEHDNEDJIFLIMCMGAEJOCMGICDCJNAFKIONFBNBFOPIMCBOADKCMCKCPPNPLMMHEPLPIEKIPBGFHKDNBJCOEEOOHFDFOELLKEOOBJKCIAKCNOCFIENJPJPJDFJJKEOOHGLHLHLJPOBPEICKCBKMPFNEJNJNJNBKDJLEOHJCCHJL&#10;MFFKCFBJCALIMPMBPBPBHCHPDLJLJLJBLOOCLOFCKKLCKIFMCOLAMCLNGLJONIOOJPGHLLNJAPCFALLKEOKBEDPDCMFJCEFNOBNONHLOKCLJNMCNFNALPNLKNPNPNHLFGIGANMPAJIICNLAMKMEGOHGBKAOBKBMJBJOJGIKICPMJJMIPAABBJAGNKMKIFFJKAKEGBKPG&#10;IAIFAIFAIFDEIALKFNKAGJHJNLFLFLPOAIFBOALOMOMMHKGOFMIPILNAIFBOALCIACIFIFADCLJFDAALAFHGNLHBGJMNBDJKENCMCOBFHABDAHDAFPDIFNOOKKEFKCJEJBAAKENCMKMHOLGGKJCBKDCNKKKOCNGCFGIDIDFODKOAOLPENMLIKJCKANLLPJGGIFDNDNGF&#10;ODPJELBMJEPEGIJNJNCDNGEHPCDKJOAABAGBAGBAGNAPBMKKEFOHIKKKNPJHLJHBPBKALGCGCMCFEJOMJOJGNAALCMFDDDDPFGKGKMKKHNLFAIFIKDLAKOFALIKBCOJOOOMNJMBIFMDEEDKJGKFMKJJAHDEHALEDNMOLJLJGAPABNIDOIDGKJGCAKEPJBFHIOEGCDOCA&#10;EEECIFENGPJFKFCLBACAPEDEAMCAMCAMCAMCAMCIAALAALAALODDBMCOJCBCIJIBCBJAGBPCDFCJFLIOJCFOALCHJLMJHOJHFOCHJFMCKHCIONOOIEPMPMDKDCNNDFBEABMEOEOHFKNKFNKGNLMABNMMNMBGIIGKHKKBNIGMINIJLDKDKOONNNNNNPJBMPDAEJODCHMB&#10;HNGLNFEDNBANOMCAMCAMCAMCAMCIAALAALAALGAIAGNPNBOIJAKABIFKLOKLBGAGBJMFIBMCOFEDAFMCGBBLKGHCMBGBCIAGEMAIFIACIBIHKBCAGBAGBAGNALCMKACIAGBHBBBKKACKBMCEABMIIHFCLABEADAFHGNLHBGJIJFOAIFBGBBOALIHOKDIMKIGKKJCHIFM&#10;DHNBIECFCKJKCKPGIBCKMHONKFPFHDABEADCMFOLPOPIMIACIAGEEDBCIAGAEAIFAIFAIFAIFAIFAIFABAGBAGNHICMCKGJHHMKPPGFFDENALKKFNKKHOBOHKGNADIFMDPAOBBLMFDCBMCMKALIIBALALGHHAPEDMPHCKPNACDLCIHDDMNDFEMKCAAAAAAAAJEFEOEEE&#10;OKCEAGCI</image>
+    </template>
+  </extension>
+  <!--  Size  -->
+  <location id="location_53016" method="fixed" part="width" value="650px"/>
+  <location id="location_53017" method="fixed" part="height" value="550px"/>
+  <!--  Data  -->
+
+
+
+
+
+
+
+  <expressionVariable categorical="true" expression="StartID+EndID" id="expressionVariable_45"/>
+  <!--  Structure  -->
+  <graph axesOutside="false" cellStyle="graphStyle2" id="graph" style="graphStyle">
+      <location id="location_53027" method="fixed" part="left" value="3%"/>
+      <location id="location_53028" method="fixed" part="right" value="99%"/>
+      <location id="location_53029" method="attach" part="top" target="labelFrame"/>
+      <location id="location_53030" method="fixed" part="bottom" value="99%"/>
+    <coordinates id="coordinates_28554">
+      <dimension id="dimension_28555" lowerMargin="0" upperMargin="5%">
+        <axis id="axis_28556" opposite="true" style="axisStyle">
+          <label id="label_53034" style="labelStyle" textFrameStyle="labelStyle4">
+            <descriptionGroup target="Distance"><description name="label"/></descriptionGroup>
+          </label>
+          <majorTicks markStyle="majorTicksStyle4" style="majorTicksStyle" tickFrameStyle="majorTicksStyle3">
+            <gridline style="gridlineStyle"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+      <dimension id="dimension_53038" lowerMargin="1%" niceLowerMapping="false" niceUpperMapping="false" upperMargin="1%">
+        <axis id="axis_53039" maxSize="300px">
+          <majorTicks delta="1" id="majorTicks_53040" length="20px" markStyle="majorTicksStyle5" style="majorTicksStyle2">
+            <format scientific="false"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <point clip="none" dot="true" id="point" labelCollisionHandling="none" positionModifier="none" style="pointStyle" zOrder="0">
+      <labeling clamp="true" id="labeling_28562" style="labelingStyle" textFrameStyle="labelingFrameStyle" variable="CaseNumber"/>
+      <split id="splitAesthetic_28563" split="false" variable="StartID"/>
+      <x variable="Distance"/>
+      <y variable="Y"/>
+    </point>
+    <edge dot="true" id="edge_28564" positionModifier="none" style="edgeStyle">
+      <attach id="attach_28565" target="point" targetKey="StartID"/>
+      <position id="position_28566" variable="expressionVariable_45"/>
+    </edge>
+  </graph>
+  <labelFrame id="labelFrame" style="labelFrameStyle">
+    <!--  Size  -->
+    <location id="location_53048" method="sizeToContent" part="height"/>
+    <location id="location_53049" method="fixed" part="top" value="0px"/>
+    <location id="location_53050" method="same" part="left" target="graph"/>
+    <location id="location_53051" method="same" part="right" target="graph"/>
+    <label id="label_53052" purpose="title" style="labelStyle2" textFrameStyle="labelStyle5">
+      <text id="titleText"> </text>
+    </label>
+  </labelFrame>
+  <style color="white" color2="transparent" id="frame_graph_1s"/>
+  <style color="transparent" color2="transparent" id="graphStyle"/>
+  <style color="#F0F0F0" color2="black" id="graphStyle2" margin="1px"/>
+  <style id="edgeStyle" symbol="acrossDown"/>
+  <style id="pointStyle" symbol="none"/>
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle" padding="1px"/>
+  <style color="black" color2="transparent" font-size="12pt,8pt," font-weight="bold" id="labelStyle2" margin="3px" padding="2px"/>
+  <style color="transparent" color2="transparent" id="labelStyle4" visible="false"/>
+  <style color="transparent" color2="transparent" id="labelStyle5" visible="false"/>
+  <style id="labelingStyle" labelLocationHorizontal="negative" labelLocationVertical="center" margin="2px" maxAttachedTextHeight="20pt"/>
+  <style id="labelingFrameStyle" color="transparent" color2="transparent"/>
+  <style color="transparent" color2="transparent" id="labelFrameStyle"/>
+  <style color="#cccccc" id="gridlineStyle" stroke-dasharray="3.0px,6.0px"/>
+  <style color="black" font-size="8pt,6pt," id="majorTicksStyle"/>
+  <style color="black" font-size="8pt" id="majorTicksStyle2" textAlignment="left"/>
+  <style id="majorTicksStyle3" visible="false"/>
+  <style color="black" id="majorTicksStyle4" margin="1px" padding="0px" stroke-width="1pt"/>
+  <style color="transparent" id="majorTicksStyle5" stroke-width="1px"/>
+  <style color="black" id="axisStyle" stroke-width="0.5pt"/>
+</visualization>

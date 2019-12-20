@@ -1,0 +1,10 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJCfs0pNCrAWARwK0C0rT_q2I,29b42ea65f28dfd71414486086a85ec1da13c1e0,Takaosan Jingoji Temple,35.0546057,135.6699576,4.4,421,"５ Umegahata Takaocho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJa-Z4iderAWARFZbLn4CmZ6g,7cb5237948908e411f9a93b7abfb0449aa6ac60a,Saimyo-ji Temple,35.0572374,135.6748678,4.2,128,"1 Umegahata Makinoocho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJNzwiZn2pAWARrd0KVEihaMw,c57dd31c8090a4093b7cfbbd96f16cb37261e500,Shirubegyo Temple,35.056872,135.6769,4,1,"21 Umegahata Hikijicho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJxcLGA9arAWARZZg2n7_Z6vs,6d126d9b505a443075e96c8172dc692bf6c834d2,Jishoji Temple,35.053689,135.676125,4,1,"Kyoto, Ukyo Ward, Umegahata Hinokiyashirocho, 4 慰称寺","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJvRJMV32pAWARdw1UV7Er3og,cc3c9dd4d16749aa6050b1f616573ec9e98f9ab9,Jinja Shrine,35.0574982,135.6766259,2.8,4,"36-2 Umegahata Tonohatacho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJLUItbGKpAWARKhuOtpTq_gE,4e06f3dd8edb1365ba6fec1bbf606c255b0c610a,Kasuga-myojin-sha Shrine,35.061298,135.6770876,3,1,"Umegahata Toganoocho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJVVXK932pAWARhzKvCoTk4So,e592e0c78c6e521a52d21be32e47de7362220714,Seiryugu Shrine,35.0541503,135.676409,4.5,2,"3 Umegahata Hinokiyashirocho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJvYv-4GKpAWARIeg30pCkBkc,5670c30ffbf08b30af4e8d89109b6892147c8b82,Kosanji Temple,35.0605948,135.678519,4.2,311,"8 Umegahata Toganoocho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJNb15dISpAWARGsI1Yuywph8,5a2e826aaa7bfdb8d405eadb0aaa09652d3df4a4,Shinkyuji Temple,35.0471071,135.6824616,3.5,2,"Kyoto, Ukyo Ward, Umegahata Uetocho, 4 真休寺","['place_of_worship', 'point_of_interest', 'establishment']"

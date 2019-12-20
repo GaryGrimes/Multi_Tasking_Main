@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization creator="en" date="2008-04-17" description="Overall Summary of Missing Values" id="visualization1" type="170000" version="2.5" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="true" description="" name="MI_OverallSummary.viztemplate" summary="sum; mean; cumulativeSum; min; max; range; percent; cumulativePercent" version="1"><variable name="Count" type="continuous"/><variable name="Panel" type="categorical"/><variable name="Color" type="categorical"/><aesthetics>Size</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAIABAJEEEBEEFIHKNNOMNPHIEEBJFMBAAAPBAHLPBKNCGGPLIGDLLMFNELPBGHNPAFKEDIKOOEDLLCDPOCKAOCJKIOHDGIEJJBFNBNFEEJPPIGOBGFGLFLJGPDEPMLCJKII&#10;EJDPCLCECGLKBJLHHHNEHNIGDCNEBLIMECLCMAHMCEDCHLPHMAHMOPBDPHMABLHPMNNEDHDHGHLJPFLLDLMBPOBPALNFKCONHNPMOLHPNJPOMMMLJFMMHIKJMOGIBCCAEIFIALABGBCMCEIFIALABBACMCEIFIALABGBCMCEIFIIAABGBCMCEIFIALABGBCMCEEAIALA&#10;BGBCMCEIFIALABGBCCAEIFIALOPHJIFOBPIHMJOEHCJECJPAOBAIGJGBAHGLCKKGAPPIOMOEMBHMBAAAEDNELACIABLDEACKICKLMFOCCIACAIPLNNLLHAKKKCKGBGAMENDOHMAPNCMIJBOPNKOMIFAPHPPHEPIAHLJNAMGPNOAGFMKAKHGOMEBMEGCPBGINAGPCPJJP&#10;NNHIHFALPMPJPMPGJNCIHJFJJDOKOFFHIDMBMCLMKBFGEOGHLLBGAAHDOGIDOIPBHGGLOGFGHFMKABMMGOPABDGOOMOPJPDGAMGBLAHLGHNCBLDHHKDOMNJDNBALKPLPJNLIHBJOCICAAGGDLADMDEMIMOBEIFDCLLFMCMEJGJGHEDFDBMPAADKJDPIAOEGJGOGGKKEK&#10;EIJJHDPEEJMILCIALGEEHNEIFNLNLOONBLDIMJEDJIFJMBCPDPIFDENNLLOHNDFFPFPEFHFHFEKFKICKIKKOKGMDHCHMLBODAGNJBLIHONLHIOABJJIJIMFIPBFFGCGFAKDPLGGNAJNKNKMDPMHECIJAGONBLLNBPMOMGOFOEAMKHCGNFJLCOMEJEBGEOMIKKIALGALP&#10;IPBPOKNPLPNJNNNNKPOKLLHKPEJINNLLJJBOMBKBFCMCBFEPNGKNEIHMFMBLCPFKEJBGFAGKIFGGGCFNGNGAPHJENOCFOFPKHLGLGLFCNDNFAFEBALOAIFDADAONMJMJOAMADBFBNAMKCALAGHBNMGGCKOLOFDKHBMFBNFBFBOIEKECFMBALGFMKOPOHONKGFCEFIEJK&#10;DMKAMCJECMGGDFNOFMBHMNBNDKEKMPFKHKLBGNLNHLCEKFKJDFFMIKKJALAGHDJJAKHJKLMDFHCOEANKOEKEDBGBPMLIJKJKEJKGJCNEIFIBGALCFEKKBLBFJCGFFGFCOKKFKEDBGNKKFFAENNKODNFALAGHHPELJGOOHFPKEOLEFLGLCFBKKMDOIMCGBMCGKAGNMIKF&#10;GAGNOIFALDFJLJLAPILGCHEKKHKHMJJBJBMJGMAIFNAGBBEILDBCBIBNIDALOCIFALDNHCOEIMJEFFLLGHBOKNDAGFDIFLIGBFLIGPBIFPCMCOMEGCOPNMLJAPIFNMNMILGMFAIKCBLKBLBJGNOLAAFHEMCINJJCMCMAPHJNDGJOCFKEHJAIFBDGNCMFIEKCKKCCDKAI&#10;FAPMLBILANHNHCKJLJJBNFEKEBDGFDGDCFKEGKFNDHMADMDKAIFALDBFEFEBKALGJPCHCMIBMKFNLKFBFKJEIFPKGHEEHALINBHDOMHOBPIEGJLAADHKJBAIFDADACMINBLCHODFCIJKEPNPANPMAMKEEIPCOPBMALPHDCHIFAHMAHFFEFMIOIJLELEJGNLEKEJBGNJJ&#10;DDOEJHFFIOLDMALHGIBGHPMPPDBOLNLMAPIPOOPHLPCDCHIFDIFDEMCLFGDKLCGIJDDHIADGALKIKIEGOFBIJPJMPLAALFBDMOHHMALBIBKHBAHGGNDEMALONIMBGBMDPJIPEGFCGLFLBFKHNBILFBDGJFMCMKGIBJONHEEDHGFAOIJICMDKHEDCDAODFHKAIOICFKAA&#10;LIHONHKEPKNOFENKOMKBOOOKAOKGOHLOGFDIALAHMNDKPOEJOIEAGBBLOGNFAHBNAELBDIFFBFBEJOLDAHECALIKJLDHHEGMMJOJOEJBDIFHAOAIBAIFCIEGKKLADDDLMCGJBJBDHMFMJKLIJDEOALCHBLGPMOBABNEMKOCPPKJPPDMPNFBMBABNMGOAKNCIAIJLEBGI&#10;EBIBGPNNAFBNDBLCIFMOEJJEPAPAMEOMGJILBLKOPPEGNLOPOHPNPHGMECKEGFELBKKKHIACMCGFJEFFLAHGDBPOPBHAGJODNNOPICODNBGHOPMKLDNLJAJIPJHMKCNCFNILMANLDBDBPPKMKJNPLOHNGNDJLPDJLIKPGMFCGIKPHHNHOPCCNKLGIOIGCBIDNLEJIKIG&#10;FCBLCODOFNOMMKAEFOMBIPJDMBFIEMALDLMCPKGPKFHLBPIJJEHPMJFOCIDNHCHDNOCPONJHHKKKCJPLBPIJGMLMJPPDPMGIGOHJHNPFBNGAOEPCFCKCKFJEMKAOMJFADDOLMOAFDAFJDPAHBCNBIICCEOALLAMKNOHGPLIFFBCBLMOGHJDFKDAPBPDOBMHJJCHHKIGO&#10;OFKDJDLHHFIJJODKDEFELCJIFJBJBDCDGGDLJJMIMNALGCDJAJNGNKLLFDJCDFCALIECFCDFAAMFKOMECNEMOMMJMIPNOLPEPPBPOECPHFOFJHDNHCCENBEBEBEAPFBNFKDCNDGGMHMHPNHLJKPDAGDKGPBKNAPMKGOGMMIJPDHOMMCALJCDLOGLFKOOLHODJDDNAENJ&#10;PEBLKILIDILCIHGDKEDCPIODHDMMKEPPFKIHONJOKNELNMPHHCOMKINBAKPIHHGMAGOIMLGHNGEGAMHKPELLMADMCAJHJHCGMOJBNHMKIEBGCFIAONGJENDNDCMANBNNCKOIFMNJLDHMEMADGBIFALAGEHMMDDGGAFGMAGBMMLFAGMOININFMKDMHIHEHIMFMFMKFPGL&#10;JLKFMCILCBDLCLCGDFKAOMPBPIENNKMPGPGHIJKMIBDGALMDNENEEHMECGNNPFOLMDEPNCBGAGMAGBMGNBGFLGMKJEBHADNIHIONBFDNANAAHGGJHMIBMCPINNOBLGDJLKDGBNCCPFINNLNGJCJCAMIBMCINMBJKJKBLDCFOBDJJIJGLGLAPLHNBOMPJHGFJMFBIANFB&#10;LEMOKOCMDGGOALIEOGMNICHGLMBFOGOCFGMAGBMGMOBJDCONIBAJCGNKGFOKPKPEONONHFBDODOJADGALAGOIAKCLCLMINCIOFADJJIOLNHLFOPOMPLGIGAOENOFIGGNIIFAJLMNOOGDLIFMIMKCEFGMGDGDJKLLJPMJBAIFDIHDDBPFMLACDJCJMIBJKCPCHJJLBECP&#10;DJGLJHDLDNPHCNNBFHMKBMDBGMOMOEHOENJKBNOEKOFGFGMBHMJKOHIGAKALAFPOKMLEBMGDMPHBPCIOJCDFCKECFGCDBJHMOIJGPHIOJKEKEIJILIDHJBAIFDIPICMEPHPDJJDJDCEEKFKCJCJIALJNMDCFLPALEFELLOHNNNJAJAOEDAALODMOKFJNHLPMNDBGCEEI&#10;EKEMFJLCJMGPGHNFOJCHKBOGPKPFLILIHBDBKDMCJEFHDMDDPEOJAFJPJPKDHJEBGBLADHBOCEEOOBBNELJNMFDBHCCBKJGHCHIGJHOIPAINMGEOCJFCKLADJLLKLKJJHJPCFNNBIPEJMDBFHOLCPCHAJMJMILKMCMCELPDHEOIHDGDCBLBGDIADNHKLKIHOOLMHJPJP&#10;MNFKLEOMOOOGNCHENDFBNKBKBIJMNMFAOPNNAKCGEPALGIHGJJDPFPLGHINNOIPGLNGMHOHOLPCMEBFGABIGJNCDBLEKEMNFDFDOEAAIBGIBDAPLGLAIDOEMKMKECCPCPAMELJGAMPLJCAECPECMNNDFHKKDHFPKGHNBMDIELOMPNLOAAFNICKICMBGLLLHHJOGNGFAG&#10;HLDIKMKEIFCIDIKJKBAHFPKOAOHLLDMDJHCAAAACJECFPNEBOKNLBMDGPGPEPIAHDPGCLFFFFEPJPDPMCMOFHFHEPNKLFMEPGPOHMMMAIOLBDEEBEDEIFIALABGBCMCEIFIALAFDEIFIALABGBCMCEIFIALAFDEIFIALCCDNOPDADBPBINPMBBJGHOLIAAAAAAAAJEFE&#10;OEEEOKCEAGCI</image></template></extension>
+<!--  Size  -->
+<location id="location_20049" method="fixed" part="left" value="0px"/>
+<location id="location_20050" method="fixed" part="right" value="680px"/>
+<location id="location_20051" method="fixed" part="top" value="0px"/>
+<location id="location_20052" method="fixed" part="bottom" value="310px"/>
+<!--  Data  -->
+
+
+
+
+<intervalDomain id="intervalDomain_10"><range exact="true"/></intervalDomain>
+<!--  Structure  -->
+<labelFrame id="labelFrame_33"><!--  Extension  -->
+<extension graphId="graph_19" id="extension_20061" position="title"/>
+<!--  Size  -->
+<location id="location_20062" method="sizeToContent" part="height"/>
+<location id="location_20063" method="fixed" part="top" value="0%"/>
+<location method="same" part="right" target="graph_19"/>
+<label id="label_20064" purpose="title"><text id="text_20065">Overall Summary of Missing Values</text></label></labelFrame>
+<graph id="graph_19"><!--  Size  -->
+<location id="location_20067" method="attach" part="top" target="labelFrame_33"/>
+<location id="location_20068" method="fixed" part="left" value="2%"/>
+<location id="location_20069" method="fixed" part="right" value="75%"/>
+<location id="location_20070" method="attach" part="top" target="labelFrame_33"/>
+<location id="location_20071" method="fixed" part="bottom" value="98.3%"/>
+<coordinates id="coordinates_20072"><polarTransform id="polarTransform_20073"/><dimension domain="intervalDomain_10" id="dimension_20074" niceLowerMapping="false" niceUpperMapping="false" unionDomain="true"><scale id="scale_20075" method="linear"/></dimension></coordinates><faceting id="faceting_20076" method="dot"><dot id="dot_20077"><variableReference ref="Panel"/></dot></faceting><facetLayout id="facetLayout_20079" topDown="true"><facetLevel gap="4%" id="facetLevel_20080" level="1"><axis id="axis_20081"><majorTicks base="0" id="majorTicks_20082"/></axis></facetLevel></facetLayout><interval dot="true" id="interval_20083" positionModifier="stack"><summaryStatistic convertIntervalToSingleValue="true" id="summaryStatistic_20085" method="percent"/><pattern clamp="true" dimension="0" id="color_22" variable="Color"/><labeling clamp="true" dimension="0" id="labeling_20087" variable="Count"/><labeling clamp="true" dimension="0" id="labeling_20088" variable="Count"><summaryStatistic convertIntervalToSingleValue="true" id="summaryStatistic_20089" method="percent"/><format suffix="%"/></labeling><x variable="Count"/></interval></graph>
+<container clip="false" id="container_40"><!--  Size  -->
+<location id="location_20092" method="fixed" part="right" value="98%"/>
+<location id="location_20093" method="sizeToContent" part="height"/>
+<location id="location_20094" method="fixed" part="left" value="75%"/>
+<location id="location_20095" method="same" part="top" target="graph_19"/>
+<legend id="legend_20096"><!--  Size  -->
+<location id="location_20097" method="sizeToContent" part="height"/>
+<location id="location_20098" method="same" part="left" target="container_40"/>
+<location id="location_20099" method="same" part="right" target="container_40"/>
+<location id="location_20100" method="same" part="top" target="container_40"/>
+<label></label>
+<legendTarget id="legendTarget_20101" target="color_22"/></legend></container>
+</visualization>

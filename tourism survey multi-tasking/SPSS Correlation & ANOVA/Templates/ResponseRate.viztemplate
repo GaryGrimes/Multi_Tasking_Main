@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" style="visualizationStyle" version="2.7" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="false" description="Response Rate Charts" name="ResponseRate" version="1"><variable name="groupVar" type="categorical"/><variable name="responseRate" type="continuous"/><variable name="denominator" type="continuous"/><aesthetics>Color;Transparency;Size;Label</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAEAOAJEEEBEEFIHKNNONJPFLECDBEEBGMNPEMNHAAJOOKOOKLIIAPCEEKLAJOPAEBFEIEMCBCCCIFMKLIGIFAOFMCBBCLIELAFICECECCLHBLEIEMEPMKDPCGKLGNLNOGKN&#10;OMJJGPMBEGJJNBGGHJFPHMMJDDPMMBHHGMMIAGLIMGJBGEAJMBMKLPLPLHGIFBFNOCPCPCJBGBDMCGIFMALIBGJGCALMHPNPHLHLHDJHMANJKMDODPDPDPIGEDCGIFBINJNJNJJJGKJHFDBDMJOFNCIBKBELKFNCJKLBGPGPGPCFNALOIPIPILGFLKFJKEFCLMCLANJI&#10;EGBGGPIIKMDPDPDPLLLLLDOOJFDHGPCPCPCLIFJCNNDJNNAJDAMDDMCGIFMALIBGJCFLKGFJBGFEDLCFJEEJLMCKIFEGIFBBIEFLLNBEBOBPBFMOOOCDMKPKNANBKOGOGODOENBHEMJOJCDMKPMMMADEMCODHBINNCJPALPHABGNENLPODLHKFBNMGCDMKIAEKCCGDIE&#10;LAMCIHPJNGPHPNMABMLABBNKOFPAKAIBICHKPBPMLEHAMKBOAFMBNBNHPPNGHGDOHBCEODOKKENFPMCEIBCICPMBPIFFICIPBPIHMKBFGKEBNBKGGFCCECNALCHJLMFLLNNGKPJJCNOHPDAJKJBNNFPOHFAGJGBJJCNBMAEEODPJEILOFMIIJFEGDDFKIBIMCBGCFBGI&#10;FNNOGHLKBDHCJOKEAGBOJBFJMLCGBDHALKBNIGEGDLJFCOALADONDEIFKCBLMMMKDHFBKAFIDJDJDBCOALOAOAEBIDAKGJOGIAJNNBFEDKHCBALACIAGLGLGLIMCMCPNPAGCEDKANODAGNLOLOLCIEBEDEBJFIFANPJKKMBADMALAKOMBCHEPCOCOCIGCMCIMEPEMEJK&#10;LGPDHDEFLOAIKDFAIHMIAIIAIFELAGBNENJFABGFLMHKPMHFPALKHNLOBIHBFDIFIJNCDFIOGFBGIFIJPDDCGMDJCIFOJHBMACIEEMGOAGJDOIDOKLOCJCIFIIGFBHDPJJJMFMMCKGALCPJHBEHMGOAGFHKDNJKEFKCCGCJMCFKAJJCFMNLJENCAOIJDIFGKJGOOPOPO&#10;LFGJFABABEBCDFKEKKLFFIBGBMHABBDONGLNGDMADEJHGKEBKHNJKNKLAKAHPMCILBCIFMELGEBGGKEHFFPKOLMPNHNJFNPODJIJPNIOBKDLACEEFNGCIBELJJLBCADBNBBCKENHOGIBLOHIIHFDALIOECPPIAGIGPADMKEODJPHNOGHAJOEAMNAEOHADDLBAGCEMMMB&#10;MAIMDMKPJKIMOPBCMCAGKKHNFIOFGKAAGBCOHDEKJLDOIANOMCJGIFPAPABAJCKJBPLJGBMCELFCCJDPEKLALGIDMAADBEABIOOLHAEMPKAMCPNPAGKBMCPNLNEIIMNGGDJKEOFIJICMCNEDKCBBFJOAPHEAGBPKOLPIBALKHNLOBPKOLPIKALGDHDHDNGLNGOFNHPBL&#10;DGGBPKOLHOAAPMALIBGBDMCGIFMALIBGBDMCGIFMALIBGBDMCGIFMALIABMCPMDPMPPCCFOMDLDNFPPBINCJHJDFEIFGIBGMIGEDKGFLKFNNOGHLGFLKFDKBNIOEHKDIDCOELAFICIIJMLINDCPEBFIHKHKHCLMCLAFGDNEDFGDDHMBHEGNLMGDCLNLMLLBOCPJGFKKB&#10;IFLCPMEJGFLKFFJPOIFAKAOKLOOBOBOBONONONGGDLJFMHHGJLCPBBFJCPEHHGHGHOKPKPKLCFJKAKMIGGICILDBDJFPCLNIMGPCPOGILMHKFJKGAGNCGGKEBPEGLNLKDLFLFLFLFPFPFPPPEDININININOEGNGGHPAHPIHALGBDDFKJKCLMABJINJJKIBNAJBGFMADO&#10;PLFGAGBFKMALIBGBDMCGIFMALIBGBDMCNEAGBFOHHEAJMBMKMFOENPOMACKNAMKMHOHFDLJGEHKCAGFBLIEFGPHABNAAGJMNCPCGJJNBAJDNFNDLEIANBGNLBKCHIFOJHPPGJAGEJLMBMKMPFKGGPOFGKFFCAKEMKGBEBNAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Data  -->
+
+
+
+
+
+<intervalDomain id="zeroDomain"><range max="0" min="0"/></intervalDomain>
+<!--  Structure  -->
+<graph cellStyle="graphStyle" id="responseRateGraph"><!--  Size  -->
+<location id="location_1168" method="fixed" part="left" value="2%"/>
+<location id="location_1169" method="fixed" part="width" value="625px"/>
+<location id="location_1170" method="fixed" part="height" value="250px"/>
+<location id="location_1171" method="fixed" part="right" value="98%"/>
+<coordinates id="coordinates_1172"><dimension id="dimension_1173" lowerMargin="5%" upperMargin="5%"><axis id="axis_1174"><label id="label_1175" style="labelStyle"><text id="text_1176"></text></label></axis></dimension><dimension domain="zeroDomain" id="dimension_1177" unionDomain="true" upperMargin="10%"><scale id="scale_1178" method="linear"/><axis id="axis_1179"><label id="label_1180" style="labelStyle2"><text id="upperYLabel">Response Rate</text></label><majorTicks id="majorTicks_1182" markStyle="majorTicksStyle4" style="majorTicksStyle"><format maximumFractionDigits="0" minimumFractionDigits="0" suffix="%"/></majorTicks></axis></dimension></coordinates><line breakRepresentation="wings" dot="true" id="line_1183" positionModifier="none" showDiscontinuity="false" style="lineStyle" zOrder="0"><x variable="groupVar"/><y variable="responseRate"/></line><lineGuide id="lineGuide_1184" style="lineGuideStyle" y="50"><label id="label_1185" style="labelStyle3" textFrameStyle="labelStyle7"><text id="text_1186">Target response rate</text></label></lineGuide></graph>
+<graph alignCellHorizontallyWith="responseRateGraph" cellStyle="graphStyle2" id="denominatorGraph"><!--  Size  -->
+<location id="location_1188" method="attach" part="top" target="responseRateGraph"/>
+<location id="location_1189" method="same" part="left" target="responseRateGraph"/>
+<location id="location_1190" method="same" part="right" target="responseRateGraph"/>
+<location id="location_1191" method="same" part="height" target="responseRateGraph"/>
+<coordinates id="coordinates_1192"><dimension id="dimension_1193" lowerMargin="5%" upperMargin="5%"><axis id="axis_1194"><label id="label_1195" style="labelStyle4"><descriptionGroup id="descriptionGroup_1196" target="groupVar"><description id="description_1197" name="label"/></descriptionGroup></label><majorTicks id="majorTicks_1198" markStyle="majorTicksStyle5" style="majorTicksStyle2"/></axis></dimension><dimension domain="zeroDomain" id="dimension_1199" unionDomain="true" upperMargin="10%"><scale id="scale_1200" method="linear"/><axis id="axis_1201"><label id="label_1202" style="labelStyle5"><descriptionGroup id="descriptionGroup_1203" target="denominator"><description id="description_1204" name="label"/></descriptionGroup></label><majorTicks id="majorTicks_1205" markStyle="majorTicksStyle6" style="majorTicksStyle3"/></axis></dimension></coordinates><line breakRepresentation="wings" dot="true" id="line_1206" positionModifier="none" showDiscontinuity="false" style="lineStyle2" zOrder="0"><x variable="groupVar"/><y variable="denominator"/></line><lineGuide id="lineGuide_1207" style="lineGuideStyle2" y="50"><label id="label_1208" style="labelStyle6" textFrameStyle="labelStyle8"><text id="text_1209">Target response rate</text></label></lineGuide></graph>
+<labelFrame>
+<location method="attach" part="top" target="denominatorGraph"/>
+<location method="same" part="left" target="denominatorGraph"/>
+<location method="same" part="right" target="denominatorGraph"/>
+<location method="sizeToContent" part="height"/>
+<label purpose="subSubTitle"><text>Split Label</text></label></labelFrame>
+<!--  Styles  -->
+<style color="black" color2="transparent" font-size="12pt" font-weight="bold" id="labelStyle" padding="1px"/>
+<style color="black" color2="transparent" font-size="12pt" font-weight="bold" id="labelStyle2" padding="1px"/>
+<style id="labelStyle3" labelLocationHorizontal="negative" labelLocationVertical="positive" margin="2px"/>
+<style color="black" color2="transparent" font-size="12pt" font-weight="bold" id="labelStyle4" padding="1px"/>
+<style color="black" color2="transparent" font-size="12pt" font-weight="bold" id="labelStyle5" padding="1px"/>
+<style id="labelStyle6" labelLocationHorizontal="positive" labelLocationVertical="positive" margin="2px"/>
+<style color="transparent" color2="transparent" id="labelStyle7"/>
+<style color="transparent" color2="transparent" id="labelStyle8"/>
+<style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+<style color="#EBEBEB" color2="black" id="graphStyle"/>
+<style color="#EBEBEB" color2="black" id="graphStyle2"/>
+<style color="black" font-size="8pt" id="majorTicksStyle" margin="2px"/>
+<style color="black" font-size="8pt" id="majorTicksStyle2" margin="2px"/>
+<style color="black" font-size="8pt" id="majorTicksStyle3" margin="2px"/>
+<style color="black" id="majorTicksStyle4" stroke-width="1px" margin="2px"/>
+<style color="black" id="majorTicksStyle5" stroke-width="1px" margin="2px"/>
+<style color="black" id="majorTicksStyle6" stroke-width="1px" margin="2px"/>
+<style color="#013996" color2="black" depth="80%" id="lineStyle" stroke-width="3px"/>
+<style color="#013996" color2="black" depth="80%" id="lineStyle2" stroke-width="3px"/>
+<style id="lineGuideStyle" stroke-width="3px"/>
+<style id="lineGuideStyle2" stroke-width="3px"/>
+</visualization>

@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ6b-HiKUIAWARd2z3ykoUuk0,98b06f2e8c622c4bf19bdbb334e9967ddd241010,Pound Kyoto Ekimae,34.9891127,135.7590256,3.9,277,"Kyoto, Shimogyo Ward, 七条通烏丸西入東境町185番1","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJMTFIz6AIAWARCvmqgqv-I4U,a044d77d93bed853a84b4f34d4e1fa0224aa7a25,Sushiiwa,34.9902533,135.761784,4.3,134,"Kyoto, Shimogyo Ward, 下珠数屋町通 間之町角","['restaurant', 'food', 'point_of_interest', 'establishment']"

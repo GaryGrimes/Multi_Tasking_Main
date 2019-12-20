@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization clip="false" creator="en" date="2017-01-05" description="Graph" id="visualization1" lang="en-US" name="GGRAPH" type="25000000" version="3.0"><extension><template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://xml.spss.com/visualization http://xml.spss.com/visualization/vizml-2.8.xsd" url="http://xml.spss.com/visualization" version="1"><name xml:lang="en">byspostpiror</name><description xml:lang="en"/><variable type="categorical"><name xml:lang="en">X</name></variable><variable type="continuous"><name xml:lang="en">Y</name><description xml:lang="en"/></variable><variable type="categorical"><name xml:lang="en">Color</name></variable><aesthetics>Transparency;Size;Label</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAGAMFJEEEBEEFIHKNNONJPMLELFJFEBHMNPDAMFILAHBNFEHBFMFFHBKAFBEEMFILAHBOCKAGFCFBKBIIBDIEAJABEBNAGFEEMCCCCCGBGKCDOAIEIABCKDFBNBCIIFBLDA&#10;OEGMBHKIEAMCDKCOIDKCMMCEMFEABBFMKDKCENBFCEAJABECMLJPKOBNLDPKBDPDFNECHDBPMJFEILHPOLHHPHNHCHOOJLHOONHHDJHJDKALEMNCJDMIAIBGBDMCJEAGFPHPHPHDHDHDPIMIMIACMOGHLLLFLFLFBBOBPBPBHEINEGCDBCBNJOEHCNFCEKPCMCMCAFCC&#10;FOCEEHEHEHEBJFKKKKKKIKEADKBNIFPFPFPHEHEHEIMFNFNFNFEHPDFJPAJKOKOKOGKGKGCBBGEKDCLMGOGOGKHMDOJJKJKJCEBCIKFAJBBHFBJLOMPMPMBHFLGKGKGEEILDLDLDHDGDGDMMGGDLIKLMCGBLAFFEIMIIICFJMENOBBNCHDNFKIHNLOFKAACFMFOCHBFJ&#10;JEJCEFDCKHENBNBNBNLNLNLEFJKOFPKHKKEPLBIFNDNDNDIGOKAIFDJDJDJCCMLHLHLHBMAGAFAMCMHKBMAGIJPJPJHBJLABFPJPMHDBDBDBFKFKFKEFKNJNJNJBCBFEDEJOOHMNDENNAEDCIAKDFIBJOILHANFFMHCAMBKABMFFEPKIKBAIGOCODHOGOGOCABIAAFIB&#10;NGDMHKILBOEOEOEANNGEEHKHKHKBJBBFFPANANABCNFELHIKNAENLANJOEHIAAFDONOGHLDFJPEJCEFAOKOKOKCOLIHEOFKKEBHPDFFKBDGIBCENBOOHFHIBKNEJAFKLIOHONMAPNHJEEKCDHLHLHLDNJGDLIENBMPOHPDFEPIPIPIJEPCIEAKFDEKCMCCKCEFCJCFIE&#10;DBPAOAOAABGMIGNNPNPNPICNFKMIHDAPEALANHGMILDAJCIGIDGALAEJMBIDAJCEAOADGAJGAMCOGDMIJCCLJIEJOIBDCICBAEDLOKOKOENDMMBJHDLPHGDECLNHECNHNHNHBFOOEIBKBFHEBGNEEIKHGMMMLCLAMKMJMJHIIODHADMCGIFMALIBGBDMCGIFMALCMEPJ&#10;BOLPJFNKGNCOCOCGHIDMBIFIOCCFALIJEKADMHFMMJLGBMKGDBOEDKMMPJJKAIFIFNGIGFLKNCPCPCHMKPLJAGBNKFPBBGMCHPJFDLCKJDNMIFGKJKHLJCIBGBLNMCGIFMALCMKEOFPHONHKNKPEMALCGIIOOHGNFLMPONCMKJFBBFMHBAPNLMJMHJPOGBPNBPADMIGC&#10;DIPHOAGOOHHJLHIOLDEGLJFBNEMEPLKJGGMDDDMGAODOCDMEJFLDLBCGOGKLPKGPJDGNMBHOBMDPMGGHNBANNDEHCPOONILOOJPOGPPJLPJNPMKINCPGPPIHLPAIMJCNCLBJCLLFHDLMGPHJNCNFDFOFGIJGGNINPNDGCFPCHHMHODPNMOMOMKMAALAGMOGHOEHHEKGI&#10;FOFPKHHJGJGJIGDHGMAGADIDNJOELIFMCIICNGAGJJNMGGKAHLHLHLDPCEKFBKHEKOHFOENIOEHAEDDADADAAKGKFNKGJCBJCMOHPLPDJKLDFKFINLFIJBALDFKOGHLLBEHICMKBNIGAKGFNBNBNBLPLPLPGDLJNMOGHLHLGLGLCFIFMGMJGCDEDLGNOPJFDJHMFKKIB&#10;GAOPGOGHIGKINGGFFMPEFBJJBDMABEKKIKIKICNIALEKCHODDGAMKNLNLNDHJLMFBPLCHNNLDMKMPPODPDMPFIHMPIFKDIFADJEADBOBCPIKCOONBGNDKPBOBFINEPKEHGFGEMMDLILICNBMKBNBNBFKDLNJJMGNMKGMPNKBPGGCOHINIPABOPOOHPPOJNDIPANFJNEE&#10;MLGFCFCHBPJPGONIMFALMDOBPICKKDDPJJEFIFFCPDGJIBPHBDCMDFPJBPMMMGNPLLFBNOGNPMPJPCHKJMKAJLAGBMELHCEHODDDFNOBMLKOIFFGKPBGFACABABOBMLMIALOJMDBJIAGBGAAKKPMKFLEBALIMAGBJMHNPKCBBMCHHCIKHOJKAIFPCOFIMLOBMLMFGDLO&#10;APAFJABPAJLCLCJNGGFEAJGJLBPAJJPFPLGGLJFBBEOFNLKADJIOAHIEBALCFJOHGFMFCLDLDCBOMJIPPHPJLMKMKMEMCKKNKGFLOFOHBJBGOIJEGKHMFHAJKMAMPBMBMBINMGHFLMOINNNNNFNMFKIOFPKHNJOOKOBFAHNGNGNCCMADNGELINOEOCMKALKGFHNDDBFK&#10;PBGNKPKPKLINHINEPPBDJMMPMHJKFDLADOLEMDMIIEPLNMCJAGCODJEHHNBCEFOKPAEELMLALCNGOBMDGAIDKICDKBFBBDBBHIFHKBEGDPAODNALHAPDGDGPNEEBMLMEGCFKLLLFGHIFJGINDIHDIBEJPCPFCDCNFHIFNFNFFIHAPJMCIFNINIKMAMAICLFKKNHOLMNM&#10;NMAGPDLEJLMHABNHLOBGIIBAEADFDPMPJLCHKHKBOGDPAEINDKFMFEFGAHAPCOOLMIGHKEBOMEFHHCCGMCCOFNMKCMCMMCEPAOBOFLPNFEDLCDLMHLEJPMPMKHKPEDLGHNGIHPGALMHOLLIJLPPJNDLMGOFIEPNFBGBMDGKPIPBPBKMOKDIEELMNBGIFMALIBGNFPOEJ&#10;GBEBEBAPPAKMDGDMCKNJCFKPDBHLEPMOEJGGAJGGBPPAKMJNGGBDMCGIFMALIBGBDMCGIFMALIBGBDMCGIFMALIBGBDMCGIFMALIBGFGMDMCHJLMFBMAGADOMDBKLBCICDBKIGCEPNKEKIPLDLIHLCDLJNMGKFNKGHDCOLDJGGPANBGFCECJHJHJHHLOIGEPCKCBKLKC&#10;JCMKGLGLGDFHEPEOEOEMCGBLIKDFENPKGNAKHLEJIKPKCNLNEGIEMOGHLLILKNDNDNDIBIPLMLMLMKOCJFMLACEENPHDNBHDLGEJHBGBNLIKGENCKBNIGCCBMKLJDGJDEGHNPFMLMGBKGKGKGGIHIHIFNPDKCKFPFPFHBALCEOAPJHIENICPCMKAJGIGDEDEDEIIOOIK&#10;BGBEDFCEOEGEHHGHGHGINCGBIJGFGFGFENKGLAIFGGDLJJCMIKCIOPKJDCMGNIJBDGDLINPMCGJEKBMKEJNLBNLCLBAGFKMONIOFMDMAFJIEDJDIKFCLGPFPHFJNBCPPBAMCHICDFMJDCLLAMKAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Extensions  -->
+
+<!--  Size  -->
+<location id="location_1082986" method="fixed" part="left" value="0px"/>
+<location id="location_1082987" method="fixed" part="right" value="850px"/>
+<location id="location_1082988" method="fixed" part="top" value="0px"/>
+<location id="location_1082989" method="fixed" part="bottom" value="500px"/>
+<!--  Data  -->
+
+
+
+
+<categoricalDomain id="categoricalDomain_72"><variableReference ref="X"/><categories remove="false">8;12;14;15;16;17;18;19;20;21</categories><simpleSort id="simpleSort_76" method="natural"/></categoricalDomain>
+<intervalDomain id="intervalDomain_84"><range max="0" min="0"/></intervalDomain>
+<categoricalDomain id="categoricalDomain_99"><categories remove="false">1;2;3</categories><variableReference ref="Color"/><simpleSort id="simpleSort_106" method="natural"/></categoricalDomain>
+<!--  Structure  -->
+<graph id="graph_96"><!--  Size  -->
+<location id="location_1083010" method="fixed" part="left" value="1%"/>
+<location id="location_1083011" method="attach" part="top" target="labelFrame_110"/>
+<location id="location_1083012" method="fixed" part="bottom" value="99%"/>
+<location id="location_1083013" method="attach" part="right" target="container_117"/>
+<coordinates id="coordinates_70"><dimension domain="categoricalDomain_72" id="dimension_71" lowerMargin="5%" upperMargin="5%"><axis id="axis_78"><label id="label_79"><text id="text_80">Educational Level (years)</text></label><majorTicks id="majorTicks_81"/></axis></dimension><dimension domain="intervalDomain_84" id="dimension_82" unionDomain="true" upperMargin="10%"><scale id="scale_83" method="linear"/><axis id="axis_86"><label id="label_87"><text id="text_88">Mean Beginning Salary</text></label><majorTicks id="majorTicks_89"><gridline id="gridline_1083026"/></majorTicks></axis></dimension></coordinates><line breakRepresentation="wings" dot="true" id="line_97" positionModifier="none" showDiscontinuity="false" zOrder="0"><color affect="main" clamp="true" domain="categoricalDomain_99" id="color_98" variable="Color"/><x variable="X"/><y variable="Y"/></line></graph>
+<labelFrame id="labelFrame_110"><!--  Extension  -->
+<extension graphId="graph_96" id="extension_111" position="title"/>
+<!--  Size  -->
+<location id="location_112" method="sizeToContent" part="height"/>
+<location id="location_113" method="fixed" part="top" value="0%"/>
+<label id="label_108" purpose="title"><text id="text_1083034">Multiple Line Mean of Beginning Salary by Educational Level (years) by Employment Category</text></label></labelFrame>
+<container clip="false" id="container_117"><!--  Size  -->
+<location id="location_1083036" method="same" part="top" target="graph_96"/>
+<location id="location_1083037" method="sizeToContent" part="height"/>
+<location id="location_1083038" method="fixed" part="left" value="75%"/>
+<location id="location_1083039" method="fixed" part="right" value="99%"/>
+<legend id="legend_115"><!--  Size  -->
+<location id="location_1083041" method="sizeToContent" part="height"/>
+<location id="location_1083042" method="sizeToContent" part="width"/>
+<location id="location_1083043" method="same" part="left" target="container_117"/>
+<location id="location_1083044" method="same" part="right" target="container_117"/>
+<location id="location_1083045" method="same" part="top" target="container_117"/>
+<label id="label_127"><text id="text_128">Employment Category</text></label><legendTarget id="legendTarget_116" target="color_98"/></legend></container>
+<!--  Styles  -->
+<style font-size="14pt" id="popupStyle"/>
+<!--  Interactivity  -->
+<popup id="popup_1083267" style="popupStyle" target="line_97" tokenTemplate="Educational Level (years): $[1]$&#10;Mean Beginning Salary: $[2]$&#10;Employment Category: $[3]$"><tokenMapping id="tokenMapping_1083268" valueToken="1" variable="X"/><tokenMapping id="tokenMapping_1083269" valueToken="2" variable="Y"><summaryStatistic id="summaryStatistic_1083270" method="mean"/></tokenMapping><tokenMapping id="tokenMapping_1083271" valueToken="3" variable="Color"/></popup>
+</visualization>

@@ -1,0 +1,4 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ2TYj8QimAWARuN2LY02VI2E,5210057b1248ce1c340249cda3f3e73dfe46e3ae,Kibunesou (Kyoto riverbed),35.1217995,135.7632492,4.2,115,"50 Kuramakibunecho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJt2B77wimAWARbbhQU6Zh32g,1c46ef09567e4d346f461fee39f1bb7badcf88c6,Kibune Kiraku,35.1214713,135.7633534,4,76,"47 Kuramakibunecho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJr11HNAimAWARgUfnToHOMAk,d131464fb7d03500ebc0cc3b9220c9b826cab9bf,Kifune Nakayoshi,35.1236655,135.7637255,3.8,132,"71 Kuramakibunecho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"

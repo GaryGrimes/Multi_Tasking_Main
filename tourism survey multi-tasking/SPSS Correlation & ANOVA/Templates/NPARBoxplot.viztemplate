@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2011                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" version="2.6" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="boxplotSource"/>
+  <sourceVariable categorical="true" id="Category" measurementLevel="nominal" source="boxplotSource" sourceName="Category"/>
+  <sourceVariable categorical="false" id="Value" measurementLevel="ratio" source="boxplotSource" sourceName="Value"/>
+  <sourceVariable categorical="true" id="Tooltips" source="boxplotSource" sourceName="Tooltips"/>
+  <sourceVariable categorical="false" id="Label" measurementLevel="ratio" source="boxplotSource" sourceName="Label"/>
+  <graph id="graph1">
+    <coordinates>
+      <dimension>
+        <axis>
+          <label purpose="auto">
+            <text>xAxisText</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+      <dimension unionDomain="false" upperMargin="10%">
+        <axis>
+          <label>
+            <text>yAxisText</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+    </coordinates>
+    <schema id="schema">
+      <tukeyStatistic/>
+      <x variable="Category"/>
+      <y variable="Value"/>
+    </schema>
+  </graph>
+</visualization>

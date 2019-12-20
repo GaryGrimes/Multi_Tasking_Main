@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJmeaclB4IAWARpGlpD3bD8dc,7ca11c625c2ba08dc955debb27e9bfac25a1aa3e,Le Grand Café,35.05219150000001,135.7673454,4.1,22,"20 Shimogamo Minamishibacho, Sakyo Ward, Kyoto","['cafe', 'restaurant', 'food', 'store', 'point_of_interest', 'establishment']"
+ChIJoRN5EyIIAWARutkul_CZqAE,70918cae9d69a0ad7dc8f74ba4f62e5ae7244c3e,Nanzan,35.0516998,135.7720568,4.1,199,"Kyoto, Sakyo Ward, Shimogamo Kitanonokamicho, 31 北山通ノートルダム小前","['restaurant', 'food', 'point_of_interest', 'establishment']"

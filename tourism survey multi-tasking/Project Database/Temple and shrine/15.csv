@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ4W9CCwUJAWARyauI6BzKiiU,6cd13f014ae1cef84f6480246cea98ee1d6474c2,Higashiyama Jisho-ji,35.0270213,135.7982058,4.4,4255,"2 Ginkakujicho, Sakyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJH7edDgUJAWARTJZxOwRkAgA,9193881002741a2a176c4efe993b1a68512ba903,Hachiman Shrine,35.0266356,135.7980165,4.2,5,"Ginkakujicho, Sakyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<visualization version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+	<extension legend1="legend1"/>
+  <userSource id="graphSource"/>
+  <sourceVariable id="category" categorical="true" measurementLevel="nominal" source="graphSource" sourceName="Category" domain="categoricalDomain"/>
+  <sourceVariable id="frequency" categorical="false" measurementLevel="ratio" source="graphSource" sourceName="Frequency">
+    <format maximumFractionDigits="2"/>
+  </sourceVariable>
+  <sourceVariable id="observed" categorical="false" measurementLevel="ratio" source="graphSource" sourceName="Observed">
+    <format maximumFractionDigits="2"/>
+  </sourceVariable>
+  <sourceVariable id="hypothesized" categorical="false" measurementLevel="ratio" source="graphSource" sourceName="Hypothesized">
+    <format maximumFractionDigits="2"/>
+  </sourceVariable>
+  <sourceVariable id="type" categorical="true" measurementLevel="nominal" source="graphSource" sourceName="Type"/>
+  <sourceVariable id="residual" categorical="true" measurementLevel="nominal" source="graphSource" sourceName="Residual"/>
+  <categoricalDomain id="categoricalDomain">
+    <variableReference ref="category"/>
+    <simpleSort method="data"/>
+  </categoricalDomain>
+  <labelFrame id="titleFrame">
+    <location method="sizeToContent" part="height"/>
+    <location method="fixed" part="top" value="0%"/>
+    <label>
+      <text>titleText</text>
+    </label>
+  </labelFrame>
+  <graph id="graph">
+    <location method="fixed" part="right" value="75%"/>
+    <location method="attach" part="top" target="titleFrame"/>
+    <coordinates>
+      <dimension>
+        <axis>
+          <label>
+            <text>xAxisText</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+      <dimension unionDomain="true" upperMargin="10%">
+        <axis>
+          <label>
+            <text>yAxisText</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+    </coordinates>
+    <interval id="interval" positionModifier="dodge">
+      <color id="intervalcolor" affect="main" missing="silver" variable="type"/>
+      <x variable="category"/>
+      <y variable="frequency"/>
+    </interval>
+  </graph>
+  <legend id="legend1">
+    <location method="sizeToContent" part="width"/>
+    <location method="sizeToContent" part="height"/>
+    <location method="same" part="top" target="graph"/>
+    <location method="attach" part="left" target="graph"/>
+    <label id="label" purpose="auto">
+      <text>legendTitle</text>
+    </label>
+    <legendTarget target="intervalcolor"/>
+  </legend>
+  <popup id="popup" target="interval">
+    <tokenMapping valueToken="category" variable="category"/>
+    <tokenMapping valueToken="observed" variable="observed"/>
+    <tokenMapping valueToken="hypothesized" variable="hypothesized"/>
+    <tokenMapping valueToken="residual" variable="residual"/>
+  </popup>
+</visualization>

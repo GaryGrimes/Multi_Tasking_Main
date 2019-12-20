@@ -1,0 +1,11 @@
+﻿# created and last modified on Dec.3
+
+Evaluation result: optimal search process
+Specification: 
+1. Es evolution strategy
+2. Top 3 Path Filtering enabled
+3. ILS used replacing OP solver
+
+# Notes:
+* 到后面mutation strength都为0了；
+* generation size是12，所以pass到下一代的时候，特别是在parameter in each iteration的xlsx里，左边12个是按score从小到大的pop，右边12个是cross_over的kids

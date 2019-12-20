@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization id="visualization1" lang="en-US" version="2.8">
+  <extension>
+    <template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">EMMEANS</name>
+      <description xml:lang="en">Estimated Marginal Means</description>
+      <variable type="categorical">
+        <name xml:lang="en">effect1</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">targetValue</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">confMargin</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">effect2</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">effect3</name>
+      </variable>
+      <aesthetics>Transparency;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAHAIPJEEEBEEFIHKNNONJPHIEDJLFIBHMPNBLKPDKPLOKEAHDECMLANPEANOHMPBFBFEHFMKLDKEKPBIFJMALMGGEJNACDJEKGNCBBDBMECBOOAKPBIEJJMIANAFKJFHNLJ&#10;CEPHMAJBDGIIHBFBDLMIJBINIFCGCONADMLCICEBGEEMOKHHIIHHHPLOOJLOLMCHLNLLHHDPNNGPOGOJHIIBPOOMLPMJHOMJDPJOMJHOMDHOMLPKLDMJHIJIIGBOIBCAGALIBMCJPAMKKIKIKAHKDNJPIOBNDKKMKMKMGMGMGENJOEHLLGHNOCHLLNNKHNLOBJCNDNDN&#10;DFEFEFEFMFMFMANMHKPEPJCODFDKBNEBJHFAPFLJKJKJOIPBPDOIMLDIDIDIILFJFJFJFDCDCDCKFNKGBGEKJLJLJNGGDLFBGBGBCOLCENAHHBGAHCGCGCAHNNCNCNCEGBGEHEHEJCDGOEOEOEPGPGPODOHMPIBKDILOGCPKAOCKDLDLDBHBGBLIFGNNKLFHAFLKLKLK&#10;DMHFOFDDPCPCPAFEAKEHEFPCDCDCDIMKFLFLFLBCHNHLPGPNAGPBJBLGKGKGAPFFNKGFDFGEKGLMMNMNMJJNMGGLKFNKMLFDKKPEIGIFALOIPMJOJOJGEOHEGGCDNPJPDPHOHGPMOJBCFOMOJNDLNFNFNFPFPLOHFCIFACLAIFDODODOEJIANHICDCPCJJKBKBKBCCDF&#10;NONONOEIFBJNNFOCHFDEDEDAFBEEFJGMFDJFAOLOAAOCANEELABFIOOJNDLHAJCEGJBFJBMFDOGJKEFKCOFJJEDJAKAKIAEKAKGCJNJNJNOLNMBKCCKAKAKAAHBNBNBNBIPPOHKMIEFNGELCANEDKCFIMKNCKKPALBGIMMHGFCHDMCCPKEIBBNHJPCPFGONLPAODJGIP&#10;AJPACIAGMDCMDLACFAOEDBHHNHDFGJBBMCONLCBMDFAPONHIHPFDEODIAOFPAOGINOGHLDGCEACNBKEBGDMAJNADEGALIBMCGCBODMKCJCJCBILCNJPLBOFJIKGJNJCJCJCJINALABHNGJHJHJHMIKMGOIDGDMAJBMCJPBMKLNJPJPADBDKPOPNDDIFBKFOJPDIHAPPC&#10;HMBCCFFGALEMJIPMGCEADIFMAGBDIFBAFKOPGMNIGNFNLKJBMCBFCNJKEFCAJEHHHHHDDIFCKEGGGGGGIFPMCGODLIBMCGALIBMCGALIBMKICBMKFBLCOKGHDHKKNMLJPEEMNAGJGEDKBHLLNNEPAHFEGOALGHMOADEHDHPLMHJPCPFCOGALKPKPKPMJOEHKMPLHGFLG&#10;LKMAGIBKKFNKOHFPKOFFJFJFJJMJBGNAMAIHOPPFEBADPJFBKGJEAJEKOAODHDHPHFFICKJFKFIFKFNGCJCMKFJLCLMAAEODOHMPICFBMKPEPJCJEDEHIBMBEPMDPHOOBBIJNKCADMCOILBGFKCDAKOHKGKGCJGMJFLILLAIIGIFDHMBHPLFAKNCADLIFCJEDICFIPAO&#10;AOPOKBGIKOJFGCDJPHKNBJDCBAEBNIFCFCADBPHNINIFCMDMKIMHGDEPDIFLAPCODKPJCONKLFOJEEPHKLDLNGLNCNCEHIPOBGFNGNKAKJIINOLAAABGDMCDMBMDIIGFKBPKOFNAGBOCOCFDOMCPBIFONHFDJDIKAGKOIPHEBKIIPAMCHJLMFCGCDMNOLIHBBNKEDPDJ&#10;HCOPHLCNCNEKIAKEHBAGFIEPFEFNLBGDAMEEFPJPDPBHAIFEPOKFHIPBHBOCILLFDKEEBBMLHBGNBLDGCKMCMENGKNEBHIOJFLFHLOGNDAHAOAEEMALCLCLEKLFOOIHBGJIFPKNBHJANBKHLHLHDMINGJJPOBGFAMJHNJEMGLKGFBAJEPHPHPLIHIFKFOMEBGEAGPBHB&#10;IFJBJBJBDGCODAGBPBIFGADIAKLFJMLMLBLAONEPACALMIKEFGFLMKBGFEGLGJNAJOBNLBPHKPJAIEGCHCHCHJIBEJKMLAGJNNOGHOHGDMKPKPKPJNJNJFBKHNECNLALMGGDBBDFHOGJNCAECBMGJHIJIKALIPJNAFHKDNFFEFEFIAHOJPDHPNODJEGGBKEEFIFLIGGD&#10;EEPMKAGJBCNCNOMLJIDNOJIDBFBCHAIFPOOHMELIPEPMKMJMJMBBDJBMBOAHIJILMOJBBJLMPLIGCMCKHKLDLBHDGOGMBGGDMJKJKJKFKEAFKBLHIFOIFPLOLHEBLJDGNNDLAEKADMADCIJNADKBALOPIFDLGKKCINODDIPPKHNDGPODLMJLACCLIOJFIEMAJBFJCPBH&#10;AHCAFMJFBNAIFNJGGDPHCBONGGFPNFHDOCDHIFBCEOEOJEPIPOMENJEGALOANBKLCBGBMCDIKEFGMAGPIIHNPHPKKFOPALOPODNHKFEKGKCEBPLDAIIFNKGFJAMHGNFKLEBAGLLKFGOALKKHHOOMJPNCHLMFBBBNNMMOMKDGHPOOENENDHBGFPMCLNOPNPPCMPHFCFFN&#10;FNJAJLAJOBNHHPOGIFJKEBFPIJAEAGPOGCMKIDLKGKGCIODJFLEGIHOGIAEJHNOKJEDBEJKAHMIKJMAALOKMFBJGCCIHLIFCEMGFMLMPBGNAIAMDDMBMIHJKKKCJGGJLDBKGPAIMEICICIPOPPIMCAGFFNBNDKIKCGNHADPILFPFPCNMKNAPFMLIJPPHCMDFNEKHKDME&#10;ENEJGJGMNAGJJNMGGLLNNOCAJBGCHCHCHMFJKMAALHIDEPOBIMCJDICNLGJCPDHBMBBNLHEGJCLILKLGBLIFCEPCCBDAGAFKNINICJEEAPBONDALIIPCMKFIIAJGGDMAIFAHOCCGGPIJFMBMCNPPAJJKGFHJHCCBMKAPKHGFIFPMMODCIIDLCJEAGBKBGBJCJKFOHALM&#10;LPLNDHCMCOMHLPGHJNDMCDIBMDDKDKBCFBDCJPDOMMEGCIFJOJOHKNEMJGLILAFEJPAGMCJINALNHLPCPNOJFHPPOHLIJILDHOAHMIIEAFGHAMNFHAFJKKPNLPDHIIJEKDLBKELOAOFMMOBMDDIFECHLFFKKKFBBLDGBMAGJMNFIBMCGALIBMKEMDIFGKLLHHBNKMBIH&#10;JPCJBMKANCNKFLFLIGFKDPNMLBGALCGLFGHCKDMKHIPAPBKPOPKJEGEJEIOHHECFBKAFEEJMOHMIAGNIMIMIMFPLOHNDBFKHEEMILGCBJEBGCPJPNHBNEBJHOPBKDFPFPFPNJJDDHGIOKNBOAHEHKHFGBJOIBNIGMKLKLKLAGGBCIFOCCJDFHKOEFPEPEPMMPOKOIHFB&#10;MBOFJFEGMFAKKHEKMNJBFOFBILIFIFNGNGNGEHIAFIKFNKOOKOKOKGIGIGAMFLLNNOGPNHOIPGGDLJLALALABNMGIGGHEHEHAENODMHIPAIEHICLAEOCCJMMMMMEHKDNJEHGFFAFDLHBFLMBGMLCLCLCBGMNDONDAGBAGABGMBKDEHENDAMIDKIGOPEHFIIPDMCMHOLO&#10;HNPKHPOONNLMPBFMBIKBLPGHFCELHGNOKNFLGHLLNLELELEJPGKKOFPKHBOMFOLGPDLDLDLBKAIMCEALMHPHOFCAGMHKHKHKBGMBJIEHOLGACBPAPBODMADOFMFMFMADOHDPGONEEOFEHBDBIONNJAMBKDECMJADIFBFGIFDEDEDEIIADAOPIFHKDNBPHGONAMPEBMLG&#10;AOOCMDLMEMEMEIGEDKJGJGJGBKDBOGCMFDOALGADOIBDFADOIBPFIPKEHCHPAGEPBMIPFILAHBAGMBHLIOEOLAJLDMCENIBPJIKNHLHLHLDPHGONILMFOCKIGGBOMFAOAFIOMEOAMEAKCAHMINIALBHCHDPEOLJCPDPDPBGMBPFJOIJMBIBHIPIHIBPIFOPFDJHELGIB&#10;ONLLHHPCKHFDGKDPEKGIHIHIJJPMCGOAOJBMCGALIJIIDIFGFLKFJMHHCJMENENEFIFLENKLDHHOOANCANCEOPFHJBEBIGNICOLJHJPLFOPOMLJOEDPDPPFNCKECCMHBNOLFOCCECCMKGBMGOHPOBFNPHAHECBNLHDDCHJCGBGAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <!--  Data  -->
+
+
+
+
+
+
+  <categoricalDomain id="categoricalDomain_1023607">
+    <variableReference ref="effect1"/>
+    <simpleSort id="simpleSort_1023608" method="custom">
+      <categoryOrder>1;2</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <categoricalDomain id="categoricalDomain_1023613">
+    <variableReference ref="effect2"/>
+    <simpleSort id="simpleSort_1023614" method="custom">
+      <categoryOrder>0;1</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <categoricalDomain id="categoricalDomain_1023619">
+    <variableReference ref="effect3"/>
+    <simpleSort id="simpleSort_1023620" method="custom">
+      <categoryOrder>1;2</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <!--  Structure  -->
+  <graph id="graphFrame">
+		<location method="fixed" part="left" value="1%" specifiedByUser="true"/>
+		<location method="fixed" part="right" value="75%" specifiedByUser="true"/>
+    <location method="fixed" part="height" value="70%" specifiedByUser="true"/>
+    <location method="attach" part="top" target="labelFrame_Title" specifiedByUser="true"/>
+    <coordinates id="coordinates_1">
+      <dimension id="dimension_X">
+        <axis id="axis_1023563">
+          <label id="label_1023564" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1023565" target="effect1">
+              <description id="description_1023566" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_X"/>
+        </axis>
+      </dimension>
+      <dimension id="dimension_Y">
+        <axis id="axis_1023569">
+          <label id="label_1023570" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1023571" target="targetValue">
+              <description id="description_1023572" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_Y"/>
+        </axis>
+      </dimension>
+    </coordinates>
+    <faceting id="faceting_1023574">
+      <variableReference ref="effect3"/>
+    </faceting>
+    <facetLayout id="facetLayout_1023576">
+      <tableLayout id="tableLayout_1023577"/>
+      <facetLevel gap="5px" id="facetLevel_1023578" level="1">
+        <axis id="axis_1023579">
+          <majorTicks id="majorTicks_1023580"/>
+        </axis>
+      </facetLevel>
+    </facetLayout>
+    <line breakRepresentation="wings" id="line">
+      <color affect="main" id="color" variable="effect2"/>
+      <x variable="effect1"/>
+      <y variable="targetValue"/>
+    </line>
+    <point id="point">
+      <x variable="effect1"/>
+      <y variable="targetValue"/>
+    </point>
+    <point id="confPoint">
+      <x variable="effect1"/>
+      <y variable="confMargin"/>
+    </point>
+    <line id="confLine">
+      <split id="splitAesthetic_1023586" variable="effect1"/>
+      <split id="splitAesthetic_1023587" variable="effect2"/>
+      <x variable="effect1"/>
+      <y variable="confMargin"/>
+    </line>
+  </graph>
+  <labelFrame id="labelFrame_Footnote">
+    <!--  Size  -->
+    <location id="location_1" method="sizeToContent" part="height" specifiedByUser="true"/>
+    <location id="location_2" method="attach" part="top" target="graphFrame" specifiedByUser="true"/>
+    <location id="location_2a" method="same" part="left" target="graphFrame" specifiedByUser="true"/>
+    <location id="location_2b" method="same" part="width" target="graphFrame" specifiedByUser="true"/>
+    <label id="label_1023639" purpose="footnote" style="footnoteStyle">
+      <text id="text_1023640">FootnoteText</text>
+    </label>
+  </labelFrame>
+  <legend id="legend">
+    <location id="location_3" method="sizeToContent" part="width" specifiedByUser="true"/>
+    <location id="location_4" method="sizeToContent" part="height" specifiedByUser="true"/>
+    <location id="location_5" method="same" part="top" target="graphFrame" specifiedByUser="true"/>
+    <location id="location_6" method="attach" part="left" target="graphFrame" specifiedByUser="true"/>
+    <label id="label_1023593" purpose="auto">
+      <descriptionGroup id="descriptionGroup_1023594" target="effect2">
+        <description id="description_1023595" name="label"/>
+      </descriptionGroup>
+    </label>
+    <legendTarget id="legendTarget_1023596" target="color"/>
+  </legend>
+  <labelFrame id="labelFrame_Title" >
+    <location id="location_7" method="fixed" part="top" value="0%" specifiedByUser="true"/>
+    <location id="location_8" method="same" part="left" target="graphFrame" specifiedByUser="true"/>
+    <location id="location_8a" method="same" part="width" target="graphFrame" specifiedByUser="true"/>
+    <location id="location_9" method="sizeToContent" part="height" specifiedByUser="true"/>
+    <label id="label_1023744" purpose="title">
+      <text id="text_1023745">TitleText</text>
+    </label>
+  </labelFrame>
+  <style color="black" color2="transparent" font-size="10pt;10pt;10pt" font-weight="regular" id="footnoteStyle" margin="3px" padding="2px"/>
+  <popup id="tooltip" target="point" tokenTemplate="popup1=$[1]$ &#10;popup2=$[2]$">
+    <tokenMapping id="tokenMapping_1023602" valueToken="1" variable="effect1"/>
+    <tokenMapping id="tokenMapping_1023603" valueToken="2" variable="targetValue"/>
+  </popup>
+</visualization>

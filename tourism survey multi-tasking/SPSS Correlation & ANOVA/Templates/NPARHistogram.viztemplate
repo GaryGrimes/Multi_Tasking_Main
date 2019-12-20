@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<visualization clip="false" version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="graphSource"/>
+  <sourceVariable id="value" categorical="false" measurementLevel="ratio" source="graphSource" sourceName="value"/>
+  <sourceVariable id="count" categorical="false" measurementLevel="ratio" source="graphSource" sourceName="count"/>
+  <intervalDomain id="intervalDomain">
+    <range min="0"/>
+  </intervalDomain>
+  <graph id="graph">
+    <coordinates>
+      <dimension>
+        <axis>
+          <label purpose="auto">
+            <text>xAxisLabel</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+      <dimension domain="intervalDomain" upperMargin="20pt">
+        <axis>
+          <label purpose="auto">
+            <text>yAxisLabel</text>
+          </label>
+          <majorTicks>
+            <format maximumFractionDigits="0" minimumFractionDigits="0" minimumIntegerDigits="1"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <interval>
+      <binStatistic/>
+      <summaryStatistic method="sum"/>
+      <x variable="value"/>
+      <y variable="count"/>
+    </interval>
+  </graph>
+  <labelFrame>
+    <location method="same" part="top" target="graph"/>
+    <location method="sizeToContent" part="height"/>
+    <location method="sizeToContent" part="width"/>
+    <location method="same" part="right" target="graph"/>
+    <label style="statStyle"><text>labelText</text></label>
+  </labelFrame>
+  <style id="statStyle" color2="transparent" font-size="10pt" margin="3px" padding="2px" textAlignment="left"/>
+</visualization>

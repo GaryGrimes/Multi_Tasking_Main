@@ -1,0 +1,5 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJq6rqd5UIAWARDxj4sQBzO1o,debe600707af6fcd95e395692e82767b2a9e2e26,Kichisen,35.035733,135.771335,3.3,83,"Kyoto, Sakyo Ward, 下鴨糺ノ森(森本町)五","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJv0lV1EMIAWAR4KjdVnmV0Ls,2b26929536a065e3f9754334dfe9ecad54b29acb,Shimogamo Saryo,35.0341744,135.7739817,4.3,185,"62 Shimogamo Miyakawacho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJGQ5_wmkIAWAR0hURhfutWfU,06a3cc02176ae9a934a0dae918d1a011560ae5a7,Hanaore,35.0332683,135.7705291,3.9,73,"121 Shimogamo Miyazakicho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJCw16RWgIAWARcbvfN3lQrpQ,5ad36621b959cdc9806e4cbfb91372cda762b7d4,Kokyu,35.0311207,135.7694261,4.4,30,"204 Seiryucho, Kamigyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"

@@ -1,0 +1,4 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJE1F2oPGGHWARw76ww1TD7P4,9276fd06f307dfacd7489f78761663f37b9e215e,Uosaburo,34.932327,135.764743,4.2,102,"Kyoto, Fushimi Ward, 京町3丁目187番地","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJ1eflx40PAWARkrDkTzOrrKw,785819a69e7361d1474a9f1ecc63645b2c879f5f,肉匠 森つる,34.9306237,135.7598329,3.9,51,"273 Kurumamachi, Fushimi Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJWUpzSn4FAWARTzbmYoFriF0,fc96df47933197ec94d8da955bd5215d340f0a27,熟成焼肉 听 新堀川店 | 伏見 焼肉 宴会 デート 女子会 大人数 熟成肉 和牛,34.937762,135.750902,3.5,122,"１９ Minaminekoyacho, Fushimi Ward, Kyoto","['meal_takeaway', 'restaurant', 'food', 'point_of_interest', 'establishment']"

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2013                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization lang="en-US" version="3.0" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="graphSource"/>
+  <sourceVariable id="counts" categorical="false" source="graphSource" sourceName="COUNTS"/>
+  <sourceVariable id="means" categorical="false" source="graphSource" sourceName="MEANS"/>
+  <sourceVariable id="labelname" categorical="true" source="graphSource" sourceName="LABELNAME">
+    <format></format>
+  </sourceVariable>
+  <sourceVariable id="types" categorical="true" domain="domain" source="graphSource" sourceName="TYPES">
+    <format></format>
+  </sourceVariable>
+  <categoricalDomain id="domain">
+    <variableReference ref="types"/>
+    <simpleSort method="custom">
+      <categoryOrder>0;1</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <intervalDomain id="domain2">
+    <range min="0"/>
+  </intervalDomain>
+  <intervalDomain id="domain3"/>
+  <graph>
+    <coordinates id="coordinates"/>
+    <coordinates id="coordinates2">
+      <reflectionTransform alternating="true" dimension="y"/>
+      <transposeTransform/>
+      <dimension id="dimension0" domain="domain3" facetsShareScale="true" lowerMargin="20%" unionDomain="false" upperMargin="18%">
+        <scale method="linear" invert="false"/>
+        <axis maxSize="120px">
+          <label>
+            <text>yTitle0</text>
+          </label>
+          <majorTicks/>
+        </axis>
+        <axis opposite="true" maxSize="120px">
+          <label>
+            <text>yTitle1</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </dimension>
+      <dimension id="dimension1" domain="domain2" facetsShareScale="true" lowerMargin="0%" niceLowerMapping="true" niceUpperMapping="true" unionDomain="false" upperMargin="8%">
+        <axis>
+          <label>
+            <text>xTitle</text>
+          </label>
+          <majorTicks>
+            <format minimumFractionDigits="0"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <coordinates id="coordinates3">
+      <reflectionTransform alternating="true" dimension="y"/>
+      <transposeTransform/>
+      <dimension domain="domain3" facetsShareScale="true" lowerMargin="20%" unionDomain="false" upperMargin="18%">
+        <scale method="linear" invert="false"/>
+        <axis/>
+        <axis opposite="true"/>
+      </dimension>
+      <dimension domain="domain2" facetsShareScale="true" lowerMargin="0%" niceLowerMapping="true" niceUpperMapping="true" unionDomain="false" upperMargin="8%">
+        <axis opposite="true">
+          <majorTicks>
+            <format minimumFractionDigits="0" negativesInParentheses="false"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <faceting method="dot">
+      <dot id="dot">
+        <variableReference ref="types"/>
+      </dot>
+    </faceting>
+    <facetLayout cellSize="60%" method="structured">
+      <tableLayout>
+        <label/>
+      </tableLayout>
+      <facetLevel gap="0px" level="1">
+        <axis maxSize="120px">
+          <label id="subLabel">
+            <text>subTitle</text>
+          </label>
+          <majorTicks/>
+        </axis>
+      </facetLevel>
+    </facetLayout>
+    <interval coordinates="coordinates2" dot="true" positionModifier="none">
+      <binStatistic/>
+      <summaryStatistic method="sum"/>
+      <color affect="main" clamp="true" variable="types"/>
+      <x variable="means"/>
+      <y variable="counts"/>
+    </interval>
+    <interval coordinates="coordinates" dot="true" positionModifier="none" style="hiddenStyle">
+      <labeling variable="labelname">
+        <summaryStatistic method="first"/>
+      </labeling>
+    </interval>
+    <line coordinates="coordinates3" positionModifier="none">
+      <binStatistic/>
+      <summaryStatistic convertIntervalToSingleValue="true" method="cumulativePercent"/>
+      <x variable="means"/>
+      <y variable="counts"/>
+    </line>
+  </graph>
+  <style id="hiddenStyle" color="transparent" color2="transparent" size="100%"/>
+</visualization>

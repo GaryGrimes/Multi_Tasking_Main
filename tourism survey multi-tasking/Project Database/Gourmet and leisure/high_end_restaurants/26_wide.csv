@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJqRkzLUcHAWARko9woHroyTI,32544f1a9d55a4f622fa98dbd81c5fba688185a1,Tempura Matsu,35.0041182,135.6905852,4.3,137,"Kyoto, Ukyo Ward, 京都市右京区梅津大縄場町２１−２６","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJqeIGxEUHAWARjdsancWEqy8,75be908222ba4ddcac5661e1bf01ac90f3d9010d,Arashiyama Sakura,35.00589860000001,135.6873339,4.7,34,"２０−６ Arashiyama Furonohashicho, Nishikyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"

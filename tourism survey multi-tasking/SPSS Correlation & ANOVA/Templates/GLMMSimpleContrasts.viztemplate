@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization id="visualization1" lang="en-US" version="2.8">
+  <extension>
+    <template aggregates="true" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" summary="sum; mean; cumulativeSum; min; max; mode; range; percent; cumulativePercent" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">SimpleContrasts</name>
+      <description xml:lang="en">Simple Contrasts chart</description>
+      <variable type="categorical">
+        <name xml:lang="en">category</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">value</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">confMargin</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">type</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">facet1</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">facet2</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">tooltip</name>
+      </variable>
+      <aesthetics>Transparency;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAABAHBJEEEBEEFIHKNNODNBLJIEIAEEBAIBONCFOKOADALDADADLFMCAEABDADCLHINENAFEBDILAEMOAEEMOAMOGEGDOFOOOBHLNAMFGHMBOHPHADMAPIJIODGONNOLEPLO&#10;OGIAAGBMKLACGFPNHPBHOIDOINFHNFKJGKBHJCKICGPNHPJGKJCGOLNGLFMJLOKLGMDLKKKKCLMCLBGIBODPHKHMDOBDPMDHDNEDNGLNOFIOHGFCJECBGEBHJKLOKDOCHPLPNDALOJPMHOLOFPKABJIJHMECOMIBGOJHOPOHJHOJHOBHMBFGJFOCLMCPGGFLGIGNABGB&#10;MCBMCIFALAGBMCIFCIFALAGBMCIFALEALAGBMCIFALAGJAGBMCIFALAGBMCBMCIFALAGBMCIFCIFALAGBMCIFALEALAGBMCIFALAGJAGBMCIFALAGBMCBMCIFALAGBMCIFCIFHNEMKPIPDNMPMCLGIALAGBMCIFCIFALAGBMCIFALEALAGBMCIFALAGJAGBMCIFALAGB&#10;MCBMCIFALAGBMCIFCIFALAGBMKPPENHDKKNHDCDMPHGMJLEAAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <categoricalDomain id="colorDomain">
+    <categories>0;1</categories>
+      <variableReference ref="type"/>
+  </categoricalDomain>
+  <graph id="graph1">
+    <coordinates id="coordinates_1">
+      <dimension id="dimension_1">
+        <axis id="axis_1">
+          <label id="label_1023666" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1" target="category">
+              <description id="description_1" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1"/>
+        </axis>
+      </dimension>
+      <dimension id="dimension_2">
+        <axis id="axis_2">
+          <label id="label_2">
+            <descriptionGroup id="descriptionGroup_2" target="value">
+              <description id="description_2" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_2"/>
+        </axis>
+      </dimension>
+    </coordinates>
+    <faceting id="faceting_1">
+      <cross id="cross_1">
+        <variableReference ref="facet1"/>
+        <variableReference ref="facet2"/>
+      </cross>
+    </faceting>
+    <facetLayout id="facetLayout_1">
+      <tableLayout id="tableLayout_1"/>
+      <facetLevel id="facetLevel_1" level="1">
+        <axis id="axis_3">
+          <majorTicks id="majorTicks_3"/>
+        </axis>
+      </facetLevel>
+      <facetLevel id="facetLevel_2" level="2">
+        <axis id="axis_4" style="invisibleStyle">
+          <majorTicks id="majorTicks_4" labelAngle="270"/>
+        </axis>
+      </facetLevel>
+    </facetLayout>
+    <interval id="bar">
+      <summaryStatistic id="summaryStatistic_1" method="range"/>
+      <color affect="main" domain="colorDomain" id="color_1" variable="type"/>
+      <x variable="category"/>
+      <y variable="value"/>
+    </interval>
+    <point id="confPoint_1">
+      <x variable="category"/>
+      <y variable="confMargin"/>
+    </point>
+    <line id="confLine_1">
+      <split id="splitAesthetic_1" variable="category"/>
+      <x variable="category"/>
+      <y variable="confMargin"/>
+    </line>
+    <lineGuide id="lineGuide_1" y="75">
+      <conditionalStyle id="conditionalStyle_1" style="invisibleStyle" when="whenText"/>
+    </lineGuide>
+    <lineGuide id="lineGuide_2" y="76">
+      <conditionalStyle id="conditionalStyle_2" style="invisibleStyle" when="whenText"/>
+    </lineGuide>
+    <lineGuide id="lineGuide_3" y="77">
+      <conditionalStyle id="conditionalStyle_3" style="invisibleStyle" when="whenText"/>
+    </lineGuide>
+    <lineGuide id="lineGuide_4" y="78">
+      <conditionalStyle id="conditionalStyle_4" style="invisibleStyle" when="whenText"/>
+    </lineGuide>
+  </graph>
+  <labelFrame id="titleFrame">
+    <label id="label_3" purpose="title">
+      <text id="text_1">TitleText</text>
+    </label>
+  </labelFrame>
+  <labelFrame id="captionFrame">
+    <label id="label_4" purpose="footnote">
+      <text id="text_2">CaptionText</text>
+    </label>
+  </labelFrame>
+  <labelFrame id="footnoteFrame">
+    <label id="label_5" purpose="subFootnote">
+      <text id="text_3">FootnoteText</text>
+    </label>
+  </labelFrame>
+  <legend id="legend">
+    <location method="sizeToContent" part="width" specifiedByUser="true"/>
+    <location method="sizeToContent" part="height" specifiedByUser="true"/>
+    <location method="same" part="top" specifiedByUser="true" target="graph1"/>
+    <label purpose="auto">
+        <descriptionGroup target="color_1">
+            <description name="label"/>
+        </descriptionGroup>
+    </label>
+    <legendTarget target="color_1"/>
+  </legend>
+  <style id="invisibleStyle" visible="false"/>
+  <style font-size="14pt" id="popupStyle2"/>
+  <popup id="barPopup" style="popupStyle2" target="bar" tokenTemplate="$[1]$">
+    <tokenMapping id="tokenMapping_1" valueToken="1" variable="tooltip"/>
+  </popup>
+</visualization>

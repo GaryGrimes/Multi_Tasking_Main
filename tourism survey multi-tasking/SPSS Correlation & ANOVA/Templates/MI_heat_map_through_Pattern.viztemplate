@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" version="2.5" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="false" description="Multiple imputation heat map" name="MI_heat_map" version="1"><variable name="X" type="categorical"/><variable name="Y" type="categorical"/><variable name="Color" type="categorical"/><aesthetics>Label</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAADANHJEEEBEEFIHKNNONNBLLGCOAFMBHAAHPPCIOOFKLFJOPDANFKNFLDEBKDHLAFIKLFPOKDMNANBOAOGMANCMBEFKLIDIGJCCICCIIBBBEIAIIIFBJCGFALCBCIEAJKII&#10;IDIEBBBCDIIDEGNLBCIEBJONPAPBHBKHHEPEDFPHJKNIFPLPFOBBENEKPIEODOLHJGKJGCJHOLHGEMBHMHACAPICGNDNDNDJNDNJKLEOEIFMMCLMKBOAHICOFPIGMJPEIIFHGHGHGFPKHNLIFMCKJGKJFJKEFKPNPOLIJCNLNKFNKGNNOGHJGKPIPIPIELEONONONGJL&#10;MFGKFILHNLOJBGIBGOIDEDHJONCNMNMGGDLJOEHKFMMNINIDCGGBFNGCKOBBFNOCGDGJCKICJMEGCJALIGLPPKOKOKEHNFHBDFDOPEIIAOBOBOBIGJEFFFFFDNELAGADIEEGEPJHJKEFKGGDLJCJECBJCANMNMHODPENCLEMMFFGMBBDLMOKHEEFLDHCMKMFOCHHPMLE&#10;IDMBOLHGHCKBNICPLCBKPCAIPFJMECMKCEBKAMMPCBCCBJIAPPLJEJFGJJPFJAPHLFGKELMCAGBALAIFAMCAGBALGJGBLIOAEOKBNIGANBGFANBCCDALGKAGNPKBHANCLANNABIFAMCAGBALAIFAMCAGNLLBGNFPFPFHGIHJPOHCHCJJNLNDGGBJGHGHCDMOMFMFMFAP&#10;LCJHHOGJFHOHOPMODPBDLEGHLGLGJDKLBCALAIFAMCAGBALMDEIFGJFGJIPHFIDALGKDGNAGADAFFFFBIFOIALCABIAMNMNMNILDHGKEBLPMCAGBALAIFAMCAGBALAIFAMKHFCBKAFIEGOFOLMBMBANGKCDLMPMNONGJJNBJGHHHFGPLPJJFGJGOELCPGMGAPLNIPPFI&#10;FNNOGHNADMAAGJDCMKKFNKGAMCHKIFFNKGFBIFOEBLKHNLOFJLMFGAGJDNOGICJECBALGKDGNIGEDKIFMCGKICKAALONAIFGJFGBALMJOODLKFNKGFKCFJKPMGHJJEKLOIFFPKHNDIBMACNPOEMCFJKEIGJFDJALGIDMBGCDJJELPOAODAGNECMCKNFFBFPLLMHODPAM&#10;CHENNABPHLBCALAIFAMKFAGMCKDMIIIDPCHMHMHMBHGHOLNBOBGMPEPEJJFOHMKOKGMHNGNIJFGBBKFGJPNPMPGEBFAKNENFKIOGIAMCAGBALAIFAMCAGNHEAGJIHGLABALGKDGJGKJGJIEECMDEHCPPMLMIFNOGHLFELJCELMCMODLAIFAMCAGBALAIFAMKHDAGNFOF&#10;OFGIIHJNPNPNPABLDHELJLJBCPJPIJFOLOKMKAPLCJHHOGJFOGMFDFKCPKPKPCHEHDEAGBALAIFAMCAGBALGBDBLMCLMCHNOEOPNHKHMCFEBFOOOOOOMLDHLNPKHKBLEFFFFHNOKMPDMODLAIFAMCAGBALAIFAMCAGBALOFJEBLIFMJMDKFIIMCLMMPBCHEIPFJMMNGF&#10;DKDNJOMDPMMDOOOIIPBGGGIPFJMMJHFDODCHMKADLPBHNFMJKBMFJFDBHCDCCHNMOIFKLOKLIHCHMDHCGPDOKLGGOELKFNKKGFLKMMFNANEDNOFONFMLOODGJNPIJNHOECABIAELLNNGOENAGPNGMGMJINHJDMIHKLLBOPPKHEIDMOEBDPPIHOALOFOIPDHFJKEFMEDN&#10;EBPKJODHBPAPJALHMCKDAGNPLDOPMBFEMLGCIDKOBHEPGNOBLIOAIFOJOMPGPCPBOCPHJNAMCEKIAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Data  -->
+
+<categoricalDomain id="categoricalDomain_2440"><variableReference ref="X"/><simpleSort id="simpleSort_2443" method="natural"/></categoricalDomain>
+<categoricalDomain id="categoricalDomain_2450"><variableReference ref="Y"/><simpleSort descending="true" id="simpleSort_2453" method="natural"/></categoricalDomain>
+<categoricalDomain id="categoricalDomain_2470"><variableReference ref="Color"/><simpleSort id="simpleSort_2475" method="custom"><categoryOrder exclude="false">1;0</categoryOrder></simpleSort></categoricalDomain>
+<container clip="false" id="container_2487"><!--  Size  -->
+<graph id="graph_2464"><!--  Size  -->
+<location id="location_2492" method="attach" part="right" target="container_2486"/>
+<coordinates id="coordinates_2438">
+  <dimension domain="categoricalDomain_2440" id="dimension_2439">
+    <axis id="axis_2445">
+    <majorTicks id="majorTicks_2448"/>
+    </axis>
+  </dimension>
+  <dimension domain="categoricalDomain_2450" id="dimension_2449">
+    <axis id="axis_2455">
+      <majorTicks id="majorTicks_2458"/>
+    </axis>
+  </dimension>
+</coordinates><polygon dot="true" id="polygon_2465" positionModifier="none"><pattern clamp="true" domain="categoricalDomain_2470" id="color_2467" variable="Color"/><x variable="X"/><y variable="Y"/></polygon></graph><container clip="false" id="container_2486"><!--  Size  -->
+<location id="location_2488" method="same" part="top" target="graph_2464"/>
+<location id="location_2489" method="same" part="bottom" target="graph_2464"/>
+<location id="location_2490" max="30%" method="sizeToContent" part="width"/>
+<location id="location_2491" method="fixed" part="right" value="100%"/>
+<legend id="legend_2484"><!--  Size  -->
+<location id="location_2493" method="sizeToContent" part="width"/>
+<location id="location_2494" method="sizeToContent" part="height"/>
+<location id="location_2495" method="fixed" part="left" value="0px"/>
+<location id="location_2496" method="fixed" part="top" value="0px"/>
+<legendTarget id="legendTarget_2485" target="color_2467"/></legend></container>
+</container>
+</visualization>

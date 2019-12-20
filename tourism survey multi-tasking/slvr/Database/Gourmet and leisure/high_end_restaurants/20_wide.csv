@@ -1,0 +1,7 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJk3s6r9QHAWARE2O9ZpKPa6k,e8e5ff431dcb31e4668b9524464fc1a0a46f3e2e,Kyoto Shinsenen Heihachi,35.011403,135.74777,4.1,73,"Kyoto, Nakagyo Ward, 京都市中京区 御池神泉苑東入門前167","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJCbmP8YQIAWARHD3FI3z-Jzw,9f441fe2f5ecfb9986e36330b81614270c213d5e,Sumibi Steak Sakai KyotoSanjo,35.0085308,135.7583363,4.3,86,"Kyoto, Nakagyo Ward, Mikuracho, 66 梅澤ビル 1F","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJe55FZocIAWAR3-7WNuJxFvo,ea1d933be2a26cabff69b8c01632bb3f5d0c59a0,リストリアラディーチェ,35.0149869,135.7582227,4.5,20,"50 Kagamiyacho, Nakagyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJw4BEWoAIAWARCTxU5_7Juro,80471dc8993db5d7ed501cbaca92509b55f33eba,Grill French,35.0119918,135.7540694,4.3,72,"Kyoto, Nakagyo Ward, 御池上る下古城町377","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJRdmIEocIAWARZKzTfph2pK4,1b406409c409b5d34134243cecc7d486b4d7acf4,鰻割烹まえはら,35.0143812,135.7585824,4,87,"Kyoto, Nakagyo Ward, 二条上北小路町108-1","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJXf3eDoAIAWARatccbDVqfFI,060063b3a5538c4b40a2a84b933deedeec340ca7,Unkai,35.0124634,135.7530092,3.3,15,"Kyoto, Nakagyo Ward, 堀川通二条下ル土橋町10番地 ANAクラウンプラザホテル京都","['restaurant', 'food', 'point_of_interest', 'establishment']"

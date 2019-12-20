@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" lang="en-US" version="3.0">
+  <extension>
+    <template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">GLMMPredictedByObserved</name>
+      <description xml:lang="en">Predicted By Observed chart for GLMM</description>
+      <variable type="continuous">
+        <name xml:lang="en">X</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">Y</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">Transparency</name>
+      </variable>
+      <aesthetics>Color;Shape;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAGAAGJEEEBEEFIHKNNOMJPHIELFHFEBHMNECGKBDNHNHJHJIJPNNEENECLKDLKBFDDLJCFEDNGHLAOKNKDHGDELOCLMKNFHOKDHDMPHKMKMGFJOGMIBEHACJJFIOIBLGHCF&#10;LNCBABHCMEGIDGEHFKEBHNFBBKMAJCNPDMPDGFKEJMPFFEKFEKIEBHCCIIPHIIIEIOOLDPOGPIHECBDGEHKGCBNDHIHMFOOLLHPEOFOONPIHOOJLHOMDPNLEONLACJELFCPIABABMCCIFEALIAGBBMCCIFEIAIAGBBMCCIFEALIAGBBMCCEAEALIAGBBMCCIFEALCNML&#10;COPHCNFNFNFJKFNCNMGEJGLPCGKAJDMALIFFEJKEFCKMLFHLOGJPMHOLLNHLPGDLDFIIHMDOJKKKKKCJOELBNFOHPLPJBCGMJCEJBKACKCPAOAOAKEBGBKLOOMNJLDDNDNDNDPDPDPIGBDJJMEIKHOGLFGBHMBHMOEHMGMGMEMGEOJHOBFPHOPMPJLEJJCLGEJCIGBFJ&#10;BHBBICPDLHGPMCOMCLEKFGNENENMGEALMKFMKBHMHMHMHJEIFCGHBEJBMLCJCMCFICEBDMDMDMDLDLDLLBNAGBGBDCGOGMKOOGHLLBLILEKKGIOKOIOIOAEFGLPGPNOMEJJFFIJCHMNCDEMHGPOONNLLJEPLLKFKFKFCBJIDNOGIPPCJCBJJCFIOAEBHGBBMCCIFECEA&#10;LIAGNGEAIFJOHALDJIKJMCLJJFOGOJILGKJMDOKHAMCPKHNLDKDKDKIIJIAHKIAIDLNKNKNKPKPKPIFHFPHPHPLEDFMBJOHGLDLDLDBFGIDMBOOJOJOBENBNLPAOBMDIEEIFMOKAOAHIDGKGKGKGPMOJNDJDPALEFKCFFMCGBDBBHIBMAGIJLJLJDGFHELHKGLIAACGI&#10;CDIFAMANKFLFLFFKHHFDCOOKAHDPGONEEKHEJDPALOGMNILBNONONOCOEPGCHCHCBDJHGJNPACFFOGIGIGAGAEDJOMDBMIIFOEOBMAGAJNNHLAIGCLOCGFBGHFAEKAJKGFLKDKBNIOFPLOHNHDEJDIHMKEEMMDJFKDNEOAOJGHDECBCIFEALIAGBBMCCIFEALIEIAGBB&#10;MCCIFEALIAGBBMCCBCIFEALIAGBBMCCIFEALGFBPLCDPCPOPKFBJMGMBIFDCDCDCCGNHCGCGCIAGNCKDJHFICEBCNHGDJDFPPDPOGDFDMKIGEDKICHEHEHEJGJBOCNCFMFMFMIJPDKMEELMKHKPEPJKNNOGPAGADIBHGHHLJNNHGFCFBFLKFNHPPOPNHBPJAIHBBGBPM&#10;DPCDJJMFOCPMHJBEEOIFEMFACHFEBIMEGKAJLCEFCHJLCFGCLMHJLMHLAOAEPNCEHDENEOGCDLJDMBOAHKPPHPDIPNMIEECCJFNALINDEBLBIAEAINJODMHIPANLOFPOBPDOHMLHKHKHEKKDPGGDNLFOLNHHINHPKNLPKKNKGGAACLKDPNJCLNNHOFFKGLAHCMOEOEIH&#10;JNIFENEGKCOAIDKCPMEOLCFDKFDKHPAEDHHFLOJKPBMMGHPKJNKOMFOOIHEHKDNFMJBLPCGPAHOMKDBMCIBGAGICMMMHAOPLADKJLAHBOCEKGAKHGPDPOAPGNGDLNKEKOKCLOOLJKIKNLEAICKGONJFCFBHKNKOKHHFADMOGDINKBIPCEPAKBNNFLHJMCFCNAFDLPPLO&#10;KINNHKPLNOOPDOHOPFHIDNMBCFPGPGPCKMCNCNCFBEABEMPCNJLJLJLMMLFGJFMCGBMAFAFCLBDBGMHDJDJDJJKBGNOCPGNFLOJKIMOKNHPJJLMNPBJLKKPMKBMGHIOPBEDOLLKFBFLNFIFBHLFKAMIAAHIGMKKNLHFLCLOCMOIKKGHHGFGLNHKPFMPIPBPJJDPLBNMH&#10;GBMJKLIPOHAMCGALOKMFLPJKIKEKCFLFIOAHLPOCOLEOJPCFBKMNGKDDLPMCOMAJONKFPIFAIGLCNGFFKKEPIGMNBFDHOEADEFPOLHDOLDPNBMDHHOPCOPOPLNANPJJDPALEFKCFBIOALFGIAHCFJOIPFLGJGJDJMBHMLCBIEMKLHNAGFPHBAHGHFEOPGFEJIDMEFENE&#10;MJGKEBEKEGCHFKAKPHFEDKPKEHOOMAEJGFPJIHNPAFAPCOHPHFCHOBGFDGDGDCGOPHEOIMBJEPHDBIDKHEPICMFPKGFLKDOJHBEDKBNKAKFNLAKDDCHMJGGBKOGANIAKPNGMLAMNGDBELKNCENJOKABFKBNIGKDMBIAEGMDKHIFFAIFCNHHCEINDBLGLEOCDMFLOIDLO&#10;CPFOLCCIOMCBKANJIMGMEHHEEAENMNMNMBLIFMAFGGABGJPNPHAKCKOKLBLNFAOIHCPEOJAKFOONNLLHMMLEMEPEPEDLIBCALBFOKAONNLLFNBIFPIPBPDGBDKIBJGIAKMCIKJFHOIAONBOOPEIBJCMBALPCJGHBGECPPHONPEMFNJNNAFKAIEKFHGDCLEMIAOHNEBGJ&#10;FLIHPLIALMOFEOCGNICOPJDDDMLMAFBLACCODNBLIKDCLMBJKCECGEAPLGNODLMEGCLJNGHMJEOFDGEJGGPKIKACHPKGKGKGCEFMFOCHBGFCGGODOMKIDCFEHHNBGFNCBJMEPPEHJFCNNNNHFFPGALOBLDGPOBBMKFCEKOLOPAOLNPBMAEIODMPFAHEMNOGIPIOBNDCG&#10;OGEDDGLLBGGLBMKHFLBOLCGEKAHAMOLGJFOCCCLHBGFKGGHLCGJKIKOGEBBGJNMOOAJOOGIJLKALEEEDBKAFICNJLPLKLMCBECOJOPGMOADJJNJBHLLBOIMIMIALNEADLFGHDMEDPOMEEMNPALIIEBGFCNLPLKJFBGLPJBHLMCIFAFMFLECNLPLKLJKBGFCKIGFLKNHB&#10;JNNCEPPOLPMFDIFNJNJNJDEDEDECOKHEJKEJHJHJHMFKCOCOGIALJEBGFECCBJIGEDKJCOOCIJELLEMHJDDHNPDICJMKAIFNPNPNPAHKOAPIOLIJCIENJNHCFDAECPJFEODLIAGNKMCOMCPIHMDJINOOHPLPJAGFCHOFDDDDDDIIHNHGHGHGHAHAHABFJBLBLBLMMOPE&#10;ACGGFPCDEAAKIFMCGMBHMBKEEGAHFGFGFGLGHPLLKGJDPALAGJFIAFAAGJFDODODOIEGABJCBKOEHKLBIBIBIILNFPDLEINBJDIHCIFEALIAGBBMCCIFECEALIAGBBMCCIFJLECPHDNNMKCKHICLMEBEPPAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <intervalDomain id="intervalDomain_1022453">
+    <format hourFormat="AS_24" maximumFractionDigits="0" minimumFractionDigits="0" minimumIntegerDigits="1" separatorChars=".,/:" yearAbbreviation="false"/>
+    <range max="98.8" min="33.667"/>
+  </intervalDomain>
+  <graph id="embedded_graph">
+    <location id="location_1022416" method="attach" part="right" target="legend_1022417"/>
+    <coordinates id="coordinates_1022392">
+      <dimension domain="intervalDomain_1022453" id="xDimension" lowerMargin="3%" niceLowerMapping="true" niceUpperMapping="true" upperMargin="3%">
+        <axis id="axis_1022394">
+          <label id="label_1022395" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1022396" target="X">
+              <description id="description_1022397" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1022398"/>
+        </axis>
+      </dimension>
+      <dimension domain="intervalDomain_1022453" id="yDimension" lowerMargin="3%" niceLowerMapping="true" niceUpperMapping="true" upperMargin="3%">
+        <axis id="axis_1022400">
+          <label id="label_1022401" purpose="auto">
+            <descriptionGroup id="descriptionGroup_1022402" target="Y">
+              <description id="description_1022403" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1022404"/>
+        </axis>
+      </dimension>
+      <sameRatioTransform center="true" id="sameRatioTransform_1022456"/>
+    </coordinates>
+    <facetLayout cellAspect="1" id="facetLayout_1022457"/>
+    <point id="point" style="pointStyle">
+      <transparency affect="main" id="transparencyAesthetic_1022409" low="0" variable="Transparency"/>
+      <x variable="X"/>
+      <y variable="Y"/>
+    </point>
+  </graph>
+  <legend id="legend_1022417">
+    <location id="location_1022418" method="sizeToContent" part="width"/>
+    <location id="location_1022419" method="sizeToContent" part="height"/>
+    <location id="location_1022421" method="fixed" part="top" value="0px"/>
+    <location id="location_1022445" method="fixed" part="right" value="100%"/>
+    <label id="label_1022422" purpose="auto">
+      <descriptionGroup id="descriptionGroup_1022423" target="Transparency">
+        <description id="description_1022424" name="label"/>
+      </descriptionGroup>
+    </label>
+    <legendTarget id="legendTarget_1022425" target="transparencyAesthetic_1022409"/>
+  </legend>
+  <style color="#2b3a96" id="pointStyle" size="15px"/>
+</visualization>

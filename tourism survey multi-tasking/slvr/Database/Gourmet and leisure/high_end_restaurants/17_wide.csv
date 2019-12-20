@@ -1,0 +1,12 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ__87-u8IAWARMOQyfPRsXNg,49a455082f0f63203060c1f6ebd479963953f644,天ぷら圓堂 岡ざき邸,35.016148,135.7802,4.5,91,"Kyoto, Sakyo Ward, Okazaki Nishitennocho, 60−3","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJw2vMBfAIAWAR86pLyFaUBas,c205771083d86980a9b16f1c82632a9852db4b3e,Cenci,35.0170544,135.780176,4.4,94,"44-7 Shogoin Entomicho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJUYJVIucIAWARbW2Rgzy7M_c,46f9d56aaa7129918feba35ae7d2f920fbb0ed31,Kyoto Modern Terrace,35.014003,135.7815605,3.8,201,"Kyoto, Sakyo Ward, Okazaki Enshojicho, １３ ロームシアター京都 パークプラザ ２F","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJhQ6C-_oIAWARfhJqPDQQhNk,3b4ea1fe09edd2ebd23398f7e87ff74cca77c0e3,Osteria CONACINETTA,35.0195495,135.7826449,4.5,22,"14 Shogoin Higashimachi, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJb7Sw5ucIAWARhsJON824TXM,892f0bfdbfa5f59719f68f0d6bdbdb2c0984fd80,Tan,35.0089283,135.7808644,4.2,85,"106-13 Gokencho, Higashiyama Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJwfwekI0IAWARhG94Berdg8I,cfdd3e35fe19b0085a98acb67947709ce24bde00,245 GION,35.006387,135.775646,4.1,30,"245-1 Nakanocho, Higashiyama Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJQUJ8DR4JAWAR7nJcYAP5PJs,d2c3e7e1610945ea1ecace8ba80b0aa7d7f19d9d,Tsuruya,35.0166248,135.7910829,4.4,43,"30 Okazaki Higashitennocho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJga5LcQEJAWARQ9OxOxh3-m0,1957c32a3ebead22f785bb1fe9631bfd3999dacb,Soujiki Nakahigashi,35.027595,135.792715,4.4,153,"32-3 Jodoji Ishibashicho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJyR-ioB0JAWAR46VgJXyGZSs,7d1b0c5643f9ddc431cb166bcb50532830175917,Gyu-Ohta,35.019536,135.791436,4.4,54,"164-9 Jodoji Shinnyocho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJQTOIuSEJAWARVPRgqQ07PAo,444c43376e1399f85ec6f77324dc8061913dd15e,Okutan Nanzenji,35.0124114,135.7930438,3.9,148,"86-30 Nanzenji Fukuchicho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJAQBwVecIAWAR2Uc4maKJl0E,e8639b1ce802303558cdf2acb6afac3e812835d9,美濃吉本店 竹茂楼,35.0100529,135.7851677,4.2,160,"６５ Awadaguchi Toriicho, Sakyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"

@@ -1,0 +1,1 @@
+openExample('stats/TrainAkMeansClusteringAlgorithm2Example')

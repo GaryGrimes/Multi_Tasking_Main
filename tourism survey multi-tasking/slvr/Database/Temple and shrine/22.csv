@@ -1,0 +1,6 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJJ9_QoHEHAWARwGpmDLXsQ-A,132a4db642d028160a79eb9ede04cf6d8e1ab31a,Kōryū-ji,35.014657,135.7071308,4.2,397,"32 Uzumasa Hachiokacho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJh2lEZXQHAWAR7ZJuexVdQN4,92eb6aa8f875394292c6793ef3deb8932249dc85,Jorakuji Temple,35.0139379,135.710115,0,0,"11 Uzumasa Kakiuchicho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJAQBV5HMHAWARsfy6-hSKFRk,59d2312c671ee12d16ffca805c3a9e2abc657b84,Ozake-Jinja Shrine,35.0146042,135.708723,4.1,21,"Uzumasa Hachiokacho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJe6xqcHUHAWARnoHVGPGznsw,fd0a7c2741d0b0dafb7630c2ff8cc2eb72d30285,Konoshima-Jinja Shrine Haiden,35.0145149,135.7135418,4,2,"50-1 Uzumasa Morigahigashicho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJH36gd3UHAWARK0dkwFJj5MI,e6dd186bfa262f0f02eb8c70decfd0d6125916ea,"Konoshima-Nimasu-Amateru-Mitama-jinja Shrine (Kaiko-no-yashiro, Konoshima-jinja Shrine)",35.0145927,135.7135008,4.1,159,"50-1 Uzumasa Morigahigashicho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

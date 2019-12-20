@@ -1,0 +1,3 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ7Xgox44FAWARr3_-4k1jW-E,56eb2c3c75cfa5e20ebb4873da594964e3fc6f9b,Jonangu Shrine,34.9511233,135.7465384,4.2,838,"Kyoto, Fushimi Ward, Nakajimatobarikyucho, ７","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ29sl1ogFAWARYakg_ny-ADs,c1643574eaf0e374bec90d7315eff61bec81f720,Mahataki Shrine,34.9504337,135.7479295,4,3,"Nakajimatobarikyucho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

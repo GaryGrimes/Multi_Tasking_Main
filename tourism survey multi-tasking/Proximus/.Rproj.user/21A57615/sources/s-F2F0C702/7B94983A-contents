@@ -1,0 +1,8 @@
+df <- read_xlsx("data_binary.xlsx", 
+                 col_names = FALSE)
+data <- as.matrix(df)
+data = apply(data,2,as.logical)
+
+
+pr <- proximus(x, max.radius=8, debug=TRUE)
+summary(pr)

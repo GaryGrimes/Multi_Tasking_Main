@@ -1,0 +1,11 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ8aS_iMYIAWARYqrEHEF8IjQ,879a19e588fe5ddf14a6260a2d1e107ddb7735c9,Tempura Endo Yasaka,34.9989587,135.7751241,4.4,612,"Kyoto, Komatsucho, ５６６ 八坂通","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJjbOS9sMIAWARn4xC7JAw2iQ,186a7072378a8c944865f39961b4aecd74a0f755,Gion Karyo,35.0018011,135.7745123,4.3,154,"570-235 Gionmachi Minamigawa, Higashiyama Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJhfNcIKYIAWAR-MbSOL6N770,48e7136f5383480c37515183213b933f7554ea48,Honke Tankuma Honten,35.000276,135.769221,4.1,65,"168 Izumiyacho, Shimogyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJuxR_z9oIAWAR1TzuP0HVXk4,3b17ecc41a20a4b952e87d65b0bf1ee1465d44ca,Manjirō,35.00172,135.780131,4.4,199,"Kyoto, Higashiyama Ward, 高台寺北門前通下河原東入ル鷲尾町518","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJdeIDXMUIAWARR5_dz5gha20,c74af45ed5f977d18ae79b677894ba1486820ecb,The Sodoh,34.9988511,135.7796514,4.2,815,"Kyoto, Higashiyama Ward, 八坂通下河原東入八坂上町366","['bar', 'restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJVVXF5doIAWARUetIixOU-sw,0d8d616cce105e86b126cd92ddca703099ca6565,Kikunoi,35.0014754,135.7820562,4.4,281,"Kyoto, Higashiyama Ward, Shimokawaracho, 鳥居前下る下河原町459 Yasaka Dori","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJp4KafcYIAWARxP1SeiJTfsE,693a713d8ee84423970feeb1b5a6ba5808876e26,Gion Karoku,34.9989019,135.7752593,4.3,86,"Kyoto, Higashiyama Ward, 八坂通り西入ル","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJW8liP9AIAWARX12XJ33-YTM,83dd51ed4c174fd4cc3229927d6ab12cccb938ad,Hiramatsu Kodaiji Restaurant,34.9986055,135.7816421,4.4,66,"353 Masuyacho, Higashiyama Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJNdtJJO8IAWAROLakASqxLBM,f7abddb617f8948778fafc71e0f9e55ef5d6e109,Kodaiji Wakuden,35.001752,135.7797409,4.6,61,"Kyoto, Higashiyama Ward, 高台寺北門前鷲尾町512","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJVcb5ecQIAWAR6Vbuz4oHv28,31e86021f4cbf7d43c72199ef93cd36cad5cc7be,Sopporo Kaniya Kyoto,35.00191300000001,135.77721,3.8,414,"Kyoto, Higashiyama Ward, Tsukimicho, ２","['restaurant', 'food', 'point_of_interest', 'establishment']"

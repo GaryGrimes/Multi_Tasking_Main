@@ -1,0 +1,11 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJDRN1WgwIAWARrXuo6tMKdZs,33c073ed6543c93b6f9c3f436c67de5cef92865a,Hatakaku,35.0361181,135.7586819,4.3,64,"Kyoto, Kamigyo Ward, 室町東入内構町430","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJCw16RWgIAWARcbvfN3lQrpQ,5ad36621b959cdc9806e4cbfb91372cda762b7d4,Kokyu,35.0311207,135.7694261,4.4,30,"204 Seiryucho, Kamigyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJq6rqd5UIAWARDxj4sQBzO1o,debe600707af6fcd95e395692e82767b2a9e2e26,Kichisen,35.035733,135.771335,3.3,83,"Kyoto, Sakyo Ward, 下鴨糺ノ森(森本町)五","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJ__8TGIkIAWARdLH5f9avhIc,fd9835f60fbef309feec0d3e10b6ba36e23bff98,Hafuu,35.0154038,135.7656762,4.4,449,"Kyoto, Nakagyo Ward, 麩屋町通夷川上る笹屋町471-1","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJX0jJfEGX_18RRA5tyak6VzQ,34caa93ced96087a23f42cba5f86f79b58515114,Ryoriya Stephan Pantel,35.0171581,135.7636602,4.5,88,"Kyoto, Nakagyo Ward, 4chome, 柳馬場通丸太町下る182","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJq6o6XIgIAWARXiYCduy8dZc,6f1f84f30bbf3e357d1b36d5f227094d07d36179,Kiyama,35.0157236,135.7629463,4.5,53,"Kyoto, Nakagyo Ward, Kinuyacho, 136 ヴェルドール御所","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJa03JyH4IAWARLoqljZVfoz0,5f07f434ab3aae74b10a89c9ac6f431d5abf103b,Pound,35.015051,135.7590634,3.7,131,"Kyoto, Nakagyo Ward, 夷川通烏丸西入ル巴町85","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJe55FZocIAWAR3-7WNuJxFvo,ea1d933be2a26cabff69b8c01632bb3f5d0c59a0,リストリアラディーチェ,35.0149869,135.7582227,4.5,20,"50 Kagamiyacho, Nakagyo Ward, Kyoto","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJD0FFCosIAWARb7DNVM43jZE,487a6893a0217f1f86c1da03828bbcae6dd98524,Le14e,35.0171808,135.7688062,4.6,50,"Kyoto, Kamigyo Ward, Iseyacho, 393-3 ポガンビル 2F","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJ9YR-nIwIAWAR7oOYfs8UInI,fc7c93014590d4e2514fadc4d1f7faf53605c1d6,Kamogawa Takashi,35.015891,135.769576,4.2,126,"Kyoto, Nakagyo Ward, 竹屋町上ル末丸町265-1 中町通","['restaurant', 'food', 'point_of_interest', 'establishment']"

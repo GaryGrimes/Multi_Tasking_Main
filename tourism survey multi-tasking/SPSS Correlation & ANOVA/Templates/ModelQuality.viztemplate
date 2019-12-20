@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" version="2.5" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="false" description="Model Quality chart for ROC" name="ModelQuality" version="1"><variable name="X" type="categorical"/><variable name="Quality" type="continuous"/><aesthetics>Color;Transparency;Size</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAACAODJEEEBEEFIHKNNOMJBDLICMADEBHMNPIGOIOHCAHFHHPLDILMBFMFMNOKMNANBFAHAJCMBOAOACFKANOBFEEEMFEEMBKIIEBFABEFEHAHAHAHABBPCHJCEJDBOMOFKC&#10;KEFKOPOPMDECJCPKJENPJPCJMLGJINMNJBJCLCHACIHEBMCPNHPDDDPNMHFCFPAEIFOKLOGGGAGNOFKAIFKEKJJEBALEJELDJCAGBBJFEEGBLKBCALIBGIPKMALGBCFAMCCJCFCFHAGOMCGOMKMMBMKNKEBALOJDAGFFLKPOFKCJLJNALCGBPDFIFCKDFCJBMKKEFODC&#10;HJLDHGFMGPCNCJMJCPCMALGGCNAIFKEGLDJGAMCCCLIIMKEBNGFCNAIFAMCGIBGKIGLAJGAMKEHDJCNDNJOEEKOAHBALGDLJNIHOJHDJJMEKDNJOMEHKDNOFPKHDPJPMHADIBEABEAGIBGADHGNFAMCBIGKBNIGIFGJFOIDOIIPEBFGBIJKGFLKJNGLNGKJGKPOLPFOC&#10;PLBDHGNPIOIHMDKIIGKHFKJDLGLCNIJAOBIFECFKMDPMCOJKDAJKDABJFAMCCCLIFNABIFMADEBCNEDNLAFAHDLBGJPMLJCMCBNJCMOPMCGPKDALPDLINPJFMOPMCGLMBBALIPDNAAALIENBIENBIENBIIMCCCLIFNABIFAMCGIBGGHPONANADMAHFNEFPKHNPOLOJHH&#10;PGAPGIOKPBFPKHFJLLLHODDEHNKEALOAHIDEILJJNCMCEEFNIBPMPDLKHDELJPLNNEBLBMDLMNBBEKINFHMIHGEHMFIPEIHFIKEALOLEKCKCEEFNIBPMOHPLPCOOMLEFMDHJLMFKHOJHHNMDDKDODKBNIEBLLOOGHLLGLNGLKIHKJGKJBEABMPLNFLOKLODMBOAFEJFJ&#10;AGFLKFNCBHFALOFPKDMCEIPJBPOJBONGKKKIHKGKJGDOBPIPKJHGEOGCOKFNCLMCFJGAFELGNOGHLFFMDFMPIEBDNGGEOGNMGGDNBHMBBFFONPJFPALFNABIFIAIFAMCAGBALAIFAMCEAMCAGBALAIFAMCAGBCAGBALAIFAMCAGBALABALAIFAMCAGBALAIFIAIFAMCA&#10;GBALAIFAMCEAMCAGFKLKPGOABLMBFKHDOFAHFBAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Data  -->
+
+
+
+
+<intervalDomain id="zeroDomain"><range exact="true" max="1" min="0"/></intervalDomain>
+<!--  Structure  -->
+<graph id="graph_1114"><!--  Size  -->
+<location id="location_1115" method="fixed" part="top" value="0px"/>
+<location id="location_1116" method="fixed" part="left" value="0px"/>
+<location id="location_1117" method="fixed" part="width" value="500px"/>
+<location id="location_1118" method="fixed" part="height" value="200px"/>
+<coordinates id="coordinates_1119"><dimension id="dimension_1120" lowerMargin="5%" upperMargin="5%"><axis id="axis_1121"><label id="label_1122"><text id="text_1123"></text></label><majorTicks id="majorTicks_1124" style="tickStyle"/></axis></dimension><dimension domain="zeroDomain" id="dimension_1125" upperMargin="5%"><axis id="axis_1126"><label id="label_1127"><text id="text_1128"></text></label><majorTicks delta="0.1" id="majorTicks_1129"><format maximumFractionDigits="2" minimumFractionDigits="2"/></majorTicks></axis></dimension><transposeTransform id="transposeTransform_1131"/></coordinates><interval dot="true" id="qualityBar" positionModifier="none" zOrder="0"><labeling id="labeling_1133" style="labelingStyle" variable="Quality"><format maximumFractionDigits="2"/></labeling><x variable="X"/><y variable="Quality"/></interval><lineGuide id="lineGuide_1135" style="lineGuideStyle" y="0.5"/></graph>
+<!--  Styles  -->
+<style id="labelingStyle" labelLocationVertical="positive" margin="20px"/>
+<style id="lineGuideStyle" stroke-dasharray="2pt,2pt"/>
+<style id="tickStyle" margin="2px"/>
+<!--  Interactivity  -->
+<popup id="popup_1138" target="qualityBar" tokenTemplate="$[1]$"><tokenMapping id="tokenMapping_1139" valueToken="1" variable="Quality"/></popup>
+</visualization>

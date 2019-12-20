@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2012                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization description="Process Capability Chart" id="visualization1" lang="en-US" style="visualizationStyle" version="2.8" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"><extension><template aggregates="true" description="" name="ProcessCapabilityChart" version="1"><variable name="X" type="continuous"/><aesthetics>Transparency;Size;Label</aesthetics><image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAKAPCJEEEBEEFIHKNNOMJNOPEEBJFGBGMHOPFMNPAGMIKJIJMIBHODOGGEEGNFHFDOGGGHCKDLLEGKHBIBFKFKBMOHBLBKBALLBKBKBMONBJFEEBBALJHNGOFGGAHMBHGGA&#10;JBBLHBKFAEENFDEMIBDEMILPAOJOMNNLJKLHLOGPNOKHJOOGBKKCFJKEJHJDFECFPDOMDHOMJLHKOOFPDLPAONBKNHMHGOBCAPAGJHALMDIFOBMCPAGJHALMDEAOBMCPAGNBABIFBKAFIOPNFJIDOGPNOLNPJOBMKKLKLKLPPGFCOILDHHOOIHALGPNBMKBIBIBIOKOK&#10;OCPAGJGNBLLLLLLHEOIMBJPKODOBHIOANBCPAGJKOIBMBMBMGMGMGEPMDLGPDHMMKJLJLJLMPHMDGBHBHBNDIFOJHGFJHAGNAPAPAPNDHIOINPPALENPCJOJHGJMBGNEOEOEOFILAHBKDLDLDBHNLCHFOKEKDNJOHAPAOBACDKJHALECALGLGLGLCOBPIDNFBFPEOFOL&#10;MHJPNNLLHHJKEFKKCLALGOHFGNPOOPELKHPPBFOGBPHPMHFBBMKDJHCPECANMBNDKHEBHNIGEDKAIFIBMKMCMKPBPJEOPHNFLNEKLPFCOOONLIJFGMDGLPFOLKBLPJPJCPDCHPOBOKCGANCDMCLPJKMKKHBGFGPBPKNGMGPLAOHEGNHLOFMMNDOFDLMALMOPLJGFJCMC&#10;IHABCOEJIDOAHOKHJPKOFJNHIFGIMGGIJAPDFGDLGKGKGKNININIPEMAGBCMJHOGDOJLIDOLCJPNKHEJLNALPALIPMGGIDKHLHLHJCLJBIENLOHNPKFFALEMCKBAPAHLGLGLCPGHCKNAPNBIBHMBGJBCKFBPHMIMDMFFLPALIPMGGOHPLPBOAFKDJNMGPAGJIFEDAOHA&#10;HFPKOFFMFHEGEGEKNLNLNHHHHHHFELBMACABILBALABLJCLGOBLJACPENPADPOMHMMCBLIGIKJKJKBAEBMPIBKEOBPBPBHAHBBNGIPOAMIDLALGGGJHNGLOFMLEDLPJGOLEJADPLPPDAMLCEDIKJGAOCCMCBDOBNLNHLPGJEMIKIIJFAHBDMFNBHIFAHMBIHGJKNGEPF&#10;JIOMDMCBDOBBOKEBNOEBBDLIFEHDHGBGBGOHDGICPKEMDAJICPBODNHGGNAGJIFEDIIJNMEKGGIHPFJHMMCMPAOMOJNDLKOIJFOCBMKLHKHJMOEDDHCKIALEMCKBIFGDDDDHOACDDMAKMFGIDEDEDEACCIHIFMCCNEEDOMEGCDODPJPMBBIFICIDHCOHJMJOIFOENPKP&#10;PBNJKOEFEIFCGBNAMCLJJJJDHAJJBCBKJMFGIHJOCNFCCINMKIEDFIOBHHGHGHIOPODGIDIHHPGNEIFPLNKNGOPGKHDLFGEJGKKDDPKOCHEJOAAOCGAJIJCEPIEOCKCNPNOHCOEMJICKPJCMCGBNPHEEOKFNANJNMHDOKFECIHKLJOLLDFMGEAHOJOPCPPAMPPDBHOHF&#10;PHNDBADLGOLBNKMGEMHFHPHEDINEPEHHEFDDGGFBNMGGALBKMGGOCGJOAMLLHDPOJFAPIAEKMDIIIAONBILJOMIJPGMGKLDHOGOCMLELANCBPBLBCMNEAOKOPJINIAOGOPCHOODHKLBMIMDIFIAAOGOCNPNPLEMIECODKBDNPIKBKBPMBDLBMNMEHGDKJKOLIJGGMMCF&#10;HGDDGGDAAKCPIJFIHIDEBKAJKDEFFHHHHHDDGBFCFAIHEJEJCFIFDHDPBKENNPELODMKEOIPNKJJMGEFKALOGGGOGKJBMCBDIBJKDLJBDLJCAMCBDMAFECCBJKPKPKHFHIKCANEAIDLAALMAFCCFHFMOLFACAMJDEDJJMMGGDCILJAIPLGJGEIOMPDHNOBCOPPJIDPCO&#10;HNPFAOKDFDLNGDCDNBHKBJGAPNJCDINIJBMCHODGGFACABAKJKMICCEFNAPAPADMMMCAMCDEGNHGALCNJJBAKLBNEIFIDBOBECFIFDBDLNOGGALEMIHEMCFPLCCGGBFGMHDKMADIBMACOJEABBDEHEBEELJCJODHGAPALOJMDLHOCHIFDBNPFKCMCGPIIBAGBMJEFPDG&#10;GBLENPKIIJFEJBPNICDEKHCJFFLGCNHOJMGKEKPMJBFEFGIDDJNLOHPGKPGEJKALOGPEFCJCAJJOLMAFMIHEMCFPLCCGGNPPLICFOPHGAPKDMDJNBNBNBENCOBJODPEGDFCNHOMICKCDMLFDBNHEPKNFCBMCEGNLBOJKOGLJCDMCKJNMAGDEJNMKCANFHAJKMALPDDJG&#10;GPKKKPALINDIGHEGIKOMGGEGDEJNMEOBDLENNJCFCLBLMNJCFJKMAJFEPJCFBGBNDIGHEGIKOMGGEGDEJNMEOBDLENNJCFCLBLMNJCFBFGIAFNMIOEHHJFDIFAJBGGDLBGNHJBKDJFKDAFMDCFHHKEJMGMCHHKEFEJBCCAGNMPMHANKBMCEJGGAOFKPCDEOFCCNPNPNP&#10;IHLAFHKOHCLBKENPFBIIJFCKMAJFJLEGBAGNOJCOCDJGNHJBCPCBBKEIOKOENPEGDEHFJHMMCFPMNCJFNCGGNKDFKCKMAPLPJIEJNBIFAHMENHJBCPCBJMHODPILKKDFPDJNAFKOHJHMMCFPMNCJJNIFLGOPJBEGIBNEEADDDLNBGHAGBGCNDFPNEPFLGKMANJPIJFKO&#10;JLFCDLBLGALMACDMAGCDOPDMCELKNBIFLIDPBMGIALPLMEDHDMCDHMMCDIMALFLPKHNAPOJFKCMCMJFPBNAFJDCLBGJPHJJECPCDEIHJFILHCGOAAMKAHDPCNCELILOCDMCPDMCOFGILEPECPNGHDKJNBAIFNMFHDGDNNJKJCDEBLCDAJOHAOJKKDJBGGOHJMFHGMMHG&#10;PBGFDMPDLGGAHCLPEDFGICGFGAMPHAOJKOCIFMLMAHMOHOHKMKFEDGLAGJPOEBPFMKJKFGICGFGAMHHAMNKMCAMFMENBNFKFAILMEGILGLJLNLIPLHONJCIFAAEMPEDAMNNMGIMLDHCNEEMNGOCAMFOJFLEFGIDDLMLHNMIHHKAGNMEGPKDFLLGMNNJLBKIOMJIHHDKJ&#10;HPJNBIFAGNFLFLFLGIPEBGJIIHADMNOFHNGBODHIDLFCBBBMFLJKBPELDCALIPODPILIFEJKLHBKKIBLGGOJFJMOJAOPADPHNAPODILCNMCHMPPNJDGALCNJJBAGFAEMOHICKEBALCFPBPPOPAJMMEHGDKOMCMCIKPIKHDNKGJBOKOKOKCGOECCGBABCGHIOMAGDFBAI&#10;FDFDLNGEDLPFKHPEHABGBOECPGFFIMABFPENIOIOIKELAIAGNBKDDLGPDEFAAGBEAIIJMACLPAPFOMCMCEINCCFCKCMDLAMCEKNKFAGNBKDDLGPDEBAGBJHGCLOFEAKCKFMDACGEHHGFJOCFDMMAMLDDJJMANPBKKECJBCEDIAFKILBALGMHGLDAHKCEGILMLMLMGGFH&#10;MLINEHCJIMAJJHGCFBGGILHIDBGOCHJDGFHKBDHLEGFJOCFDMMAEKAIMAGPLDLDLDFCJMAJPOILLDLALIKLCPKOPAGBIMBNCNOAPBLODKEBBJBCJHGCKGLCMDDBOAHIBHFMMJBJOPJPOPNPLHGOGJEFJOOKMKMKALGIJBNHOMNCKOMFMDMKJNJLIAPNNODHOBGFGGAAC&#10;DHDDIFIPDAPLJHDPGEKFHMDDIFKCJBCDPMEGCDEFICBFMDMMGNLBJJBMKGPBNBJFEOKENGHMBGFGDLBGIDHJLFFKDADPMECNNBOKKGFCKNMAAPNDDODIMPLHKDOALAHGHMIONNCKALEMIJFCOCBGEJEMMCGOJJEPJHGLLLLLLBDNNBDDFCKNEIFNJJKIPIOMEHJLNALG&#10;EGKDOJIOPOBFDMCBDGGBLFCMIFNCFKDEIPGOPLCFMNHMHGHJAGBCLBOFPEPNCFDMCBDGGBLFCMIKKIJFMHBEAIMNJKPFABEJKALGFPJNDPGLOPOFKCKENFFIFIMGIBNLJHLGNHLOFILCDNNBKCIAICNBIOHBEAFKCMKLLPDNKGPEPEIIGOGIOKCMCMJNHNHBLLPPICHO&#10;MPGOMEGFABALMNJKJFABEJEALOBPKPGOCNDJMDLJLBKLNCDEEAIPJPFJFHHOHLNPCEKHHOPMPJHEOODKJOFCCMJDCIJFCDJJEONOINHGHFLGCFFAMCILFBPDHDEHLFGICGGDEHMGLNPCOFOBJFDBDDDKLIHBPCCEDIHMPIPBHKCKBIFOFAGPJNFNKJEFPCMHLHJHNGDH&#10;LJPGBNILNCDEHBLFEDAEDIALFICEBKFKFKFAOFGHGOMMJBDMCMABKPMOKGJFKKPHLKLKHDELIGKMACDENMNGPLOHPLPJNGLPFHBLPJFKPFGHJINCKJCPLMANMGLNPCFHGGEHKHIOFJJGBNEFMFGIMHBAFAPPCNMOBKHJLPPHJDKKCBJBKFMIJFFOHIFFNACDMKKDIFMP&#10;KIKLPGKOMHELNOJDOJMGDOLFOAOOJMALHCFJINOHJPKMJHIFMGDFBCPJDCKBKBKBABMPEMFCEIKPHAOBHEJLLEPJCMOAPBODMIPFIHMOINBLGABOALJDIKGDOIEECCOADMCGLJKAJPMBBELIJJJNCBCELAHALGABCLDAENEEDDLJDIKPGMCOKJCFKCKBKIOGLPFCDLNL&#10;NGPLGGDBBPEECCBBIAEAEMHBGLDHEMCGBDHMHAFPNIFMFDFKMODHOIKHLNPCJJNONOALIPAFOKDEKKIGJOCMEFKKPANAGPMGAJHLHCHKADIFCLBEDMPGGBHNEJCFBNAFEHLNPCJJNONKGFOCLBMCJKCKFKLGNCNALIIIJPBEBNOJPNJGEMPAKIGJPJMEJOACNABGGGAL&#10;IMDOEELHBBGBJDFIBMCJGANMAGJIBMIENLEDLJMGKALNOHPDMBIJDMMCGGJKHJGGDDLJNLNJMKHANAGJIBMIENLEDLJJNMBEEIFCKEMENLDJFJMGKALDJFNDJBKKHHCLCJNEBGHCLKHCDEFPOEGFCLJCMOEGNDIGALODNICNBKKGDGGJKHLNPCJNEBGLNPKHBDLENLNO&#10;HJMGKALNOHNLIJFKONGPLEGDFINGPLHAJFGILALALAIANOKONJMKEGDFINJMKHAJFGIEFLLLKHHCLCJNANMMEPPHGEGKOCLONOJPPBEIAAAAAAAAJEFEOEEEOKCEAGCI</image></template></extension>
+<!--  Size  -->
+<location id="location_44283" method="fixed" part="left" value="0px"/>
+<location id="location_44284" method="fixed" part="right" value="625px"/>
+<location id="location_44285" method="fixed" part="top" value="0px"/>
+<location id="location_44286" method="fixed" part="bottom" value="500px"/>
+<!--  Data  -->
+
+
+<derivedVariable categorical="true" id="capabilityVar" value="constant(&quot;Capability&quot;)"/>
+<derivedVariable categorical="true" id="performanceVar" value="constant(&quot;Performance&quot;)"/>
+<!--  Structure  -->
+<graph cellStyle="graphStyle2" id="graph1" style="graphStyle"><!--  Size  -->
+<location id="location_44292" method="fixed" part="left" value="25%"/>
+<location id="location_44293" method="fixed" part="top" value="1%"/>
+<location id="location_44294" method="fixed" part="bottom" value="99%"/>
+<location id="location_44295" method="fixed" part="right" value="80%"/>
+<coordinates id="coordinates_44296"><dimension id="dimension_44297" lowerMargin="5%" upperMargin="5%"><axis id="axis_44298" style="axisStyle"><label id="label_44299" style="labelStyle" textFrameStyle="labelStyle8"><text id="text_44300">Current Salary</text></label><majorTicks id="majorTicks_44301" markStyle="majorTicksStyle5" style="majorTicksStyle" tickFrameStyle="majorTicksStyle3"/></axis></dimension><dimension id="dimension_44302" upperMargin="5%"><axis id="axis_44303" style="axisStyle2"><label id="label_44304" style="labelStyle2" textFrameStyle="labelStyle9"><text id="text_44305">Frequency</text></label><majorTicks id="majorTicks_44306" markStyle="majorTicksStyle6" style="majorTicksStyle2" tickFrameStyle="majorTicksStyle4"/></axis></dimension></coordinates><interval dot="true" id="interval_44307" positionModifier="none" style="intervalStyle" zOrder="0"><binStatistic gridType="square" id="binStatistic_44308"/><summaryStatistic convertIntervalToSingleValue="true" id="summaryStatistic_44309" method="count"/><x variable="X"/></interval><line breakRepresentation="wings" dot="true" id="performanceLine" positionModifier="none" showDiscontinuity="false" style="performanceLineStyle" zOrder="1"><distributionStatistic distribution="normal" id="distributionStatistic_44311"/><color affect="main" clamp="true" cycle="cycle2" id="performanceLegend" variable="performanceVar"/><x variable="X"/></line><line breakRepresentation="wings" dot="true" id="capabilityLine" positionModifier="none" showDiscontinuity="false" style="capabilityLineStyle" zOrder="1"><distributionStatistic distribution="normal" id="distributionStatistic_44314" secondaryParameter="ZZCAPSIGMA"/><color affect="main" clamp="true" cycle="cycle4" id="capabilityLegend" variable="capabilityVar"/><x variable="X"/></line></graph>
+<legend id="legend_1" style="legendStyle" tickFrameStyle="legendStyle3" tickTextStyle="legendStyle2"><!--  Size  -->
+<location id="location_44326" method="sizeToContent" part="height"/>
+<location id="location_44327" method="sizeToContent" part="width"/>
+<location id="location_44328" method="attach" part="left" target="graph1"/>
+<location id="location_44329" method="same" part="top" target="graph1"/>
+<legendTarget id="legendTarget_44330" target="capabilityLegend"/><legendTarget id="legendTarget_44331" target="performanceLegend"/></legend>
+<container id="rightSideStats" style="rightSideStatsStyle">
+<location method="sizeToContent" part="height"/>
+<location method="sizeToContent" part="width"/>
+<location method="attach" part="left" target="graph1"/>
+<location method="attach" part="top" target="legend_1"/>
+<labelFrame id="Capability_textbox" style="labelFrameStyle"><!--  Size  -->
+<location id="location_44333" method="sizeToContent" part="height"/>
+<location id="location_44335" method="same" part="left" target="rightSideStats"/>
+<location id="location_44336" method="same" part="right" target="rightSideStats"/>
+<location id="location_44337" method="fixed" part="top" value="0px"/>
+<label id="label_44337" style="labelStyle3"><text id="text_44338">  ZZ01*&#10;&#10;ZZ02  = ZZ03&#10;ZZ04 = ZZ05&#10;ZZ06 = ZZ07&#10;ZZ08 = ZZ09&#10;ZZ10 = ZZ11&#10;&#10; ZZ12&#10;&#10;&lt; ZZ13 = ZZ14%&#10;&gt; ZZ15 = ZZ16%&#10;   ZZ17 = ZZ18%</text></label></labelFrame>
+<labelFrame id="Performance_textbox" style="labelFrameStyle2"><!--  Size  -->
+<location id="location_44340" method="sizeToContent" part="height"/>
+<location id="location_44341" method="same" part="left" target="rightSideStats"/>
+<location id="location_44342" method="same" part="right" target="rightSideStats"/>
+<location id="location_44343" method="attach" part="top" target="Capability_textbox"/>
+<label id="label_44344" style="labelStyle4"><text id="text_44345">  ZZ31&#10;&#10;ZZ32  = ZZ33&#10;ZZ34 = ZZ35&#10;ZZ36 = ZZ37&#10;ZZ38 = ZZ39&#10;ZZ40 = ZZ41&#10;&#10;  ZZ42&#10;&#10;&lt; ZZ43 = ZZ44%&#10;&gt; ZZ45 = ZZ46%&#10;   ZZ47 = ZZ48%</text></label></labelFrame></container>
+<container id="leftSideStats" style="leftSideStatsStyle">
+<location method="sizeToContent" part="height"/>
+<location method="sizeToContent" part="width"/>
+<location method="fixed" part="top" value="1%"/>
+<location method="fixed" part="left" value="1%"/>
+<location method="attach" part="right" target="graph1"/>
+<labelFrame id="Process_textbox" style="labelFrameStyle3"><!--  Size  -->
+<location id="location_44347" method="sizeToContent" part="height"/>
+<location id="location_44350" method="fixed" part="top" value="0px"/>
+<location method="same" part="left" target="leftSideStats"/>
+<location method="same" part="right" target="leftSideStats"/>
+<label id="label_44351" style="labelStyle5"><text id="text_44352">  ZZ51&#10;&#10;ZZ52 = ZZ53&#10;ZZ54 = ZZ55&#10;ZZ56* = ZZ57&#10;ZZ58 = ZZ59&#10;ZZ60 = ZZ61&#10;ZZ62 = ZZ63&#10;ZZ64 = ZZ65</text></label></labelFrame>
+<labelFrame id="Act_textbox" style="labelFrameStyle4"><!--  Size  -->
+<location id="location_44354" method="sizeToContent" part="height"/>
+<location method="same" part="left" target="leftSideStats"/>
+<location method="same" part="right" target="leftSideStats"/>
+<location id="location_44357" method="attach" part="top" target="Process_textbox"/>
+<label id="label_44358" style="labelStyle6"><text id="text_44359">  ZZ81&#10;&#10;&lt; ZZ82 = ZZ83%&#10;&gt; ZZ84 = ZZ85%&#10;ZZ86 = ZZ87%</text></label></labelFrame>
+<labelFrame id="labelFrame_44360" style="labelFrameStyle5"><!--  Size  -->
+<location id="location_44361" method="sizeToContent" part="height"/>
+<location method="same" part="left" target="leftSideStats"/>
+<location method="same" part="right" target="leftSideStats"/>
+<location id="location_44364" method="attach" part="top" target="Act_textbox"/>
+<label id="label_44365" style="labelStyle7"><text id="text_44366">* ZZ90</text></label></labelFrame></container>
+<!--  Styles  -->
+<style color="black" color2="transparent" font-size="11pt,7pt" font-weight="bold" id="labelStyle" margin="6px" padding="1px" visible="false"/>
+<style color="black" color2="transparent" font-size="11pt,7pt" font-weight="bold" id="labelStyle2" margin="6px" padding="1px" visible="false"/>
+<style font-size="8pt" font-weight="regular" id="labelStyle3" margin="2pt" padding="1pt" text-fit="true" textAlignment="left"/>
+<style font-size="8pt" font-weight="regular" id="labelStyle4" margin="2pt" padding="1pt" text-fit="true" textAlignment="left"/>
+<style font-size="8pt" font-weight="regular" id="labelStyle5" margin="2pt" padding="1pt" text-fit="true" textAlignment="left"/>
+<style font-size="8pt" font-weight="regular" id="labelStyle6" margin="2pt" padding="1pt" text-fit="true" textAlignment="left"/>
+<style font-size="8pt" font-weight="regular" id="labelStyle7" margin="2pt" padding="1pt" text-fit="true" textAlignment="left"/>
+<style color="transparent" color2="transparent" id="labelStyle8" visible="false"/>
+<style color="transparent" color2="transparent" id="labelStyle9" visible="false"/>
+<style color="transparent" color2="black" id="labelFrameStyle" margin-left="5pt" margin-right="5pt" margin-top="3pt"/>
+<style color="transparent" color2="black" id="labelFrameStyle2" margin-left="5pt" margin-right="5pt" margin-top="3pt"/>
+<style color="transparent" color2="black" id="labelFrameStyle3" margin-left="5pt" margin-right="5pt" margin-top="20pt"/>
+<style color="transparent" color2="black" id="labelFrameStyle4" margin-left="5pt" margin-right="5pt" margin-top="3pt"/>
+<style color="transparent" color2="transparent" id="labelFrameStyle5" margin-left="5pt" margin-right="5pt" margin-top="3pt"/>
+<style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+<style color="transparent" color2="transparent" id="graphStyle"/>
+<style color="#F0F0F0" color2="black" id="graphStyle2"/>
+<style color="transparent" color2="transparent" id="legendStyle" margin="5px" margin-left="10pt" visible="false"/>
+<style color="black" color2="transparent" font-size="8pt,6pt," font-weight="regular" id="legendStyle2"/>
+<style color="transparent" color2="transparent" id="legendStyle3"/>
+<style color="black" id="axisStyle" stroke-width="0.5pt"/>
+<style color="black" id="axisStyle2" stroke-width="0.5pt"/>
+<style color="black" font-size="8pt,6pt," id="majorTicksStyle"/>
+<style color="black" font-size="8pt,6pt," id="majorTicksStyle2"/>
+<style id="majorTicksStyle3" visible="false" color="transparent"/>
+<style id="majorTicksStyle4" visible="false" color="transparent"/>
+<style color="black" id="majorTicksStyle5" stroke-width="1pt"/>
+<style color="black" id="majorTicksStyle6" stroke-width="1pt"/>
+<style color="#D3CE97" color2="black" id="intervalStyle" pattern="0" stroke-width="1px" symbol="square" width="100%"/>
+<style color="black" color2="black" id="capabilityLineStyle" stroke-width="1pt" visible="false"/>
+<style color="black" color2="black" id="performanceLineStyle" stroke-width="1pt" visible="false"/>
+<style id="rightSideStatsStyle" visible="true"/>
+<style id="leftSideStatsStyle" visible="true"/>
+<!--  Style Cycles  -->
+<styleCycle id="cycle"><cycle id="cycle_45854"><style color="#9e4b00" id="style_45856"/><style color="#fca96c" id="style_45857"/><style color="#ff6306" id="style_45858"/><style color="#fee0ac" id="style_45859"/><style color="#7f0400" id="style_45860"/><style color="#f54d00" id="style_45861"/><style color="#ff860b" id="style_45862"/><style color="#fdbb66" id="style_45863"/><style color="#692e01" id="style_45864"/><style color="#fdcdb8" id="style_45865"/><style color="#c90016" id="style_45866"/><style color="#d3c57e" id="style_45867"/><style color="#cf9c65" id="style_45868"/><style color="#8a6f07" id="style_45869"/><style color="#b17455" id="style_45870"/><style color="#f5ee8b" id="style_45871"/></cycle></styleCycle>
+<styleCycle id="cycle2"><cycle id="cycle_45872"><style color="#8cb9d0" id="style_45874"/><style color="#bf4c51" id="style_45875"/></cycle></styleCycle>
+<styleCycle id="cycle3"><cycle id="cycle_45876"><style color="#9e4b00" id="style_45878"/><style color="#fca96c" id="style_45879"/><style color="#ff6306" id="style_45880"/><style color="#fee0ac" id="style_45881"/><style color="#7f0400" id="style_45882"/><style color="#f54d00" id="style_45883"/><style color="#ff860b" id="style_45884"/><style color="#fdbb66" id="style_45885"/><style color="#692e01" id="style_45886"/><style color="#fdcdb8" id="style_45887"/><style color="#c90016" id="style_45888"/><style color="#d3c57e" id="style_45889"/><style color="#cf9c65" id="style_45890"/><style color="#8a6f07" id="style_45891"/><style color="#b17455" id="style_45892"/><style color="#f5ee8b" id="style_45893"/></cycle></styleCycle>
+<styleCycle id="cycle4"><cycle id="cycle_45894"><style color="#8cb9d0" id="style_45896"/><style color="#bf4c51" id="style_45897"/></cycle></styleCycle>
+</visualization>

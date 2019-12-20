@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template SPSS-Version="3.0" date="2016-01-26" description="" selectPath="87 2 3 30 97 98 10 12 13 17 18 20 29 33 47 62 63 66 94 70 36 37 38 40 41 43 68 69 45 46 " xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+	<setAxisStyle categorical="true" role="x">
+		<axisLabelStyle>
+			<style color="#000000" color2="transparent" font-size="11pt" font-weight="bold" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<setAxisStyle categorical="false" role="y">
+		<axisLabelStyle>
+			<style color="#000000" color2="transparent" font-size="11pt" font-weight="bold" visible="true"/>
+		</axisLabelStyle>
+	</setAxisStyle>
+	<addFrame count="1" type="visualization" styleOnly="true">
+		<style color="#ffffff" color2="transparent" coordinate="0" number="0" visible="true"/>
+		<style coordinate="1" font-size="8pt" number="1" pattern="0" stroke-linecap="butt" text-fit="true" visible="true"/>
+	</addFrame>
+	<addFrame type="graph" styleOnly="true">
+		<style number="0" color="transparent" color2="transparent"/>
+		<style number="1" color="transparent" color2="#000000"/>
+		<style number="2" color="transparent" color2="transparent"/>
+	</addFrame>
+	<addFrame type="container" styleOnly="true" count="1">
+		<style number="0" color="transparent" color2="transparent"/>
+	</addFrame>
+
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" delta="auto" derived="false" position="outside" role="y" styleOnly="true">
+			<gridLines>
+				<style color="#777677" visible="true"/>
+			</gridLines>
+			<markStyle>
+				<style color="transparent" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#000000" font-size="8pt" margin="5px" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMajorTicks>
+		<majorTicks categorical="false" delta="auto" derived="false" position="outside" role="x" styleOnly="true">
+			<markStyle>
+				<style color="#000000" stroke-width="1pt" visible="false"/>
+			</markStyle>
+			<tickLabelStyle>
+				<style color="#000000" font-size="8pt" margin="5px" visible="true"/>
+			</tickLabelStyle>
+		</majorTicks>
+	</setAxisMajorTicks>
+	<setAxisMinorTicks>
+		<minorTicks categorical="false" derived="false" number="2" position="outside" role="x" styleOnly="true">
+			<gridLines>
+				<style color="#777677" visible="false"/>
+			</gridLines>
+			<markStyle>
+				<style color="#000000" visible="false"/>
+			</markStyle>
+		</minorTicks>
+	</setAxisMinorTicks>
+	<setAxisMinorTicks>
+		<minorTicks categorical="false" derived="false" number="2" position="outside" role="y" styleOnly="true">
+			<gridLines>
+				<style color="#777677" visible="false"/>
+			</gridLines>
+			<markStyle>
+				<style color="#777677" visible="false"/>
+			</markStyle>
+		</minorTicks>
+	</setAxisMinorTicks>
+	<addFrame count="1" type="legend" styleOnly="true">
+		<style color="transparent" color2="transparent" coordinate="0" number="0" margin="10px" visible="true"/>
+		<style color="#000000" color2="transparent" coordinate="1" font-size="8pt" font-weight="regular" number="1" visible="true"/>
+		<style color="#000000" color2="transparent" coordinate="1" font-size="8pt" font-weight="regular" number="1" visible="true"/>
+		<label><style color="#000000" color2="transparent" coordinate="0" font-size="10pt" font-weight="regular" number="0" visible="true"/></label>
+	</addFrame>
+	<setStyle subtype="simple" type="bar">
+		<style color="#5596E6" color2="black" depth="75%" pattern="0" size="75%" symbol="square" visible="true"/>
+	</setStyle>
+	<setStyle subtype="simple" type="bar">
+		<style color="#5596E6" color2="black" coordinate="0" depth="75%" pattern="0" size="75%" symbol="square" visible="true"/>
+	</setStyle>
+	<setStyle subtype="clustered" type="bar">
+		<style color2="black" depth="75%" size="100%" stroke-width="1pt" symbol="square" visible="true" width="90%"/>
+	</setStyle>
+	<setStyle subtype="clustered" type="bar">
+		<style color2="black" coordinate="0" depth="75%" size="100%" stroke-width="1pt" symbol="square" visible="true" width="90%"/>
+	</setStyle>
+	<setStyle subtype="simple" type="scatter">
+		<style color="#777677" color2="#777677" coordinate="0" size="3pt" stroke-width="1pt" symbol="circle" visible="true"/>
+	</setStyle>
+	<setStyle subtype="simple" type="area">
+		<style color="#5596E6" color2="#000000" coordinate="0" depth="75%" pattern="0" visible="true"/>
+	</setStyle>
+	<setStyle type="histogram">
+		<style color="#5596E6" color2="black" coordinate="0" depth="75%" pattern="0" visible="true" width="100%"/>
+	</setStyle>
+	<setColor aestheticNumber="1">
+		<cycle>
+			<style color="#D70033" visible="true"/>
+			<style color="#5596E6" visible="true"/>
+			<style color="#298626" visible="true"/>
+			<style color="#F3672A" visible="true"/>
+			<style color="#E3D710" visible="true"/>
+			<style color="#00B4A0" visible="true"/>
+			<style color="#FF3CA0" visible="true"/>
+			<style color="#734098" visible="true"/>
+			<style color="#5FC338" visible="true"/>
+			<style color="#3E63D0" visible="true"/>
+			<style color="#E434C0" visible="true"/>
+			<style color="#D0CA8C" visible="true"/>
+			<style color="#CC863F" visible="true"/>
+			<style color="#77378F" visible="true"/>
+			<style color="#ECE6D0" visible="true"/>
+			<style color="#454647" visible="true"/>
+			<style color="#5CCA88" visible="true"/>
+			<style color="#D05334" visible="true"/>
+			<style color="#B54DD5" visible="true"/>
+			<style color="#E1BC1D" visible="true"/>
+			<style color="#EA2767" visible="true"/>
+			<style color="#1CCDCD" visible="true"/>
+			<style color="#5C7148" visible="true"/>
+			<style color="#E18B0E" visible="true"/>
+			<style color="#092672" visible="true"/>
+			<style color="#5A645E" visible="true"/>
+			<style color="#DB2780" visible="true"/>
+		</cycle>
+	</setColor>
+	<setColor aestheticNumber="2">
+		<cycle>
+			<style color="#D70033" visible="true"/>
+			<style color="#5596E6" visible="true"/>
+			<style color="#298626" visible="true"/>
+			<style color="#F3672A" visible="true"/>
+			<style color="#E3D710" visible="true"/>
+			<style color="#00B4A0" visible="true"/>
+			<style color="#FF3CA0" visible="true"/>
+			<style color="#734098" visible="true"/>
+			<style color="#5FC338" visible="true"/>
+			<style color="#3E63D0" visible="true"/>
+			<style color="#E434C0" visible="true"/>
+			<style color="#D0CA8C" visible="true"/>
+			<style color="#CC863F" visible="true"/>
+			<style color="#77378F" visible="true"/>
+			<style color="#ECE6D0" visible="true"/>
+			<style color="#454647" visible="true"/>
+			<style color="#5CCA88" visible="true"/>
+			<style color="#D05334" visible="true"/>
+			<style color="#B54DD5" visible="true"/>
+			<style color="#E1BC1D" visible="true"/>
+			<style color="#EA2767" visible="true"/>
+			<style color="#1CCDCD" visible="true"/>
+			<style color="#5C7148" visible="true"/>
+			<style color="#E18B0E" visible="true"/>
+			<style color="#092672" visible="true"/>
+			<style color="#5A645E" visible="true"/>
+			<style color="#DB2780" visible="true"/>
+		</cycle>
+	</setColor>
+	<setStyleCycle>
+		<cycle>
+			<style color="#D70033" visible="true"/>
+			<style color="#5596E6" visible="true"/>
+			<style color="#298626" visible="true"/>
+			<style color="#F3672A" visible="true"/>
+			<style color="#E3D710" visible="true"/>
+			<style color="#00B4A0" visible="true"/>
+			<style color="#FF3CA0" visible="true"/>
+			<style color="#734098" visible="true"/>
+			<style color="#5FC338" visible="true"/>
+			<style color="#3E63D0" visible="true"/>
+			<style color="#E434C0" visible="true"/>
+			<style color="#D0CA8C" visible="true"/>
+			<style color="#CC863F" visible="true"/>
+			<style color="#77378F" visible="true"/>
+			<style color="#ECE6D0" visible="true"/>
+			<style color="#454647" visible="true"/>
+			<style color="#5CCA88" visible="true"/>
+			<style color="#D05334" visible="true"/>
+			<style color="#B54DD5" visible="true"/>
+			<style color="#E1BC1D" visible="true"/>
+			<style color="#EA2767" visible="true"/>
+			<style color="#1CCDCD" visible="true"/>
+			<style color="#5C7148" visible="true"/>
+			<style color="#E18B0E" visible="true"/>
+			<style color="#092672" visible="true"/>
+			<style color="#5A645E" visible="true"/>
+			<style color="#DB2780" visible="true"/>
+		</cycle>
+	</setStyleCycle>
+</template>

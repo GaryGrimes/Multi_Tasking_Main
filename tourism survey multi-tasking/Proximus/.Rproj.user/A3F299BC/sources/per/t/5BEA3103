@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555583079469.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2553018024",
+    "id" : "5BEA3103",
+    "lastKnownWriteTime" : 1557749376,
+    "last_content_update" : 1557749376424,
+    "path" : "~/Dropbox/tourism survey/Proximus/script1.R",
+    "project_path" : "script1.R",
+    "properties" : {
+        "cursorPosition" : "70,0",
+        "scrollLine" : "49"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

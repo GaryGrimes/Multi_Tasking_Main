@@ -1,0 +1,9 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJj1Q5okIHAWARPV1eQpiW6rc,8d9807da546011dc38527c88338326edd06eea47,Kyosenji Temple,35.0086983,135.7328896,0,0,"13 Nishinokyo Shindatecho, Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ88DDIdcHAWAR7bqVjz-MmUA,694ef2f130b693fe5ebd7c21272d927ee1099fbf,Ryōshinji Temple,35.0179268,135.748519,3,2,"670 Sanchome, Kamigyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJXVbvQikGAWAR-1cZTLTv8RQ,476511923f00172388a4584e87e12ceadb1a9836,Jōenji Temple,35.0059486,135.7484094,4.5,2,"Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJtSVPSbUHAWARCKF99fro2YE,67e05fd12b29f11689a440757a0164989b909a91,Kosanji Temple,35.0038869,135.7322976,3.3,19,"18 Saiinkozanjicho, Ukyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJ-colstQHAWAR-_QIWuCfX08,595acedccb172d6b67cf20bc1d47a36c1b52557d,Shinsen-en Garden,35.0110739,135.7480549,4.1,548,"166 Monzencho, Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJPYsCiCwGAWARL_9Mn21hDb8,8fdee525f67bc914e38486eade67d18e12e5aa78,Takenobu-Inari-Jinja Shrine,35.0076384,135.7463054,4.1,75,"38 Imashinzaikenishicho, Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJDxDt6NAHAWARMJedhXa7IhQ,ff0791f721494ddb18242e0dc4c2c5134fc7f285,Nue-Daimyojin Shrine,35.017195,135.7458583,3.9,14,"964 Shuzeicho, Kamigyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJVVWRwMkHAWAR0ZFOKNteI30,e6834ad29e37c102ebf1df57946b8a0a10aa805e,Gyokushin-Inari-Daimyojin Shrine,35.01025370000001,135.7342773,5,1,"60 Nishinokyo Minamiharamachi, Nakagyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

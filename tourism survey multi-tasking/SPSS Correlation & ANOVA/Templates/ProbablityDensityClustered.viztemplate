@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization creator="en" date="2012-02-22" description="Graph" id="visualization1" lang="en-US" name="GGRAPH" type="21000000" version="3.0">
+  <extension>
+    <template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">ProbablityDensityClustered</name>
+      <description xml:lang="en">Probability density chart for clustered categories</description>
+      <variable type="categorical">
+        <name xml:lang="en">Legend</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">Y</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">X</name>
+      </variable>
+      <aesthetics>Transparency;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAABAMHJEEEBEEFIHKNNOKNBDKICMAEIBGAANMBFMGFCFJNLAOBAECIFJNIHAALDBDAGHGDJDAIFHKFLAPGBGLCGPGJCGHCCBCIEALFLALAJNNAINGAGHEIFAHDLMLBGIAPDJ&#10;KCMDGIPGCFMHBNHJFBMLCCEAALAGBMCIFALAGBCAIFALKNFIFBFEBBMCIFALAGBMCIFALAGBMCIFALAGFLDBLGODPJPDPJPMJOEHKFPMLIFMCOEHKDNKHNLOCLMCBGFDAGFFFFFDJJMEOFDPDOBPIKBOKOHOKGFLCIFNAIFDMBOALICKIKPMHFOJHOJECJENPGGJLMFO&#10;GGDLBIFCDLAGBMCIFALAGNPBEMKMGADIGMNJGKJCMKGIPKJGMNJFGJBMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGBMCIFNKGMKJNMGGNKJOEJOHMBLOGHLLFLGKDFKPBHMKOHPLPNKJOEJKMMCIFALAGBMKACMKLPNPOALCIALO&#10;IHMDOJPMHGIFBEIFFLENFOCHBIFBEIFNLOFPGEDKBBMKACMKOGHLLHNLOFBGFIGAMPIHMDGIFOHNBOHLBLGLLNNOOGHLDIFBKIFNJOEHAGNPMIFLPNPODECNNBGFEPKLKADOIDODMBOAALEAMDMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGBMCIFALAGNLNIFKDFKP&#10;GAGJOEJOLBIFKDFKCDLAGBMCIFPPBALOLBKPIFNIABINKIBMONAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <intervalDomain id="intervalDomain_1">
+    <range max="0" min="0"/>
+  </intervalDomain>
+  <!--  Structure  -->
+  <graph id="graph_1">
+    <!--  Size  -->
+    <location id="location_1080343" method="fixed" part="top" value="30px" specifiedByUser="true"/>
+    <location id="location_1080345" method="sizeToContent" part="height" specifiedByUser="true"/>
+    <location id="location_1080346" method="sizeToContent" part="width" specifiedByUser="true"/>
+    <coordinates id="coordinates_1080347">
+      <dimension clusterGap="15%" clusterVariable="X" id="dimension_X" lowerMargin="5%" upperMargin="5%">
+        <axis id="axis_X">
+          <label id="label_X">
+            <descriptionGroup id="descriptionGroup_X" target="X">
+              <description id="description_X" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_1080353"/>
+        </axis>
+      </dimension>
+      <dimension domain="intervalDomain_1" id="dimension_Y" unionDomain="true" upperMargin="10%">
+        <scale id="scale_Y" method="linear"/>
+        <axis id="axis_Y">
+            <descriptionGroup id="descriptionGroup_Y" target="Y">
+              <description id="description_Y" name="label"/>
+            </descriptionGroup>
+          <majorTicks id="majorTicks_1080359">
+            <format minimumFractionDigits="1" suffix="%"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <interval dot="true" id="interval_1080361" positionModifier="none" zOrder="0">
+      <summaryStatistic convertIntervalToSingleValue="true" method="percent" summaryBase="coordinate" summaryIndex="3"/>
+      <color affect="main" clamp="true" id="color_35" variable="Legend"/>
+      <x variable="Legend"/>
+      <y variable="Y"/>
+    </interval>
+  </graph>
+  <labelFrame id="footnoteFrame">
+		<label purpose="footnote"><text>footnoteText</text></label>
+	</labelFrame>
+  <legend id="legend_1080363">
+    <!--  Size  -->
+    <location id="location_1080364" method="same" part="top" target="graph_1" specifiedByUser="true"/>
+    <location id="location_1080365" method="attach" part="left" target="graph_1" specifiedByUser="true"/>
+    <location id="location_1080366" method="sizeToContent" part="height" specifiedByUser="true"/>
+    <location id="location_1080367" method="sizeToContent" part="width" specifiedByUser="true"/>
+    <label id="label_Legend">
+      <descriptionGroup id="descriptionGroup_Legend" target="Legend">
+        <description id="description_Legend" name="label"/>
+      </descriptionGroup>
+    </label>
+    <legendTarget id="legendTarget_1080370" target="color_35"/>
+  </legend>
+  <swingController function="com.spss.java_client.ui.interactive.CategoricalTargetSwingController" target="graph_1"/>
+</visualization>

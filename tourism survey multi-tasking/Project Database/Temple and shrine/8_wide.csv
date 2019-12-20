@@ -1,0 +1,12 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJNTor5fWnAWARW5qy34Naqqw,cc7baf00909dfdaadb2ec1788e140d687bf79597,Jōfukuji Temple,35.0555065,135.7667787,4,1,"Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJqeGY6gAIAWARyqWOD5UZ_8w,d31c5f8c27ebc0d8ce47c09aca8e97524e4c7994,Senkōji Temple,35.045516,135.753383,0,0,"25 Murasakino Kamiyanagicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJuTWU-mOnAWARDWRpRUQvfMs,c32ae38b49fc5ac5c71adaa879d30afdec07360a,Ishii Shrine,35.050502,135.755791,4,1,"２５ Koyama Motomachi, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJpXlv0hwIAWARa_aJZfZnDxg,223e7fd9c17cfc611fa0812ba3248b55f474e445,Nakaragi-jinja Shrine,35.0499051,135.7617712,3.3,12,"Shimogamo Hangicho, Sakyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJd1Y0lvynAWARhMI51T3sq7o,06cc825f8ab17b04d1e6907b25892f067527e0d7,Fujinoki-no-yashiro Shrine,35.0577529,135.7560871,4.4,14,"Kamigamo Fujinokicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJrwg69Q2nAWAR6cjTXX6tLuA,e3513f230cb84a6298c945b39dfcc2223f32777f,Yonaki-jinja Shrine,35.0576891,135.7586323,0,0,"Kamigamo Umegatsujicho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJWVSd4_KnAWARokBeIy6enUA,e16a056f926d06f6310e41e758d41a9be7173158,Yūshin-hachimangū Shrine,35.0580941,135.7657975,0,0,"35 Kamigamo Midoroikecho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJw_rno-KnAWAR3YbLvw4UeE8,5448026c441b71cf3fddd09db85805d324c0904f,Kamigamo-jinja Shrine Torii Gate,35.0581483,135.7524298,4.5,26,"339 Kamigamo Motoyama, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJoUo1XQ4IAWARpnJ4SaRJArs,3f2bac331eac7e6098bc91252b9abab51abd58cb,Kyogoku Temple,35.0396,135.759799,0,0,"28-7 Koyamashimofusacho, Kita Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJEySz1D8IAWAR0xpCSwMSXsM,419dd988fdb6955ae5b81501a10777a91d79025f,Hosenji,35.041428,135.771279,4,3,"80 Shimogamo Matsunokicho, Sakyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJf438RkAIAWARzM3lfzI7uAM,06ee09a3f350bd3f043957eb97b29b3d50637de7,Shimogamo-jinja Shrine,35.0391839,135.7730066,4.4,3002,"５９ Shimogamo Izumikawacho, Sakyo Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

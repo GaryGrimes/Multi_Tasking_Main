@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualization creator="en" date="2017-04-12" id="visualization1" lang="en-US"
+    style="visualizationStyle" type="25000000" version="3.0">
+    <extension>
+        <template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance"
+            location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd"
+            url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+            <name xml:lang="en">Bayes</name>
+            <description xml:lang="en">Bayesian Charts</description>
+            <variable type="continuous">
+                <name xml:lang="en">mulike</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">likelihood</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">muprior</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">prior</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">mupost</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">posterior</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">mulike2</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">likelihood2</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">muprior2</name>
+            </variable>
+            <variable type="continuous">
+                <name xml:lang="en">prior2</name>
+            </variable>
+            <aesthetics>Color;Transparency;Size;Label</aesthetics>
+            <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAGAINJEEEBEEFIHKNNOMJPNLELJHFIBHMDACFMLAJAFEABPCKIIIIACCKJLAJCJNPBACONIHBNNAHNJEAKHDDABGCCNCBMLIBLLINNJHFOAMNFIHBCGPOGOKHBBKEBBGDJN&#10;EGDBHOMNIFABJCNJFHIDHGNFGGFLDDGKOCKGKKJOEDNIBDJIJMLLPKNDFPEDLHDJMJHPHHCHCJMJHIAPCPGCJHONDJHPMHONHOJHOMDPMJDPOLBLJECEEFLINEACABALEAMCBALEAMCBALEAMCBIAILAIFGDLJNGMHMHMHJGJGJALDKGEJFNICIKJGKKEFBGJMONGPEP&#10;EPMANANAJNOFLAJPECHOOHODMECDFOCDEIFJJNDEMGNLOFPKMODJMONCDMGKKMJBGNEMEMEIPMHOLMMOHOFJLCHFCFJKEBNPECKBNIKKHIFBJIEEIMOPAOAOAOMMMMMEFGFAIPCOGAAKCBDIFFNFNFNCAGJIENBCLEOGPNOLNCAGJKFJOMOMOEBALEAMCNIALIOAMMNH&#10;NHNHNENENEINJGIGIGAMGPKPFPLOBOAHINMEIFJIEJEHIBFJGHOPFJOJOBJEOLDEJGDPIEKAGEEKDODLCFCIFDCDCDCEGHGNGNGNALNOOOOOGKDMMPFNLKHFNICMKELECNDLALELIBAFOHNKMOJEBOIBPLALCPFJNBEPDJGLGLGDNJALCEBNHLEBOHNNFJOFFCEJJJOG&#10;MBOLNDEOJEIEKEFKLAPJGNFGOBFGDGLOBKKJDILOBNDGKBLBLBDJJMEKGGIFAHLCKNHOHBBFNMHOLBPDHJOPIDIHDHIDMLFJPEIFGCEAIPNKLEHHLDLEKJDOJAEKFLHIPMFKDPELBJOGHMDOBPMOCNFBFHIFGGJFGGHLLNBGJBFICIFEKDGLNPCNEOIMBHKJIHDNCPJE&#10;MFHDMCCMFCLLOMPMMCFELGLGLGJCDFGBMKOIOIOACLDDMDMDMDPDPDPNCNCNCCLAIFKAALIEHGOIOENCMAGLJOLMPFBIDJGBKKEENMBKHOHPLPJCIPBNBNBNGOGOGGNAGJFPKOCPCLHEDBCFBAEOBHAPNEMOHNLCADLAMIFPGOECFKHPPOPNPFNFNFFIBHFICEBCFGIF&#10;PLNONFMJKPDLAHBEHMDHEAPCNFGCGPPDPPCFHDNALMKPKLPLPLPFDEMMCDHDAJLOLAMPGIBGJLNNOGINHMANANAJFGFOOACGDBOEEBGGFFMFBEMLHNCHKBJDBGBCIKDNABEKDLMNJFMFMFEMAFKIHLOEHKDNLOFPKMBGJGPLKKGFJACIHJKOBIFCDBGNENENEJEHJDJB&#10;LFDFDFDBIAEAMEIAAPIMLDMDOBPAJNPGPGPGHAPCPMAPIPHCPBJLLDJHCJDPFINGCLDFELCHHAGCGEGHIIJIJIJMPDNGBAOFAMCFLCPIOBNDCILEOMOMOMCDEBAGOJMAFACGFMMALDFDONCAPCALAHKIIMGODPFOLKEEBAJKJBDEBANPEICACDIDLOKFAOFAGBJCAIMB&#10;OAHIOGFACCIMIHNKLGBIHBIFIEGCAJOFMCMCMCADEBAHFOJBKAEMEDIBMCMIHLAMLAMCBBAOFDIACIFICOCFIFCCBJAFMPGDNJOELOOGBIICICKOAHBGJFCGFHHEFJAJKDDFAMCFLCHLOGNNKKEEIFHHOOMNBJFBKDKGOOOHKJIJIJIKEEIFNDNDNDNLNLNLEHCLBMFO&#10;CHNOPOPOHFFFFFJIIJFJDAGNNILBHDOGONMLJEONEHEHEHAAMFADIBEFDDNCNFJIALIOEHCABBIBKJNNOGPFJFJFBGPBGAGKFJIALEGBBKGAGAGAKOKOKOAOJIJDFLNHODPJMCGGNGPLDPBKPMGOEONOFFIIBNABGPCAPKEPLPNPKODAMPJMHFPDBPGEKGLKJONLCEAM&#10;CEAPCAMKAEACACCGGJGAHDMNMNMNEBALEEJLDFMAIFFBKDKBKOLDMKCEDDIHBALKABBDLKCAFEAMCLOBGJIFKADNACIODMDIHAPAANPBGICILNNOGGICAEAKANININIGNFLAMLAMCBLEBGGCLINNOGHFEFAGLDBJBPGBEEAIPCFLAAPNFNFNFINCDGFAEBONBIBBAIMN&#10;HPEJPCGDDJLDMODPJAKODFMPKIMGKLNEGCDKDKDKMGFAOFMCLCCBJIELGLGLCDIGKHMDOBENEOMAIFKIHNDGNHNHNJBKAAHAMFOFOFOCGONLOAILAFEOHOBDMABJAHAJPGNPCEEGAPHBGINILMFCFGMNELGJJALIKDOEFIOCFIFOEDPGMGLOLOLODLNLGCDBMJAIFKBE&#10;MMCIFHEOPHFLCPFPDHKPKNKFIAFKDNFOFALMEJJFHAAEBKMIOJKHDELDPIDMLGPNNPDEONGIDABNCPBIFGMHCPPIAEJDJDIDDGMHLJIDNDPCHAIFGECAMDMAKOHPJKLAGBBLDGGNNNCEOLPBHPBKDLPPHNJAPLALAJGECJEOIIOKJOHGKANHCDDFHLLBGIHHCKEMJOEF&#10;FKCHBKDDICPDJPODIMJCMCKPIFAALDFHANHBAOPPOHIHIIOMHIGDDCKDCOKBPIALAFGKAJCFGAOIGGCOIGIENFPCBBDNDBGIGDOHODAMBLIBHDLCCGEDECGNBGECHCACNCMJOLMEEJOBMCFPDKBOKOHDLLGGFMJOEFCDNEAJFKOMDNFKEALENMIGIPCHHPEJEPNGPGNP&#10;INMKDNNEOJFKIGOOKFOAOGIIBCMIEIHCMLOFMGFEMKIDJGIFGNPJPDMOBJPJIDINIDJCGCMCKDPNAAJLGHNOKJDMBOAKDACCONOMNMNMJMCAMHMOECJIEILBJNAEGGFNCOPFKDCLKPENPIDIBDKHFFOCCDMIJJACAMBOCFFBBKAJGJFFBNEDLHAKPNCJHONAPLNLLPLA&#10;JDHNPCODLJEHHPNHMFMKHGMAPNPHHPDIPMPDNLLDPPFOCDJDJJCANDPGICLJPGIIPLGBKEKALPCLJNIABDLOAKMCAPHEJIJPAKGCEBGKHKHKJNLKJAAFAGMPPMBKBPGBIHBIFMOLDAMLKLKLKLIOKAMHNMHGJAHDEFLCEGJGDJBLIHDKILKLDEKOAFHKDNJGNFLAMLAM&#10;CENPIIIEPMIFMLBFMFNNBEADCICANPDODALCKFAOFAGBJFBACKPHIODJNCKILIPOIIFDOHPLPJBPDBNCPKFGCHCHCDPJCAOKGBIHFMCGBDONBGBJCPAJOPHMDEGLICODHIKKIBOJHHHHHHJNLKALAJGOGOGGCPHJEICCAMHJLEAIHBALELFBCNINONLLHHPEHLCAKIBA&#10;KJMNKFENCAHEDPJFIELANFOCHBDEBABNHJBKAECMDDNCLMNKIGBIDKJPMKKKKKKKMJLIKBEFBANDBGICAJOKCDOGMODDONCAPFOGIDGDGDGKLFBIIDBBDCHLADONCIIAAPFBMDKBKBPLJMBLEAOGDJEBBAOFIIIBNAFMIGICGEDEONFOPDDECFMAILPFAAFIEAAAAAAA&#10;AAJEFEOEEEOKCEAGCI</image>
+        </template>
+    </extension>
+    <!--  Size  -->
+    <location id="location_1058265" method="fixed" part="left" value="0px"/>
+    <location id="location_1058266" method="fixed" part="right" value="850px"/>
+    <location id="location_1058267" method="fixed" part="top" value="0px"/>
+    <location id="location_1058268" method="fixed" part="bottom" value="500px"/>
+    <!--  Data  -->
+    <intervalDomain id="intervalDomain_10"/>
+    <intervalDomain id="intervalDomain_25"/>
+    <intervalDomain id="intervalDomain_40"/>
+    <!--  Structure  -->
+    <graph axesOutside="true" cellStyle="graphStyle4" id="graph_19" style="graphStyle">
+        <!--  Size  -->
+        <location id="location_1058284" method="fixed" part="right" specifiedByUser="true"
+            value="40%"/>
+        <location id="location_1058285" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058286" method="fixed" part="bottom" specifiedByUser="true"
+            value="25%"/>
+        <location id="location_1058287" method="fixed" part="top" specifiedByUser="true" value="5%"/>
+        <coordinates id="coordinates_1058288">
+            <dimension domain="intervalDomain_10" id="dimension_1058289" lowerMargin="5%"
+                niceLowerMapping="false" niceUpperMapping="false" upperMargin="5%">
+                <scale id="scale_1058290" method="linear"/>
+                <axis id="axis_1058291" style="axisStyle">
+                    <label id="label_1058351" style="labelStyle3" textFrameStyle="labelStyle9">
+                        <text id="text_1058351"/>
+                    </label>
+                    <majorTicks id="majorTicks_1058292" markStyle="majorTicksStyle13"
+                        style="majorTicksStyle" tickFrameStyle="majorTicksStyle7"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1058293" upperMargin="10%">
+                <axis id="axis_1058294" style="axisStyle2">
+                    <label id="label_1058295" style="labelStyle" textFrameStyle="labelStyle7">
+                        <text id="text_1058296">Log Likelihood</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058297" markStyle="majorTicksStyle14"
+                        style="majorTicksStyle2" tickFrameStyle="majorTicksStyle8"/>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line breakRepresentation="wings" dot="true" id="line_20" name="Log Likelihood Function"
+            positionModifier="none" showDiscontinuity="false" style="lineStyle" zOrder="0">
+            <x variable="mulike"/>
+            <y variable="likelihood"/>
+        </line>
+    </graph>
+    <graph axesOutside="true" cellStyle="graphStyle4" id="graph_21" style="graphStyle">
+        <!--  Size  -->
+        <location id="location_1058294" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058295" method="fixed" part="left" specifiedByUser="true"
+            value="50%"/>
+        <location id="location_1058296" method="fixed" part="bottom" specifiedByUser="true"
+            value="25%"/>
+        <location id="location_1058297" method="fixed" part="top" specifiedByUser="true" value="5%"/>
+        <coordinates id="coordinates_1058298">
+            <dimension domain="intervalDomain_10" id="dimension_1058299" lowerMargin="5%"
+                niceLowerMapping="false" niceUpperMapping="false" upperMargin="5%">
+                <scale id="scale_1058390" method="linear"/>
+                <axis id="axis_1058391" style="axisStyle">
+                    <label id="label_1058451" style="labelStyle3" textFrameStyle="labelStyle9">
+                        <text id="text_1058451"/>
+                    </label>
+                    <majorTicks id="majorTicks_1058392" markStyle="majorTicksStyle13"
+                        style="majorTicksStyle" tickFrameStyle="majorTicksStyle7"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1058393" upperMargin="10%">
+                <axis id="axis_1058394" style="axisStyle2">
+                    <label id="label_1058395" style="labelStyle" textFrameStyle="labelStyle7">
+                        <text id="text_1058396">Log Likelihood</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058397" markStyle="majorTicksStyle14"
+                        style="majorTicksStyle2" tickFrameStyle="majorTicksStyle8"/>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line breakRepresentation="wings" dot="true" id="line_22" name="Log Likelihood Function"
+            positionModifier="none" showDiscontinuity="false" style="lineStyle" zOrder="0">
+            <x variable="mulike2"/>
+            <y variable="likelihood2"/>
+        </line>
+    </graph>
+    <graph axesOutside="true" cellStyle="graphStyle5" id="graph_34" style="graphStyle2">
+        <!--  Size  -->
+        <location id="location_1058300" method="fixed" part="right" specifiedByUser="true"
+            value="40%"/>
+        <location id="location_1058301" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058302" method="fixed" part="bottom" specifiedByUser="true"
+            value="60%"/>
+        <location id="location_1058303" method="fixed" part="top" specifiedByUser="true" value="40%"/>
+        <coordinates id="coordinates_1058304">
+            <dimension domain="intervalDomain_25" id="dimension_1058305" lowerMargin="5%"
+                niceLowerMapping="false" niceUpperMapping="false" upperMargin="5%">
+                <scale id="scale_1058306" method="linear"/>
+                <axis id="axis_1058307" style="axisStyle3">
+                    <label id="label_1058352" style="labelStyle3" textFrameStyle="labelStyle9">
+                        <text id="text_1058352"/>
+                    </label>
+                    <majorTicks id="majorTicks_1058308" markStyle="majorTicksStyle15"
+                        style="majorTicksStyle3" tickFrameStyle="majorTicksStyle9"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1058309" upperMargin="10%">
+                <axis id="axis_1058310" style="axisStyle4">
+                    <label id="label_1058311" style="labelStyle2" textFrameStyle="labelStyle8">
+                        <text id="text_1058312">Likelihood</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058313" markStyle="majorTicksStyle16"
+                        style="majorTicksStyle4" tickFrameStyle="majorTicksStyle10"/>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line breakRepresentation="wings" dot="true" id="line_35" name="Prior Distribution"
+            positionModifier="none" showDiscontinuity="false" style="lineStyle2" zOrder="1">
+            <x variable="muprior"/>
+            <y variable="prior"/>
+        </line>
+    </graph>
+    <graph axesOutside="true" cellStyle="graphStyle5" id="graph_35" style="graphStyle2">
+        <!--  Size  -->
+        <location id="location_1058310" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058311" method="fixed" part="left" specifiedByUser="true"
+            value="50%"/>
+        <location id="location_1058312" method="fixed" part="bottom" specifiedByUser="true"
+            value="60%"/>
+        <location id="location_1058313" method="fixed" part="top" specifiedByUser="true" value="40%"/>
+        <coordinates id="coordinates_1058314">
+            <dimension domain="intervalDomain_25" id="dimension_1058315" lowerMargin="5%"
+                niceLowerMapping="false" niceUpperMapping="false" upperMargin="5%">
+                <scale id="scale_1058316" method="linear"/>
+                <axis id="axis_1058317" style="axisStyle3">
+                    <label id="label_1058362" style="labelStyle3" textFrameStyle="labelStyle9">
+                        <text id="text_1058362"/>
+                    </label>
+                    <majorTicks id="majorTicks_1058318" markStyle="majorTicksStyle15"
+                        style="majorTicksStyle3" tickFrameStyle="majorTicksStyle9"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1058319" upperMargin="10%">
+                <axis id="axis_1058320" style="axisStyle4">
+                    <label id="label_1058321" style="labelStyle2" textFrameStyle="labelStyle8">
+                        <text id="text_1058322">Likelihood</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058323" markStyle="majorTicksStyle16"
+                        style="majorTicksStyle4" tickFrameStyle="majorTicksStyle10"/>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line breakRepresentation="wings" dot="true" id="line_36" name="Prior Distribution"
+            positionModifier="none" showDiscontinuity="false" style="lineStyle2" zOrder="1">
+            <x variable="muprior2"/>
+            <y variable="prior2"/>
+        </line>
+    </graph>
+    <graph axesOutside="true" cellStyle="graphStyle6" id="graph_1058315" style="graphStyle3">
+        <!--  Size  -->
+        <location id="location_1058316" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058317" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058318" method="fixed" part="bottom" specifiedByUser="true"
+            value="95%"/>
+        <location id="location_1058319" method="fixed" part="top" specifiedByUser="true" value="75%"/>
+        <coordinates id="coordinates_1058320">
+            <dimension domain="intervalDomain_40" id="dimension_1058321" lowerMargin="5%"
+                niceLowerMapping="false" niceUpperMapping="false" upperMargin="5%">
+                <scale id="scale_1058322" method="linear"/>
+                <axis id="axis_1058323" style="axisStyle5">
+                    <label id="label_1058324" style="labelStyle3" textFrameStyle="labelStyle9">
+                        <text id="text_1058325">[XAXIS TITLE]</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058326" markStyle="majorTicksStyle17"
+                        style="majorTicksStyle5" tickFrameStyle="majorTicksStyle11"/>
+                </axis>
+            </dimension>
+            <dimension id="dimension_1058327" upperMargin="10%">
+                <axis id="axis_1058328" style="axisStyle6">
+                    <label id="label_1058329" style="labelStyle4" textFrameStyle="labelStyle10">
+                        <text id="text_1058330">Likelihood</text>
+                    </label>
+                    <majorTicks id="majorTicks_1058331" markStyle="majorTicksStyle18"
+                        style="majorTicksStyle6" tickFrameStyle="majorTicksStyle12"/>
+                </axis>
+            </dimension>
+        </coordinates>
+        <line breakRepresentation="wings" dot="true" id="line_50" name="Posterior Distribution"
+            positionModifier="none" showDiscontinuity="false" style="lineStyle3" zOrder="2">
+            <x variable="mupost"/>
+            <y variable="posterior"/>
+        </line>
+    </graph>
+    <legend id="legend_1058333" style="legendStyle" tickTextStyle="legendStyle2">
+        <!--  Size  -->
+        <location id="location_1058334" method="attach" part="left" target="graph_21"/>
+        <location id="location_1058335" method="same" part="top" target="graph_21"/>
+        <location id="location_1058336" method="sizeToContent" part="width"/>
+        <location id="location_1058337" method="sizeToContent" part="height"/>
+        <legendTarget id="legendTarget_1058340" target="line_20"/>
+        <legendTarget id="legendTarget_1058341" target="line_35"/>
+        <legendTarget id="legendTarget_1058342" target="line_50"/>
+    </legend>
+    <labelFrame id="labelFrame_1058345" style="labelFrameStyle">
+        <!--  Extension  -->
+        <extension graphId="graph_36" id="extension_1058366" position="title"/>
+        <!--  Size  -->
+        <location id="location_1058365" method="sizeToContent" part="height"/>
+        <location id="location_1058366" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058367" method="fixed" part="right" specifiedByUser="true"
+            value="40%"/>
+        <location id="location_1058368" method="attach" part="bottom" target="graph_19"/>
+        <label id="label_1058369" purpose="title" style="labelStyle12" textFrameStyle="labelStyle11">
+            <text id="text_1058360">[Graph1 Title]</text>
+        </label>
+    </labelFrame>
+    <labelFrame id="labelFrame_1058346" style="labelFrameStyle">
+        <!--  Extension  -->
+        <extension graphId="graph_37" id="extension_1058376" position="title"/>
+        <!--  Size  -->
+        <location id="location_1058375" method="sizeToContent" part="height"/>
+        <location id="location_1058376" method="fixed" part="left" specifiedByUser="true"
+            value="50%"/>
+        <location id="location_1058377" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058378" method="attach" part="bottom" target="graph_19"/>
+        <label id="label_1058379" purpose="title" style="labelStyle12" textFrameStyle="labelStyle11">
+            <text id="text_1058370">[Graph2 Title]</text>
+        </label>
+    </labelFrame>
+    <labelFrame id="labelFrame_1058347" style="labelFrameStyle">
+        <!--  Extension  -->
+        <extension graphId="graph_38" id="extension_1058386" position="title"/>
+        <!--  Size  -->
+        <location id="location_1058385" method="sizeToContent" part="height"/>
+        <location id="location_1058386" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058387" method="fixed" part="right" specifiedByUser="true"
+            value="40%"/>
+        <location id="location_1058388" method="attach" part="bottom" target="graph_34"/>
+        <label id="label_1058389" purpose="title" style="labelStyle12" textFrameStyle="labelStyle11">
+            <text id="text_1058380">[Graph3 Title]</text>
+        </label>
+    </labelFrame>
+    <labelFrame id="labelFrame_1058348" style="labelFrameStyle">
+        <!--  Extension  -->
+        <extension graphId="graph_39" id="extension_1058396" position="title"/>
+        <!--  Size  -->
+        <location id="location_1058395" method="sizeToContent" part="height"/>
+        <location id="location_1058396" method="fixed" part="left" specifiedByUser="true"
+            value="50%"/>
+        <location id="location_1058397" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058398" method="attach" part="bottom" target="graph_34"/>
+        <label id="label_1058399" purpose="title" style="labelStyle12" textFrameStyle="labelStyle11">
+            <text id="text_1058390">[Graph4 Title]</text>
+        </label>
+    </labelFrame>
+    <labelFrame id="labelFrame_1058349" style="labelFrameStyle">
+        <!--  Extension  -->
+        <extension graphId="graph_40" id="extension_1058397" position="title"/>
+        <!--  Size  -->
+        <location id="location_1058495" method="sizeToContent" part="height"/>
+        <location id="location_1058496" method="fixed" part="left" specifiedByUser="true"
+            value="10%"/>
+        <location id="location_1058497" method="fixed" part="right" specifiedByUser="true"
+            value="80%"/>
+        <location id="location_1058498" method="attach" part="bottom" target="graph_1058315"/>
+        <label id="label_1054399" purpose="title" style="labelStyle12" textFrameStyle="labelStyle11">
+            <text id="text_1058490">[Graph5 Title]</text>
+        </label>
+    </labelFrame>
+    <!--  Styles  -->
+    <style color="black" color2="transparent" 
+        font-size="10pt;8pt" font-weight="bold" id="labelStyle" margin="6px" padding="1px"/>
+    <style color="black" color2="transparent" 
+        font-size="10pt;8pt" font-weight="bold" id="labelStyle2" margin="6px" padding="1px"/>
+    <style color="black" color2="transparent" 
+        font-size="10pt;8pt" font-weight="bold" id="labelStyle3" margin="6px" padding="1px"/>
+    <style color="black" color2="transparent" 
+        font-size="10pt;8pt" font-weight="bold" id="labelStyle4" margin="6px" padding="1px"/>
+    <style color="black" color2="transparent" font-size="10pt" font-weight="bold" id="labelStyle5"
+        margin="3px" padding="2px"/>
+    <style color="black" color2="transparent" 
+        font-size="10pt;8pt" font-weight="bold" id="labelStyle6" margin="3px" padding="2px"/>
+    <style color="transparent" color2="transparent" id="labelStyle7" visible="false"/>
+    <style color="transparent" color2="transparent" id="labelStyle8" visible="false"/>
+    <style color="transparent" color2="transparent" id="labelStyle9" visible="true"/>
+    <style color="transparent" color2="transparent" id="labelStyle10" visible="false"/>
+    <style color="transparent" color2="transparent" id="labelStyle11" visible="false"/>
+    <style color="black" color2="transparent" font-weight="regular" 
+        font-size="10pt;8pt" id="labelStyle12" margin="3px" padding="2px"/>
+    <style color="transparent" color2="transparent" id="labelFrameStyle"/>
+    <style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+    <style color="white" color2="transparent" id="graphStyle"/>
+    <style color="white" color2="transparent" id="graphStyle2"/>
+    <style color="white" color2="transparent" id="graphStyle3"/>
+    <style color="white" color2="transparent" id="graphStyle4"/>
+    <style color="white" color2="transparent" id="graphStyle5"/>
+    <style color="white" color2="transparent" id="graphStyle6"/>
+    <style id="legendStyle" margin="5px"/>
+    <style color="black" color2="transparent" font-size="10pt" font-weight="regular"
+        id="legendStyle2" margin="2px"/>
+    <style color="black" id="axisStyle" stroke-width="0.5pt"/>
+    <style color="black" id="axisStyle2" stroke-width="0.5pt"/>
+    <style color="black" id="axisStyle3" stroke-width="0.5pt"/>
+    <style color="black" id="axisStyle4" stroke-width="0.5pt"/>
+    <style color="black" id="axisStyle5" stroke-width="0.5pt"/>
+    <style color="black" id="axisStyle6" stroke-width="0.5pt"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle" margin="5px" visible="true"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle2" margin="5px"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle3" margin="5px" visible="true"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle4" margin="5px"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle5" margin="5px"/>
+    <style color="black"  font-size="8pt;8pt"
+        id="majorTicksStyle6" margin="5px"/>
+    <style id="majorTicksStyle7" visible="false"/>
+    <style id="majorTicksStyle8" visible="false"/>
+    <style id="majorTicksStyle9" visible="false"/>
+    <style id="majorTicksStyle10" visible="false"/>
+    <style id="majorTicksStyle11" visible="false"/>
+    <style id="majorTicksStyle12" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle13" stroke-width="1pt" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle14" stroke-width="1pt" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle15" stroke-width="1pt" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle16" stroke-width="1pt" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle17" stroke-width="1pt" visible="false"/>
+    <style color="#AEAEAE" id="majorTicksStyle18" stroke-width="1pt" visible="false"/>
+    <style color="[likelihood]" color2="black" depth="75%" id="lineStyle" stroke-width="1.5pt"/>
+    <style color="[prior]" color2="black" depth="75%" id="lineStyle2" stroke-width="1.5pt"/>
+    <style color="[posterior]" color2="black" depth="75%" id="lineStyle3" stroke-width="1.5pt"/>
+</visualization>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2011                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+<visualization id="visualization1" lang="en-US" version="3.0">
+  <extension>
+    <template aggregates="false" inst="http://www.w3.org/2001/XMLSchema-instance" location="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd" url="http://www.ibm.com/software/analytics/spss/xml/visualization" version="1">
+      <name xml:lang="en">GLMMEmMeans</name>
+      <description xml:lang="en">GLMM Estimated Means</description>
+      <variable type="categorical">
+        <name xml:lang="en">effect1</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">target</name>
+      </variable>
+      <variable type="continuous">
+        <name xml:lang="en">confMargin</name>
+      </variable>
+      <variable type="categorical">
+        <name xml:lang="en">effect2</name>
+      </variable>
+      <aesthetics>Color;Transparency;Size;Label</aesthetics>
+      <image>JIAFOEHENAKAKBKAAAAAAANAJEIEEECFAAAAAAEGAAAAAAEGIACAAAAAAAPPAICADAAAAAEAECJEEEBEEFIHKNNOMNBEIECCBFIBHAAPJCPANBLOEBBBFAOBKACJIOACKHIIAPABNJEAJADHNCICBJFECCGICIEMCCCKOALEJHIAGDAPALMABGABIEFEFHJIOAOBMDIE&#10;FHIAKFJCAPCBBGCCCMCIBEBNBKOAOBMDIEEMAPGPLMBGHDHNNGNGCKJJJHPGMNPOPHIIBHGGCHGMPJPONHDPGEPFBHEADCLDMBCBMHIALMDOBPIHNLOFOKEBEAKKGIFOHPLPHGHGHGBNFALLBCCGBCGBCGBCGBCGBGABLABLABLEBMEMGHGHABLEGFOLPBNBBBOILFLO&#10;MOEEMCJFJFHLKFDDHFHFIIFCPCJLMJKLNNANMGGDDCGNLNIFJIEECCIBMAOOICHFEBLGPLFGBGHDEEMCEMCEMCEMCEMCEMCEMCEMCEMCEMCEMCKAJCGBLIGEOCNNONOPJBBLONOAPMPHBDCHJDDIBCEKKAGNIOIOIONPNPNLPNPOPKNAMKBOBGFPLLBGBKAFIKBIJIBC&#10;DJDJKCHNMCHJLMFDODODOANOLEPONGKKHLHBLAMLMLMHNPKIHFDEJHBDKBBHIOACPCBNICOIDLEOFKFKFAHAFKCPCHOHOIDCIPPIELJCEMKPLDHBHBKNONLBGGCDJJLOLOLGNDKEFHEHIGOHDCNJMEGCNBOAHENGOHAKAKIDGJJNMGGHKDNJKPCJCLKFFBEBNHPAGNBO&#10;BOBKBLCHADHMEHCPJHCPEPEEJALEPFFDLMOGHJLCFLLCIAEIDOGLKJLJFBOKJFCNCAMNCEPDODODCPMDPMCDGFBLIPOINJDFNANAPNGGGGEFJGJFJIEECMDOBPADLMEDBDBEOBOBIKNBNLCPKGIOCHJLOGPGPGDABIAALJIFEBFKOFALMCGBLIPMHODGJLLONCPCDFGJ&#10;KHBMCBFEBJBPLKBKCHHNELPIBGFHHHHHDELMCGGJJGLGLIEKCFMEMJJMDDGJJMEGCAPKLIHDOGBLINLPIDBIGFHDEGDDBPIDJDJDBGIOMHIJGMKDIDAGLOMHIBFMCICJAPHMHJOAIIFFFCBKABLIHGFMMBGNNMNAJFMFEGELMCADHIFDNDNMOGNAFFHBLGHLFLFDPCLH&#10;OAAEBKAEGIGIIFOLONIKMIFJDDIBIIMGMCLLNJADOJKMHFCBOAHIDNJOELACIAKBPJHEPHPDBGPDFJIFJNMGGHMGMGMEDODJALJNIIOCCEPLAMHHFHBBNLEICDGFLFLBBNBFIDEJCNBAGJOKOLLECKKIFKHEJCKDIFFNGCBHACGFJHKJKJIIOHDKJCGJOOKCKDFDMCJL&#10;DFDBABLEHKFBNJCAGJOFOOGGICDGFDGDOHKKLKLFDCEKGEBLCKBNIGECCBBFKOJNLOLOHNJDOCPFDLIFBLIFMMNOGHLICKIEADCDLLBODJMNJICGIIFIBEMCEMCEMCEMCEMCEMCMACGBCGBCGBCGFNACGFADIBEIPJKENPLONMHHNMCKBNPBGFIDMBGBFEBHLHLHLJDF&#10;CCPDAEKIDNNHKJOHNHLMCPKMPHMABFALFGBGNMCEMCFICBIAEAMLOFPGGCDJJCPFJLKLKLKKBMLCJBJBJBJHFPAEHJHJHJPPKPFJKCLJELAMCLJNMGJNMGGDAFKEEKEBOJHONEGCDBEPLGIFOIFMCGBCFNGOBCPCMCMCEKCFJCIHOHIDANONONONEEJCAHMNDODODGBE&#10;ABAGFOJOJOJOGOGOGOENENENAOAOAOOPOPOLELJIGCGNAMAMAIDMBOAACLJLJLJDJODLMHHKDNJGBLIFGJGJGJAOBCMLDJALOFFCMKOLOLODPJPMHHGHGHGAHACIHLKAEEAMFAGNPPGBBIDKPMPMPMDMDEIKLMANGABOEJICDGBLABIGBEFLJFAOHFGFGFMNOGHHFMKE&#10;JONAPKCFAFAKGCGJPGFNGKGCCDBNCLAKLNKEFNEAKPOAMCLEFJOAGBAIMEKCDHCNPBCEGJHNNBINDBIIDOBPIPGMGMGIEFDBPPDCMCJKKJAEJDLOJOJOBJKINBEJFBJKNHFKDNJGIFJFOHNPCINDBKGCCMGNEGCDJALDLEFDBBHMJFPMJLLLLLLKIBIIAFMMPEFBALIE&#10;PLPKFKCPLOAAAAAAAAJEFEOEEEOKCEAGCI</image>
+    </template>
+  </extension>
+  <!--  Data  -->
+
+
+
+
+
+  <categoricalDomain id="categoricalDomain_1024415">
+    <variableReference ref="effect1"/>
+    <simpleSort id="simpleSort_1024416" method="custom">
+      <categoryOrder>0;1</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <!--  Structure  -->
+  <graph id="embedded_graph">
+    <coordinates id="coordinates_1024369">
+      <dimension id="dimension_1024370">
+        <axis id="axis_X">
+          <label id="label_X" purpose="auto">
+            <descriptionGroup id="descriptionGroup_X" target="effect1">
+              <description id="description_X" name="label"/>
+            </descriptionGroup>
+          </label>
+          <majorTicks id="majorTicks_X"/>
+        </axis>
+      </dimension>
+      <dimension id="dimension_1024376">
+        <axis id="axis_Y">
+          <label id="label_1024378">
+            <text>YAxisLabel</text>
+          </label>
+          <majorTicks id="majorTicks_Y"/>
+        </axis>
+      </dimension>
+    </coordinates>
+    <line breakRepresentation="wings" id="line">
+      <color id="color" variable="effect2"/>
+      <x variable="effect1"/>
+      <y variable="target"/>
+    </line>
+    <point id="point">
+      <x variable="effect1"/>
+      <y variable="target"/>
+    </point>
+    <point id="confPoint" style="confStyle">
+      <x variable="effect1"/>
+      <y variable="confMargin"/>
+    </point>
+    <line id="confLine">
+      <split id="splitAesthetic_1024394" variable="effect1"/>
+      <split id="splitAesthetic_1024395" variable="effect2"/>
+      <x variable="effect1"/>
+      <y variable="confMargin"/>
+    </line>
+  </graph>
+  <legend id="legend">
+    <!--  Size  -->
+    <location id="location_10" method="sizeToContent" part="width"/>
+    <location id="location_11" method="sizeToContent" part="height"/>
+    <location id="location_12" method="same" part="top" target="embedded_graph"/>
+    <location id="location_13" method="attach" part="left" target="embedded_graph"/>
+    <label id="label_10" purpose="auto">
+      <descriptionGroup id="descriptionGroup_10" target="effect2">
+        <description id="description_102" name="label"/>
+      </descriptionGroup>
+    </label>
+    <legendTarget id="legendTarget_10" target="color"/>
+  </legend>
+  <!--  Styles  -->
+  <style font-size="14pt" id="popupStyle"/>
+  <style id="confStyle" symbol="line" glyph-angle="90"/>
+  <!--  Interactivity  -->
+  <popup id="tooltip" style="popupStyle" target="point" tokenTemplate="Teaching method=$[1]$ &#10;Estimated mean=$[2]$">
+    <tokenMapping id="tokenMapping_1024410" valueToken="1" variable="effect1"/>
+    <tokenMapping id="tokenMapping_1024411" valueToken="2" variable="target"/>
+  </popup>
+</visualization>

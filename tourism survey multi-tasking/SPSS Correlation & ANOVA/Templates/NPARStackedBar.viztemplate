@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- IBM SPSS Products: Analytic Components                            -->
+<!--                                                                   -->
+<!-- (C) Copyright IBM Corp. 2007, 2014                                -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+<visualization clip="false" id="visualization1" lang="en-US" style="visualizationStyle" version="2.6" xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-3.0.xsd">
+  <userSource id="graphSource"/>
+  <sourceVariable categorical="true" domain="categoriesDomain" id="categories" source="graphSource" sourceName="categories"/>
+  <sourceVariable categorical="true" domain="categoricalDomain_1" id="type" source="graphSource" sourceName="type"/>
+  <sourceVariable categorical="true" id="o_value" source="graphSource" sourceName="value"/>
+  <sourceVariable categorical="true" id="o_tooltip" source="graphSource" sourceName="tooltip"/>
+  <categoricalDomain id="categoricalDomain_1">
+    <variableReference ref="type"/>
+    <simpleSort method="custom">
+      <categoryOrder>CategoryOrderText</categoryOrder>
+    </simpleSort>
+  </categoricalDomain>
+  <categoricalDomain id="categoriesDomain">
+    <variableReference ref="categories"/>
+    <simpleSort method="data"/>
+  </categoricalDomain>  
+  <graph cellStyle="graphStyle2" id="embedded_o_graph">
+    <coordinates>
+      <dimension>
+        <axis>
+          <majorTicks markStyle="majorTicksStyle11" style="majorTicksStyle"/>
+        </axis>
+      </dimension>
+      <dimension>
+        <axis>
+          <label style="labelStyle">
+            <text id="yAxisText">yAxisLabel</text>
+          </label>
+          <majorTicks markStyle="majorTicksStyle12" style="majorTicksStyle2">
+            <format maximumFractionDigits="1" minimumFractionDigits="1" negativesInParentheses="false" scalingFactor="1" useGrouping="true"/>
+          </majorTicks>
+        </axis>
+      </dimension>
+    </coordinates>
+    <interval id="interval" positionModifier="stack" style="intervalStyle">
+      <color id="barColor" affect="main" variable="type"/>
+      <x variable="categories"/>
+      <y variable="o_value"/>
+    </interval>
+  </graph>
+  <container clip="false" id="container">
+    <!--  Size  -->
+    <location method="same" part="top" target="embedded_o_graph"/>
+    <location method="same" part="bottom" target="embedded_o_graph"/>
+    <location max="75%" method="sizeToContent" part="width"/>
+    <location method="fixed" part="right" value="100%"/>
+    <legend id="legend" style="legendStyle" tickTextStyle="legendStyle2">
+      <!--  Size  -->
+      <location method="sizeToContent" part="width"/>
+      <location method="sizeToContent" part="height"/>
+      <location method="fixed" part="left" value="0px"/>
+      <location method="fixed" part="top" value="0px"/>
+      <label style="labelStyle3">
+        <text>LegendLabel</text>
+      </label>
+      <legendTarget target="barColor"/>
+    </legend>
+  </container>
+  <!--  Styles  -->
+  <style color="black" color2="transparent" font-size="8pt" font-weight="bold" id="labelStyle" padding="1px"/>
+  <style font-size="12pt" font-weight="bold" id="labelStyle2" margin="3px" padding="13px"/>
+  <style color="black" color2="transparent" font-size="9pt" font-weight="bold" id="labelStyle3" margin="3px" padding="2px"/>
+  <style color="white" color2="transparent" id="visualizationStyle" padding="0.3in"/>
+  <style color="#EBEBEB" color2="black" id="graphStyle2"/>
+  <style id="legendStyle" margin="5px"/>
+  <style color="black" color2="transparent" font-size="9pt" font-weight="regular" id="legendStyle2"/>
+  <style color="black" font-size="8pt" id="majorTicksStyle"/>
+  <style color="black" font-size="8pt" id="majorTicksStyle2"/>
+  <style color="black" id="majorTicksStyle11" stroke-width="1px"/>
+  <style color="black" id="majorTicksStyle12" stroke-width="1px"/>
+  <style color="#013996" color2="black" depth="80%" id="intervalStyle" stroke-width="1px"/>
+  <style font-size="14pt" id="popupStyle"/>
+  <popup style="popupStyle" target="interval" tokenTemplate="$[0]$&#10;$[1]$">
+    <tokenMapping valueToken="0" variable="categories"/>
+    <tokenMapping valueToken="1" variable="o_tooltip"/>
+  </popup>
+</visualization>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2fa62e44-37de-4e91-a886-3ca4c4d993f3" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SEbKWX0uMiN5mt181dcu7rpPCn" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="C:\Users\UserName\Dropbox\Multi_Tasking_Main\tourism survey multi-tasking" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Numerical Hessian">
+    <configuration name="ES_Main_MultiTasking" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\UserName\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tourism survey multi-tasking" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tourism survey multi-tasking/ES_Main_MultiTasking.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main_MultiTasking_Debug" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\UserName\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tourism survey multi-tasking" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tourism survey multi-tasking/Main_MultiTasking_Debug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Numerical Hessian" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Numerical Hessian.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pseudo_t_value_evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tourism survey multi-tasking" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tourism survey multi-tasking/pseudo_t_value_evaluation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pseudo_t_value_evaluation_0.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Multi_Tasking_Main" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tourism survey multi-tasking" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tourism survey multi-tasking/pseudo_t_value_evaluation_0.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.ES_Main_MultiTasking" />
+      <item itemvalue="Python.Main_MultiTasking_Debug" />
+      <item itemvalue="Python.Numerical Hessian" />
+      <item itemvalue="Python.pseudo_t_value_evaluation" />
+      <item itemvalue="Python.pseudo_t_value_evaluation_0.1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Numerical Hessian" />
+        <item itemvalue="Python.pseudo_t_value_evaluation" />
+        <item itemvalue="Python.pseudo_t_value_evaluation_0.1" />
+        <item itemvalue="Python.ES_Main_MultiTasking" />
+        <item itemvalue="Python.Main_MultiTasking_Debug" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fa62e44-37de-4e91-a886-3ca4c4d993f3" name="Default Changelist" comment="" />
+      <created>1566809713650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566809713650</updated>
+      <workItem from="1566809714838" duration="4991000" />
+      <workItem from="1566875836992" duration="7627000" />
+      <workItem from="1566884045460" duration="23313000" />
+      <workItem from="1568421607856" duration="642000" />
+      <workItem from="1569835134030" duration="631000" />
+      <workItem from="1571059753906" duration="22000" />
+      <workItem from="1571111847281" duration="251000" />
+      <workItem from="1571113081047" duration="8076000" />
+      <workItem from="1571131643619" duration="735000" />
+      <workItem from="1571132613997" duration="237000" />
+      <workItem from="1571132861381" duration="219000" />
+      <workItem from="1571188699850" duration="924000" />
+      <workItem from="1571193105566" duration="41000" />
+      <workItem from="1571193222253" duration="163000" />
+      <workItem from="1571193597604" duration="10387000" />
+      <workItem from="1571227531374" duration="609000" />
+      <workItem from="1571287855235" duration="761000" />
+      <workItem from="1571806992564" duration="9752000" />
+      <workItem from="1571893463304" duration="6210000" />
+      <workItem from="1571907570810" duration="4779000" />
+      <workItem from="1571991290086" duration="12443000" />
+      <workItem from="1572092212660" duration="6021000" />
+      <workItem from="1572106227367" duration="1455000" />
+      <workItem from="1572174352163" duration="3429000" />
+      <workItem from="1572187497338" duration="6000" />
+      <workItem from="1572682815817" duration="360000" />
+      <workItem from="1572683201200" duration="7597000" />
+      <workItem from="1572786080991" duration="15545000" />
+      <workItem from="1573180243964" duration="4346000" />
+      <workItem from="1573352936341" duration="2397000" />
+      <workItem from="1573545570010" duration="8712000" />
+      <workItem from="1573623632907" duration="609000" />
+      <workItem from="1573694693555" duration="7278000" />
+      <workItem from="1573792840356" duration="8618000" />
+      <workItem from="1573880037650" duration="576000" />
+      <workItem from="1573884350495" duration="2601000" />
+      <workItem from="1573887258393" duration="11465000" />
+      <workItem from="1573958456649" duration="14592000" />
+      <workItem from="1574045915465" duration="6000" />
+      <workItem from="1574045956057" duration="20627000" />
+      <workItem from="1574079928641" duration="2226000" />
+      <workItem from="1574388203715" duration="335000" />
+      <workItem from="1574388774920" duration="1222000" />
+      <workItem from="1574391974872" duration="273000" />
+      <workItem from="1574393588233" duration="221000" />
+      <workItem from="1574394167339" duration="60000" />
+      <workItem from="1574582422790" duration="662000" />
+      <workItem from="1574653427154" duration="8890000" />
+      <workItem from="1574680356025" duration="4507000" />
+      <workItem from="1574926300608" duration="1504000" />
+      <workItem from="1575189967541" duration="376000" />
+      <workItem from="1575336351998" duration="823000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$Main.coverage" NAME="Main Coverage Results" MODIFIED="1573885871339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking/slvr" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$pseudo_t_value_evaluation_0_1.coverage" NAME="pseudo_t_value_evaluation_0.1 Coverage Results" MODIFIED="1572858260155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$Initialization_evaluation.coverage" NAME="Initialization_evaluation Coverage Results" MODIFIED="1571188866174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$Main_MultiTasking.coverage" NAME="Main_MultiTasking Coverage Results" MODIFIED="1573962312397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$DataWrapping.coverage" NAME="DataWrapping Coverage Results" MODIFIED="1573869645770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$MultiTasking.coverage" NAME="MultiTasking Coverage Results" MODIFIED="1566811627509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$ES_Main_MultiTasking.coverage" NAME="ES_Main_MultiTasking Coverage Results" MODIFIED="1574680097486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$Second_derivative.coverage" NAME="Second_derivative Coverage Results" MODIFIED="1572004788060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Multi_Tasking_Main$pseudo_t_value_evaluation.coverage" NAME="pseudo_t_value_evaluation Coverage Results" MODIFIED="1572176896185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tourism survey multi-tasking" />
+  </component>
+</project>

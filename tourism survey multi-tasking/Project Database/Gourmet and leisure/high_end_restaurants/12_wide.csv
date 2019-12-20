@@ -1,0 +1,4 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJ2fJksqkHAWARdbRHl8t8Nug,4ee27d7b82a03de0aa99c013b245a9379d290687,陶然亭,35.0293141,135.7295649,4.6,11,"Kyoto, Kita Ward, Kita-ku, 小松原南町 ３１ー１","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJSVqvPcMHAWARYhmyjnZS5qI,34620e21fd06977b38100f7766b64209fd0ddbd3,Daiichi,35.0226652,135.7414772,4,111,"Kyoto, Kamigyo Ward, Rokubancho, 371 Shimo Chojamachi Dori 千本西入ル六番","['restaurant', 'food', 'point_of_interest', 'establishment']"
+ChIJEzU9VeYHAWARnOzFJ1cy-yU,e5270dcf93d201a97cb96136e3644f8d5a9db2a1,西陣魚新,35.029432,135.744878,4.3,64,"Kyoto, Kamigyo Ward, 京都市上京区 中筋通浄福寺西入中宮町300","['restaurant', 'food', 'point_of_interest', 'establishment']"

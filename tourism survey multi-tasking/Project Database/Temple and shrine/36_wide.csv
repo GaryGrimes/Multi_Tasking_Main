@@ -1,0 +1,8 @@
+place_id,id,name,lat,lng,rating,user_ratings_total,vicinity,types
+ChIJqRxIUY0PAWARz0Hh7RDJHOo,8dced2c34865c9eb0c1ece4bb840acbd9040cda0,Chokenji-temple,34.9282782,135.7612455,3.4,72,"511 Higashiyanagicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJSd5_WpAPAWARz-xjj6XEl7A,bfe83dd12af2383b62c7288009e19fcf7ecd2833,Shoryuji Temple,34.936179,135.763479,0,0,"437-1 Shinmachi, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJJ1GuW4UPAWARTHMmy9GEO3Q,24f04cfd08751bf152846ef79bbb06c2458e00f8,Daikokuji Temple,34.937021,135.76081,3.7,65,"4 Takajocho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJb9WkPpEPAWARGWvQuGyx-Wg,dfddcd229de8ca4f8695fe84ab4cdb093f82a2e0,Seion Temple,34.9356257,135.7653807,0,0,"Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJX9DW8ZMPAWARvE7nsB7GQHo,6f1d4a3246e1195f7ba8673c40e00dbfa9c136b5,Taishiyama Kanon Temple,34.933733,135.765676,4.5,2,"201 Kannonjicho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJO0TnnJoPAWARcW_Dk2BMmew,7dd57d84e4775646f312ae284fcbd7ec104db7e7,Izumikyo Temple,34.9379154,135.7632762,0,0,"412 Shinmachi, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"
+ChIJuSZI_o8PAWARbu6uTx9XmM0,ba6e8a45de6c59341c952df43d71b5fc98b110dd,Kinsatsugu Shrine,34.9367682,135.7613893,4,33,"8 Takajocho, Fushimi Ward, Kyoto","['place_of_worship', 'point_of_interest', 'establishment']"

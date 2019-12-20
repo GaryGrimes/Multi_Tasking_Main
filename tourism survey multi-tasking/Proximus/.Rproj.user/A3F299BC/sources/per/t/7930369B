@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555901519456.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7930369B",
+    "lastKnownWriteTime" : 140226387247107,
+    "last_content_update" : 1555901519456,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "id" : "d0deff95234a450d82835cfe8e3930e3",
+        "name" : "pr4",
+        "title" : "pr4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "object_explorer"
+}
